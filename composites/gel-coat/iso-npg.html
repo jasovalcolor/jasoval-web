@@ -1,0 +1,1196 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gel Coat ISO-NPG — Alta Resistencia al Agua | Jasoval Color</title>
+  <meta name="description" content="Gel coat isoftálico-NPG de máxima calidad para piscinas, embarcaciones y aplicaciones de alto rendimiento. Formulado con resina isoftálica y neopentilglicol para máxima resistencia al agua y UV." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --navy:      #0f314a;
+      --navy-dark: #0a2236;
+      --navy-mid:  #164469;
+      --navy-lite: #1e5b8a;
+      --accent:    #3b9fd1;
+      --accent-2:  #2e8bbf;
+      --bg:        #f5f5f7;
+      --surface:   #ffffff;
+      --border:    #d2d2d7;
+      --text:      #1d1d1f;
+      --muted:     #86868b;
+    }
+
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background: var(--surface);
+      color: var(--text);
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
+    }
+
+    /* ─────────────────────────────────────────
+       HEADER
+    ───────────────────────────────────────── */
+    header {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 200;
+      height: 52px;
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 0 40px;
+      background: rgba(255,255,255,.85);
+      backdrop-filter: saturate(180%) blur(20px);
+      -webkit-backdrop-filter: saturate(180%) blur(20px);
+      border-bottom: 1px solid rgba(0,0,0,.08);
+    }
+    .logo { display: flex; align-items: center; gap: 10px; text-decoration: none; }
+    .logo-mark {
+      width: 28px; height: 28px;
+      background: linear-gradient(135deg, var(--accent), var(--navy-lite));
+      border-radius: 7px;
+      display: flex; align-items: center; justify-content: center;
+      font-weight: 800; font-size: 12px; color: #fff;
+    }
+    .logo-name { font-size: 14px; font-weight: 700; color: var(--text); letter-spacing: -.2px; }
+    nav { display: flex; align-items: center; gap: 2px; }
+    nav a {
+      font-size: 12px; font-weight: 500; color: var(--muted);
+      text-decoration: none; padding: 6px 12px; border-radius: 6px;
+      transition: color .2s, background .2s; letter-spacing: .1px;
+    }
+    nav a:hover { color: var(--text); background: rgba(0,0,0,.05); }
+    nav a.active { color: var(--navy); font-weight: 700; }
+    .nav-cta {
+      background: var(--accent) !important; color: #fff !important;
+      border-radius: 20px !important; padding: 6px 16px !important;
+      font-weight: 600 !important;
+    }
+    .nav-cta:hover { background: var(--accent-2) !important; }
+    .hamburger { display: none; cursor: pointer; padding: 6px; background: none; border: none; }
+    .hamburger span { display: block; width: 20px; height: 1.5px; background: var(--text); margin: 4px 0; border-radius: 2px; }
+    @media (max-width: 680px) {
+      header { padding: 0 24px; }
+      .hamburger { display: block; }
+      nav { display: none; position: fixed; top: 52px; left: 0; right: 0; bottom: 0; background: rgba(255,255,255,.97); backdrop-filter: blur(20px); flex-direction: column; justify-content: center; align-items: center; gap: 8px; }
+      nav.open { display: flex; }
+      nav a { font-size: 20px; padding: 14px 24px; }
+      .nav-cta { margin-top: 8px; }
+    }
+
+    /* ─────────────────────────────────────────
+       BREADCRUMB
+    ───────────────────────────────────────── */
+    .breadcrumb {
+      margin-top: 52px;
+      padding: 14px 40px;
+      background: var(--bg);
+      border-bottom: 1px solid var(--border);
+      display: flex; align-items: center; gap: 8px;
+      font-size: 12px; color: var(--muted);
+    }
+    .breadcrumb a { color: var(--muted); text-decoration: none; transition: color .2s; }
+    .breadcrumb a:hover { color: var(--accent); }
+    .breadcrumb-sep { color: var(--border); font-size: 10px; }
+    .breadcrumb-current { color: var(--text); font-weight: 600; }
+    @media (max-width: 680px) { .breadcrumb { padding: 12px 24px; } }
+
+    /* ─────────────────────────────────────────
+       PRODUCT HERO
+    ───────────────────────────────────────── */
+    .prod-hero {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      min-height: 540px;
+    }
+    .prod-hero-info {
+      background: linear-gradient(160deg, var(--navy-dark) 0%, var(--navy) 60%, var(--navy-mid) 100%);
+      padding: 72px 56px 72px 40px;
+      display: flex; flex-direction: column; justify-content: center;
+      position: relative; overflow: hidden;
+    }
+    .prod-hero-info::before {
+      content: '';
+      position: absolute; top: -100px; right: -100px;
+      width: 400px; height: 400px; border-radius: 50%;
+      background: var(--accent); opacity: .06; filter: blur(60px);
+    }
+    .prod-badge {
+      display: inline-flex; align-items: center; gap: 6px;
+      background: rgba(59,159,209,.15); border: 1px solid rgba(59,159,209,.3);
+      color: var(--accent); font-size: 11px; font-weight: 700;
+      letter-spacing: 1.5px; text-transform: uppercase;
+      padding: 5px 12px; border-radius: 20px;
+      margin-bottom: 24px; width: fit-content;
+      animation: fadeUp .5s .1s both;
+    }
+    .prod-hero-info h1 {
+      font-size: clamp(32px, 4vw, 52px);
+      font-weight: 800; color: #fff;
+      line-height: 1.1; letter-spacing: -1.5px;
+      animation: fadeUp .5s .2s both;
+    }
+    .prod-hero-info h1 em { font-style: normal; color: var(--accent); }
+    .prod-hero-tagline {
+      font-size: 16px; color: rgba(255,255,255,.5);
+      font-weight: 300; margin-top: 16px; line-height: 1.6;
+      max-width: 420px;
+      animation: fadeUp .5s .3s both;
+    }
+    .prod-props {
+      display: flex; gap: 12px; margin-top: 36px; flex-wrap: wrap;
+      animation: fadeUp .5s .4s both;
+    }
+    .prod-prop {
+      background: rgba(255,255,255,.07);
+      border: 1px solid rgba(255,255,255,.1);
+      border-radius: 10px; padding: 10px 16px;
+      display: flex; align-items: center; gap: 8px;
+    }
+    .prod-prop-icon { font-size: 18px; }
+    .prod-prop-text { font-size: 12px; color: rgba(255,255,255,.7); font-weight: 500; line-height: 1.3; }
+    .prod-prop-text strong { display: block; color: #fff; font-weight: 700; font-size: 13px; }
+    .prod-hero-actions {
+      display: flex; gap: 12px; margin-top: 40px; flex-wrap: wrap;
+      animation: fadeUp .5s .5s both;
+    }
+    .btn-primary {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: var(--accent); color: #fff;
+      padding: 14px 28px; border-radius: 980px;
+      font-weight: 700; font-size: 14px; text-decoration: none;
+      transition: background .2s, transform .2s;
+    }
+    .btn-primary:hover { background: var(--accent-2); transform: scale(1.02); }
+    .btn-ghost {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: rgba(255,255,255,.08); color: rgba(255,255,255,.85);
+      padding: 14px 24px; border-radius: 980px;
+      font-weight: 600; font-size: 14px; text-decoration: none;
+      border: 1px solid rgba(255,255,255,.15);
+      transition: background .2s;
+    }
+    .btn-ghost:hover { background: rgba(255,255,255,.14); }
+
+    /* Product visual panel */
+    .prod-hero-visual {
+      background: var(--bg);
+      display: flex; align-items: center; justify-content: center;
+      position: relative; overflow: hidden;
+      padding: 48px;
+    }
+    .prod-visual-card {
+      width: 100%; max-width: 360px;
+      background: #fff; border-radius: 24px;
+      box-shadow: 0 20px 60px rgba(0,0,0,.1), 0 4px 16px rgba(0,0,0,.06);
+      overflow: hidden;
+      animation: fadeUp .6s .3s both;
+    }
+    .prod-visual-top {
+      background: linear-gradient(135deg, var(--navy) 0%, var(--navy-mid) 100%);
+      padding: 40px 32px 32px;
+      text-align: center;
+      position: relative;
+    }
+    .prod-visual-top::after {
+      content: '';
+      position: absolute; bottom: -1px; left: 0; right: 0;
+      height: 32px;
+      background: #fff;
+      clip-path: ellipse(60% 100% at 50% 100%);
+    }
+    .prod-drum {
+      width: 110px; height: 140px; margin: 0 auto 20px;
+      background: linear-gradient(160deg, #e8e8e8 0%, #c8c8c8 40%, #a8a8a8 100%);
+      border-radius: 12px 12px 10px 10px;
+      position: relative;
+      box-shadow: inset -8px 0 16px rgba(0,0,0,.15), 0 8px 24px rgba(0,0,0,.3);
+    }
+    .prod-drum::before {
+      content: '';
+      position: absolute; top: 12px; left: 8px; right: 8px; height: 4px;
+      background: rgba(255,255,255,.6); border-radius: 2px;
+    }
+    .prod-drum::after {
+      content: '';
+      position: absolute; top: 22px; left: 8px; right: 8px; height: 2px;
+      background: rgba(255,255,255,.3); border-radius: 2px;
+    }
+    .prod-drum-label {
+      position: absolute; top: 32px; left: 0; right: 0;
+      text-align: center;
+    }
+    .prod-drum-label-code {
+      font-size: 10px; font-weight: 800; color: var(--navy);
+      letter-spacing: 2px; text-transform: uppercase;
+      background: rgba(255,255,255,.9); padding: 2px 8px; border-radius: 4px;
+      display: inline-block;
+    }
+    .prod-drum-label-name {
+      display: block; margin-top: 6px;
+      font-size: 8px; font-weight: 700; color: rgba(255,255,255,.8);
+      letter-spacing: 1px; text-transform: uppercase;
+    }
+    .prod-visual-name {
+      font-size: 18px; font-weight: 800; color: #fff;
+      letter-spacing: -0.5px; margin-top: 8px;
+      position: relative; z-index: 1;
+    }
+    .prod-visual-bottom { padding: 24px 28px; }
+    .prod-spec-row {
+      display: flex; justify-content: space-between; align-items: center;
+      padding: 10px 0; border-bottom: 1px solid var(--border);
+      font-size: 13px;
+    }
+    .prod-spec-row:last-child { border-bottom: none; }
+    .prod-spec-key { color: var(--muted); font-weight: 500; }
+    .prod-spec-val { color: var(--text); font-weight: 700; text-align: right; }
+    .prod-quality-badge {
+      margin-top: 16px; padding: 10px 16px;
+      background: linear-gradient(135deg, rgba(59,159,209,.08), rgba(15,49,74,.06));
+      border: 1px solid rgba(59,159,209,.2);
+      border-radius: 10px;
+      display: flex; align-items: center; gap: 10px;
+    }
+    .pq-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--accent); flex-shrink: 0; }
+    .pq-text { font-size: 12px; color: var(--navy); font-weight: 600; }
+
+    @media (max-width: 900px) {
+      .prod-hero { grid-template-columns: 1fr; }
+      .prod-hero-info { padding: 64px 24px 48px; }
+      .prod-hero-visual { padding: 40px 24px; min-height: 400px; }
+    }
+
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    /* ─────────────────────────────────────────
+       QUALITY STRIP
+    ───────────────────────────────────────── */
+    .quality-strip {
+      background: var(--navy);
+      padding: 32px 40px;
+      display: flex; justify-content: center; gap: 0;
+      flex-wrap: wrap;
+    }
+    .qs-item {
+      display: flex; align-items: center; gap: 12px;
+      padding: 0 32px; border-right: 1px solid rgba(255,255,255,.1);
+    }
+    .qs-item:last-child { border-right: none; }
+    .qs-icon {
+      width: 36px; height: 36px; border-radius: 8px;
+      background: rgba(59,159,209,.15); border: 1px solid rgba(59,159,209,.25);
+      display: flex; align-items: center; justify-content: center;
+      color: var(--accent); flex-shrink: 0;
+    }
+    .qs-text strong { display: block; font-size: 13px; color: #fff; font-weight: 700; }
+    .qs-text span { font-size: 11px; color: rgba(255,255,255,.4); }
+    @media (max-width: 768px) {
+      .quality-strip { gap: 0; padding: 24px; }
+      .qs-item { padding: 12px 20px; border-right: none; border-bottom: 1px solid rgba(255,255,255,.08); width: 100%; }
+      .qs-item:last-child { border-bottom: none; }
+    }
+
+    /* ─────────────────────────────────────────
+       SECTIONS BASE
+    ───────────────────────────────────────── */
+    .container { max-width: 1080px; margin: 0 auto; }
+    section { padding: 80px 40px; }
+    .section-tag {
+      display: inline-block; font-size: 11px; font-weight: 700;
+      color: var(--accent); text-transform: uppercase; letter-spacing: 2px;
+      margin-bottom: 14px;
+    }
+    .section-h2 {
+      font-size: clamp(28px, 3.5vw, 40px);
+      font-weight: 800; color: var(--text);
+      line-height: 1.15; letter-spacing: -1px;
+      margin-bottom: 16px;
+    }
+    .section-h2 em { font-style: normal; color: var(--accent); }
+    .section-lead {
+      font-size: 16px; color: var(--muted); font-weight: 400;
+      line-height: 1.7; max-width: 580px;
+    }
+    @media (max-width: 680px) { section { padding: 64px 24px; } }
+
+    /* reveal animation */
+    .reveal { opacity: 0; transform: translateY(24px); transition: opacity .6s, transform .6s; }
+    .reveal.visible { opacity: 1; transform: none; }
+
+    /* ─────────────────────────────────────────
+       DESCRIPTION
+    ───────────────────────────────────────── */
+    .desc-grid {
+      display: grid; grid-template-columns: 1fr 1fr;
+      gap: 64px; margin-top: 56px; align-items: start;
+    }
+    .desc-text p { font-size: 15px; color: var(--muted); line-height: 1.8; margin-bottom: 16px; }
+    .desc-text p:last-child { margin-bottom: 0; }
+    .desc-text strong { color: var(--text); font-weight: 700; }
+    .desc-highlights { display: flex; flex-direction: column; gap: 16px; }
+    .desc-hi {
+      display: flex; gap: 16px; align-items: flex-start;
+      padding: 20px; background: var(--bg); border-radius: 16px;
+      border: 1px solid var(--border);
+      transition: border-color .2s, box-shadow .2s;
+    }
+    .desc-hi:hover { border-color: var(--accent); box-shadow: 0 4px 16px rgba(59,159,209,.1); }
+    .desc-hi-icon {
+      width: 40px; height: 40px; border-radius: 10px; flex-shrink: 0;
+      background: linear-gradient(135deg, var(--accent), var(--navy-lite));
+      display: flex; align-items: center; justify-content: center; color: #fff;
+    }
+    .desc-hi-body strong { display: block; font-size: 14px; font-weight: 700; color: var(--text); margin-bottom: 4px; }
+    .desc-hi-body span { font-size: 13px; color: var(--muted); line-height: 1.5; }
+    @media (max-width: 768px) { .desc-grid { grid-template-columns: 1fr; gap: 40px; } }
+
+    /* ─────────────────────────────────────────
+       FICHA TÉCNICA
+    ───────────────────────────────────────── */
+    .ficha-section { background: var(--bg); }
+    .ficha-grid {
+      display: grid; grid-template-columns: 1.2fr 1fr;
+      gap: 48px; margin-top: 48px; align-items: start;
+    }
+    .ficha-table { background: #fff; border-radius: 20px; overflow: hidden; border: 1px solid var(--border); }
+    .ficha-table-header {
+      background: var(--navy); padding: 18px 24px;
+      display: flex; align-items: center; gap: 10px;
+    }
+    .ficha-table-header span { font-size: 13px; font-weight: 700; color: #fff; letter-spacing: .3px; }
+    .ficha-row {
+      display: flex; justify-content: space-between; align-items: center;
+      padding: 14px 24px; border-bottom: 1px solid var(--border);
+      transition: background .15s;
+    }
+    .ficha-row:last-child { border-bottom: none; }
+    .ficha-row:hover { background: var(--bg); }
+    .ficha-key { font-size: 13px; color: var(--muted); font-weight: 500; }
+    .ficha-val { font-size: 13px; color: var(--text); font-weight: 700; text-align: right; }
+    .ficha-val.accent { color: var(--accent); }
+
+    .ficha-formats { display: flex; flex-direction: column; gap: 16px; }
+    .ficha-format-title { font-size: 13px; font-weight: 800; color: var(--navy); text-transform: uppercase; letter-spacing: .5px; margin-bottom: 4px; }
+    .format-card {
+      background: #fff; border: 1px solid var(--border); border-radius: 16px;
+      padding: 20px 22px; display: flex; align-items: center; gap: 18px;
+      transition: border-color .2s, transform .2s, box-shadow .2s;
+      cursor: default;
+    }
+    .format-card:hover { border-color: var(--accent); transform: translateY(-2px); box-shadow: 0 8px 24px rgba(59,159,209,.12); }
+    .format-drum {
+      width: 44px; height: 56px; flex-shrink: 0;
+      background: linear-gradient(160deg, #ddd 0%, #bbb 100%);
+      border-radius: 6px 6px 5px 5px;
+      box-shadow: inset -4px 0 8px rgba(0,0,0,.1);
+      position: relative;
+    }
+    .format-drum::before {
+      content: '';
+      position: absolute; top: 6px; left: 4px; right: 4px; height: 2px;
+      background: rgba(255,255,255,.7); border-radius: 1px;
+    }
+    .format-info strong { display: block; font-size: 16px; font-weight: 800; color: var(--navy); letter-spacing: -.3px; }
+    .format-info span { font-size: 12px; color: var(--muted); }
+
+    .note-box {
+      margin-top: 20px; padding: 16px 20px;
+      background: rgba(59,159,209,.06);
+      border: 1px solid rgba(59,159,209,.2);
+      border-radius: 12px;
+    }
+    .note-box p { font-size: 13px; color: var(--navy); line-height: 1.6; }
+    .note-box strong { font-weight: 700; }
+
+    @media (max-width: 768px) { .ficha-grid { grid-template-columns: 1fr; } }
+
+    /* ─────────────────────────────────────────
+       APLICACIONES
+    ───────────────────────────────────────── */
+    .apps-grid {
+      display: grid; grid-template-columns: repeat(3, 1fr);
+      gap: 20px; margin-top: 48px;
+    }
+    .app-card {
+      background: var(--bg); border: 1px solid var(--border);
+      border-radius: 20px; overflow: hidden;
+      transition: border-color .2s, transform .2s, box-shadow .2s;
+    }
+    .app-card:hover { border-color: var(--accent); transform: translateY(-4px); box-shadow: 0 16px 40px rgba(0,0,0,.08); }
+    .app-card-top {
+      height: 160px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 64px; position: relative; overflow: hidden;
+    }
+    .app-card-top.pool { background: linear-gradient(135deg, #0ea5e9, #0369a1); }
+    .app-card-top.marine { background: linear-gradient(135deg, #1e40af, #1e3a5f); }
+    .app-card-top.construction { background: linear-gradient(135deg, #475569, #1e293b); }
+    .app-card-body { padding: 20px; }
+    .app-card-body h3 { font-size: 15px; font-weight: 800; color: var(--text); margin-bottom: 8px; letter-spacing: -.3px; }
+    .app-card-body p { font-size: 13px; color: var(--muted); line-height: 1.6; }
+    .app-tag {
+      display: inline-block; margin-top: 12px;
+      font-size: 10px; font-weight: 700; color: var(--accent);
+      text-transform: uppercase; letter-spacing: 1px;
+      background: rgba(59,159,209,.1); padding: 3px 10px; border-radius: 20px;
+    }
+    @media (max-width: 768px) { .apps-grid { grid-template-columns: 1fr; } }
+    @media (min-width: 481px) and (max-width: 768px) { .apps-grid { grid-template-columns: 1fr 1fr; } }
+
+    /* ─────────────────────────────────────────
+       APLICACIÓN / HOW TO
+    ───────────────────────────────────────── */
+    .howto-section { background: var(--navy-dark); }
+    .howto-section .section-tag { color: rgba(59,159,209,.8); }
+    .howto-section .section-h2 { color: #fff; }
+    .howto-section .section-h2 em { color: var(--accent); }
+    .howto-section .section-lead { color: rgba(255,255,255,.45); }
+    .steps-grid {
+      display: grid; grid-template-columns: repeat(4, 1fr);
+      gap: 20px; margin-top: 48px;
+    }
+    .step-card {
+      background: rgba(255,255,255,.04);
+      border: 1px solid rgba(255,255,255,.08);
+      border-radius: 18px; padding: 28px 22px;
+      position: relative;
+      transition: background .2s, border-color .2s;
+    }
+    .step-card:hover { background: rgba(255,255,255,.07); border-color: rgba(59,159,209,.3); }
+    .step-num {
+      font-size: 11px; font-weight: 800; color: var(--accent);
+      letter-spacing: 2px; text-transform: uppercase; margin-bottom: 16px;
+      display: block;
+    }
+    .step-icon {
+      font-size: 32px; margin-bottom: 16px; display: block;
+    }
+    .step-card h4 { font-size: 15px; font-weight: 800; color: #fff; margin-bottom: 8px; letter-spacing: -.3px; }
+    .step-card p { font-size: 13px; color: rgba(255,255,255,.45); line-height: 1.6; }
+    .step-tip {
+      margin-top: 12px; padding: 10px 14px;
+      background: rgba(59,159,209,.1); border-radius: 8px;
+      font-size: 12px; color: rgba(59,159,209,.9);
+    }
+    .step-tip strong { font-weight: 700; }
+    .steps-warning {
+      margin-top: 32px; padding: 20px 24px;
+      background: rgba(255,193,7,.08); border: 1px solid rgba(255,193,7,.2);
+      border-radius: 14px; display: flex; gap: 14px; align-items: flex-start;
+    }
+    .steps-warning-icon { font-size: 20px; flex-shrink: 0; }
+    .steps-warning p { font-size: 13px; color: rgba(255,255,255,.55); line-height: 1.7; }
+    .steps-warning strong { color: rgba(255,193,7,.9); }
+    @media (max-width: 900px) { .steps-grid { grid-template-columns: 1fr 1fr; } }
+    @media (max-width: 480px) { .steps-grid { grid-template-columns: 1fr; } }
+
+    /* ─────────────────────────────────────────
+       FAQ
+    ───────────────────────────────────────── */
+    .faq-list { margin-top: 48px; display: flex; flex-direction: column; gap: 12px; max-width: 760px; }
+    .faq-item {
+      border: 1px solid var(--border); border-radius: 16px;
+      overflow: hidden; transition: border-color .2s;
+    }
+    .faq-item:hover { border-color: var(--accent); }
+    .faq-q {
+      width: 100%; text-align: left; background: none; border: none; cursor: pointer;
+      padding: 20px 24px;
+      display: flex; justify-content: space-between; align-items: center; gap: 16px;
+      font-family: 'Montserrat', sans-serif;
+    }
+    .faq-q-text { font-size: 14px; font-weight: 700; color: var(--text); text-align: left; line-height: 1.4; }
+    .faq-icon {
+      width: 28px; height: 28px; border-radius: 50%; flex-shrink: 0;
+      background: var(--bg); border: 1px solid var(--border);
+      display: flex; align-items: center; justify-content: center;
+      transition: transform .25s, background .2s;
+      color: var(--muted);
+    }
+    .faq-item.open .faq-icon { transform: rotate(45deg); background: var(--accent); border-color: var(--accent); color: #fff; }
+    .faq-a {
+      max-height: 0; overflow: hidden;
+      transition: max-height .35s ease, padding .25s;
+      font-size: 14px; color: var(--muted); line-height: 1.7;
+      padding: 0 24px;
+    }
+    .faq-item.open .faq-a { max-height: 400px; padding: 0 24px 20px; }
+
+    /* ─────────────────────────────────────────
+       RELATED
+    ───────────────────────────────────────── */
+    .related-section { background: var(--bg); }
+    .related-grid {
+      display: grid; grid-template-columns: repeat(3, 1fr);
+      gap: 20px; margin-top: 40px;
+    }
+    .related-card {
+      background: #fff; border: 1px solid var(--border);
+      border-radius: 18px; overflow: hidden;
+      text-decoration: none;
+      transition: border-color .2s, transform .2s, box-shadow .2s;
+      display: block;
+    }
+    .related-card:hover { border-color: var(--accent); transform: translateY(-3px); box-shadow: 0 12px 32px rgba(0,0,0,.08); }
+    .related-card-top {
+      height: 100px;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .related-card-top.gc { background: linear-gradient(135deg, var(--navy), var(--navy-mid)); }
+    .related-card-top.res { background: linear-gradient(135deg, #374151, #1f2937); }
+    .related-card-top.cat { background: linear-gradient(135deg, #7c2d12, #9a3412); }
+    .related-card-label {
+      font-size: 10px; font-weight: 800; color: rgba(255,255,255,.7);
+      letter-spacing: 2px; text-transform: uppercase;
+    }
+    .related-card-body { padding: 18px 20px; }
+    .related-card-body h4 { font-size: 14px; font-weight: 800; color: var(--text); margin-bottom: 6px; letter-spacing: -.2px; }
+    .related-card-body p { font-size: 12px; color: var(--muted); line-height: 1.5; }
+    .related-card-link {
+      display: flex; align-items: center; gap: 4px; margin-top: 12px;
+      font-size: 12px; font-weight: 700; color: var(--accent);
+    }
+    @media (max-width: 680px) { .related-grid { grid-template-columns: 1fr; } }
+
+    /* ─────────────────────────────────────────
+       CTA FINAL
+    ───────────────────────────────────────── */
+    .cta-section {
+      background: linear-gradient(160deg, var(--navy-dark), var(--navy-mid));
+      text-align: center; padding: 80px 40px;
+    }
+    .cta-section h2 {
+      font-size: clamp(28px, 4vw, 44px); font-weight: 800; color: #fff;
+      letter-spacing: -1px; margin-bottom: 16px;
+    }
+    .cta-section h2 em { font-style: normal; color: var(--accent); }
+    .cta-section p { font-size: 16px; color: rgba(255,255,255,.45); margin-bottom: 36px; }
+    .cta-btns { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
+    .cta-btn-primary {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: var(--accent); color: #fff;
+      padding: 16px 36px; border-radius: 980px;
+      font-weight: 700; font-size: 15px; text-decoration: none;
+      transition: background .2s, transform .2s;
+    }
+    .cta-btn-primary:hover { background: var(--accent-2); transform: scale(1.02); }
+    .cta-btn-ghost {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: rgba(255,255,255,.08); color: rgba(255,255,255,.85);
+      padding: 16px 32px; border-radius: 980px;
+      font-weight: 600; font-size: 15px; text-decoration: none;
+      border: 1px solid rgba(255,255,255,.15);
+      transition: background .2s;
+    }
+    .cta-btn-ghost:hover { background: rgba(255,255,255,.14); }
+
+    /* ─────────────────────────────────────────
+       FOOTER
+    ───────────────────────────────────────── */
+    footer {
+      background: var(--text); color: rgba(255,255,255,.45);
+      padding: 56px 40px 40px;
+    }
+    .footer-top { display: flex; justify-content: space-between; align-items: flex-start; gap: 40px; margin-bottom: 48px; flex-wrap: wrap; }
+    .footer-brand { max-width: 280px; }
+    .footer-logo { display: flex; align-items: center; gap: 10px; text-decoration: none; margin-bottom: 14px; }
+    .footer-logo-mark { width: 28px; height: 28px; background: linear-gradient(135deg, var(--accent), var(--navy-lite)); border-radius: 7px; display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 12px; color: #fff; }
+    .footer-logo-name { font-size: 14px; font-weight: 700; color: rgba(255,255,255,.8); }
+    .footer-brand p { font-size: 13px; line-height: 1.6; }
+    .footer-links h4 { font-size: 11px; font-weight: 700; color: rgba(255,255,255,.6); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 14px; }
+    .footer-links ul { list-style: none; }
+    .footer-links li { margin-bottom: 8px; }
+    .footer-links a { font-size: 13px; color: rgba(255,255,255,.45); text-decoration: none; transition: color .2s; }
+    .footer-links a:hover { color: rgba(255,255,255,.9); }
+    .footer-bottom { border-top: 1px solid rgba(255,255,255,.08); padding-top: 24px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px; font-size: 12px; }
+    .footer-bottom a { color: rgba(255,255,255,.45); text-decoration: none; }
+    .footer-bottom a:hover { color: rgba(255,255,255,.8); }
+    @media (max-width: 680px) {
+      footer { padding: 48px 24px 32px; }
+      .footer-top { flex-direction: column; }
+      .footer-bottom { flex-direction: column; text-align: center; }
+    }
+
+    /* WHATSAPP */
+    .wa {
+      position: fixed; bottom: 28px; right: 28px; z-index: 300;
+      width: 52px; height: 52px; border-radius: 50%;
+      background: #25d366;
+      display: flex; align-items: center; justify-content: center;
+      box-shadow: 0 4px 16px rgba(37,211,102,.4);
+      transition: transform .2s, box-shadow .2s;
+    }
+    .wa:hover { transform: scale(1.08); box-shadow: 0 6px 24px rgba(37,211,102,.5); }
+  </style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+  <a class="logo" href="/">
+    <div class="logo-mark">JC</div>
+    <span class="logo-name">Jasoval Color</span>
+  </a>
+  <button class="hamburger" onclick="document.getElementById('nav').classList.toggle('open')" aria-label="Menú">
+    <span></span><span></span><span></span>
+  </button>
+  <nav id="nav">
+    <a href="/#especialidades">Especialidades</a>
+    <a href="/composites" class="active">Composites</a>
+    <a href="/#nosotros">Nosotros</a>
+    <a href="/contacto">Contacto</a>
+    <a href="https://catalogo.jasovalcolor.com" target="_blank" class="nav-cta">Catálogo B2B</a>
+  </nav>
+</header>
+
+<!-- BREADCRUMB -->
+<nav class="breadcrumb" aria-label="Ruta de navegación">
+  <a href="/">Inicio</a>
+  <span class="breadcrumb-sep">›</span>
+  <a href="/composites">Composites</a>
+  <span class="breadcrumb-sep">›</span>
+  <a href="/composites/gel-coat">Gel Coat</a>
+  <span class="breadcrumb-sep">›</span>
+  <span class="breadcrumb-current">ISO-NPG</span>
+</nav>
+
+<!-- PRODUCT HERO -->
+<div class="prod-hero">
+
+  <!-- INFO -->
+  <div class="prod-hero-info">
+    <div class="prod-badge">
+      <svg width="10" height="10" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+      Gama Premium
+    </div>
+    <h1>Gel Coat<br><em>ISO-NPG</em></h1>
+    <p class="prod-hero-tagline">Formulado con resina isoftálica y neopentilglicol. La máxima resistencia al agua, al cloro y a la intemperie para aplicaciones de alto rendimiento.</p>
+
+    <div class="prod-props">
+      <div class="prod-prop">
+        <span class="prod-prop-icon">💧</span>
+        <div class="prod-prop-text">
+          <strong>Hidrofugante</strong>
+          Barrera anti-osmosis
+        </div>
+      </div>
+      <div class="prod-prop">
+        <span class="prod-prop-icon">☀️</span>
+        <div class="prod-prop-text">
+          <strong>Anti-UV</strong>
+          Sin amarillamiento
+        </div>
+      </div>
+      <div class="prod-prop">
+        <span class="prod-prop-icon">🧪</span>
+        <div class="prod-prop-text">
+          <strong>Resiste cloro</strong>
+          Ideal piscinas
+        </div>
+      </div>
+    </div>
+
+    <div class="prod-hero-actions">
+      <a href="/contacto" class="btn-primary">
+        Pedir presupuesto
+        <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+      <a href="https://catalogo.jasovalcolor.com" target="_blank" class="btn-ghost">
+        Ver en catálogo
+      </a>
+    </div>
+  </div>
+
+  <!-- VISUAL -->
+  <div class="prod-hero-visual">
+    <div class="prod-visual-card">
+      <div class="prod-visual-top">
+        <div class="prod-drum">
+          <div class="prod-drum-label">
+            <span class="prod-drum-label-code">ISO-NPG</span>
+            <span class="prod-drum-label-name">Jasoval Color</span>
+          </div>
+        </div>
+        <div class="prod-visual-name">Gel Coat ISO-NPG</div>
+      </div>
+      <div class="prod-visual-bottom">
+        <div class="prod-spec-row">
+          <span class="prod-spec-key">Base</span>
+          <span class="prod-spec-val">Isoftálica + NPG</span>
+        </div>
+        <div class="prod-spec-row">
+          <span class="prod-spec-key">Catalizador</span>
+          <span class="prod-spec-val">MEKP 1,5 – 2%</span>
+        </div>
+        <div class="prod-spec-row">
+          <span class="prod-spec-key">Temperatura aplicación</span>
+          <span class="prod-spec-val">18 – 30 °C</span>
+        </div>
+        <div class="prod-spec-row">
+          <span class="prod-spec-key">Formatos</span>
+          <span class="prod-spec-val accent">25 kg · 225 kg</span>
+        </div>
+        <div class="prod-quality-badge">
+          <div class="pq-dot"></div>
+          <span class="pq-text">Fabricación propia · Silla, Valencia</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<!-- QUALITY STRIP -->
+<div class="quality-strip">
+  <div class="qs-item">
+    <div class="qs-icon">
+      <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+    </div>
+    <div class="qs-text">
+      <strong>Máxima resistencia al agua</strong>
+      <span>Tecnología ISO-NPG anti-osmosis</span>
+    </div>
+  </div>
+  <div class="qs-item">
+    <div class="qs-icon">
+      <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+    </div>
+    <div class="qs-text">
+      <strong>25 años de experiencia</strong>
+      <span>Formulación propia Jasoval Color</span>
+    </div>
+  </div>
+  <div class="qs-item">
+    <div class="qs-icon">
+      <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M20 7H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2z"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+    </div>
+    <div class="qs-text">
+      <strong>Stock permanente</strong>
+      <span>Entrega inmediata toda España</span>
+    </div>
+  </div>
+  <div class="qs-item">
+    <div class="qs-icon">
+      <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+    </div>
+    <div class="qs-text">
+      <strong>Soporte técnico incluido</strong>
+      <span>Asesoramiento en aplicación</span>
+    </div>
+  </div>
+</div>
+
+<!-- DESCRIPCIÓN -->
+<section>
+  <div class="container">
+    <span class="section-tag reveal">¿Qué es?</span>
+    <h2 class="section-h2 reveal">El gel coat de <em>máxima calidad</em><br>para exigentes</h2>
+    <p class="section-lead reveal">Desarrollado para aplicaciones donde el agua, el cloro y la intemperie son el enemigo principal.</p>
+
+    <div class="desc-grid">
+      <div class="desc-text reveal">
+        <p>El <strong>Gel Coat ISO-NPG</strong> es la gama más alta de nuestra línea de gel coats. Formulado con resina isoftálica y neopentilglicol (NPG), ofrece una barrera superior frente a la absorción de agua y la degradación química respecto a los gel coats ortoftálicos estándar.</p>
+        <p>La combinación ISO-NPG crea una red molecular más densa y menos polar, lo que se traduce en una <strong>resistencia a la hidrólisis hasta 3 veces mayor</strong>. Esto es crítico en piscinas, bañeras de hidromasaje y embarcaciones, donde el contacto permanente con agua y productos químicos degrada los gel coats convencionales.</p>
+        <p>En Jasoval Color lo formulamos y fabricamos en nuestras instalaciones de Silla, Valencia. Llevamos más de 25 años suministrándolo a instaladores de piscinas, astilleros y talleres de fibra de vidrio de toda España.</p>
+      </div>
+      <div class="desc-highlights reveal">
+        <div class="desc-hi">
+          <div class="desc-hi-icon">
+            <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <div class="desc-hi-body">
+            <strong>Anti-osmosis certificado</strong>
+            <span>La resina NPG reduce la absorción de agua a menos del 0,5% en 24h, evitando ampollas y delaminación.</span>
+          </div>
+        </div>
+        <div class="desc-hi">
+          <div class="desc-hi-icon">
+            <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+          </div>
+          <div class="desc-hi-body">
+            <strong>Estabilidad UV superior</strong>
+            <span>Mantiene el color y el brillo durante años en exposición exterior directa. Sin amarillamiento.</span>
+          </div>
+        </div>
+        <div class="desc-hi">
+          <div class="desc-hi-icon">
+            <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><polyline points="14,2 14,8 20,8"/></svg>
+          </div>
+          <div class="desc-hi-body">
+            <strong>Colores disponibles a medida</strong>
+            <span>Blanco estándar con posibilidad de teñido en carta RAL. Consulta disponibilidad.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FICHA TÉCNICA -->
+<section class="ficha-section">
+  <div class="container">
+    <span class="section-tag reveal">Datos técnicos</span>
+    <h2 class="section-h2 reveal">Ficha <em>técnica</em></h2>
+    <p class="section-lead reveal">Parámetros de aplicación para condiciones estándar a 23 °C.</p>
+
+    <div class="ficha-grid">
+      <div class="reveal">
+        <div class="ficha-table">
+          <div class="ficha-table-header">
+            <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+            <span>Gel Coat ISO-NPG — Especificaciones</span>
+          </div>
+          <div class="ficha-row">
+            <span class="ficha-key">Tipo de resina</span>
+            <span class="ficha-val">Isoftálica-NPG</span>
+          </div>
+          <div class="ficha-row">
+            <span class="ficha-key">Viscosidad (Brookfield)</span>
+            <span class="ficha-val">4.500 – 6.000 mPa·s</span>
+          </div>
+          <div class="ficha-row">
+            <span class="ficha-key">Contenido en estireno</span>
+            <span class="ficha-val">35 – 40 %</span>
+          </div>
+          <div class="ficha-row">
+            <span class="ficha-key">Tiempo de gelado (23°C)</span>
+            <span class="ficha-val">18 – 25 min</span>
+          </div>
+          <div class="ficha-row">
+            <span class="ficha-key">Tiempo desmoldeo</span>
+            <span class="ficha-val">3 – 4 horas</span>
+          </div>
+          <div class="ficha-row">
+            <span class="ficha-key">Catalizador (MEKP)</span>
+            <span class="ficha-val accent">1,5 – 2 %</span>
+          </div>
+          <div class="ficha-row">
+            <span class="ficha-key">Temperatura aplicación</span>
+            <span class="ficha-val">18 – 30 °C</span>
+          </div>
+          <div class="ficha-row">
+            <span class="ficha-key">Espesor recomendado</span>
+            <span class="ficha-val">400 – 600 μm</span>
+          </div>
+          <div class="ficha-row">
+            <span class="ficha-key">Consumo</span>
+            <span class="ficha-val">500 – 650 g/m²</span>
+          </div>
+          <div class="ficha-row">
+            <span class="ficha-key">Color base</span>
+            <span class="ficha-val">Blanco / RAL</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="reveal">
+        <div class="ficha-format-title">Formatos disponibles</div>
+        <div class="ficha-formats" style="margin-top: 16px;">
+          <div class="format-card">
+            <div class="format-drum"></div>
+            <div class="format-info">
+              <strong>25 kg</strong>
+              <span>Cubo estándar · Para obra y taller</span>
+            </div>
+          </div>
+          <div class="format-card">
+            <div class="format-drum" style="height: 68px;"></div>
+            <div class="format-info">
+              <strong>225 kg</strong>
+              <span>Bidón industrial · Para producción</span>
+            </div>
+          </div>
+        </div>
+        <div class="note-box" style="margin-top: 24px;">
+          <p><strong>Nota:</strong> Los tiempos de gelado son orientativos a 23 °C con MEKP al 1,5%. Varían con temperatura y porcentaje de catalizador. Consultar ficha técnica completa.</p>
+        </div>
+        <div class="note-box" style="margin-top: 12px; background: rgba(15,49,74,.04); border-color: rgba(15,49,74,.15);">
+          <p><strong>¿Necesitas otro formato?</strong> Podemos suministrar a granel o en envases especiales para grandes producciones. <a href="/contacto" style="color: var(--accent); font-weight: 700;">Contáctanos</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- APLICACIONES -->
+<section>
+  <div class="container">
+    <span class="section-tag reveal">Usos recomendados</span>
+    <h2 class="section-h2 reveal">Ideal para <em>estas aplicaciones</em></h2>
+    <p class="section-lead reveal">El ISO-NPG es el gel coat correcto cuando el agua, el cloro o la intemperie son factores críticos.</p>
+
+    <div class="apps-grid">
+      <div class="app-card reveal">
+        <div class="app-card-top pool">
+          <span>🏊</span>
+        </div>
+        <div class="app-card-body">
+          <h3>Piscinas y spas</h3>
+          <p>Resistencia al cloro, bromo y productos de mantenimiento. Barrera anti-osmosis para evitar ampollas en contacto permanente con agua.</p>
+          <span class="app-tag">Aplicación principal</span>
+        </div>
+      </div>
+      <div class="app-card reveal">
+        <div class="app-card-top marine">
+          <span>⛵</span>
+        </div>
+        <div class="app-card-body">
+          <h3>Náutica y embarcaciones</h3>
+          <p>Estándar del sector naval. Protege cascos y cubiertas del agua salada, UV y impactos. Acabado brillante duradero.</p>
+          <span class="app-tag">Sector náutico</span>
+        </div>
+      </div>
+      <div class="app-card reveal">
+        <div class="app-card-top construction">
+          <span>🚿</span>
+        </div>
+        <div class="app-card-body">
+          <h3>Platos de ducha y sanitarios</h3>
+          <p>Superficies en contacto permanente con agua y productos de limpieza agresivos. Alto brillo y facilidad de limpieza.</p>
+          <span class="app-tag">Sanitario</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CÓMO APLICAR -->
+<section class="howto-section">
+  <div class="container">
+    <span class="section-tag reveal">Proceso</span>
+    <h2 class="section-h2 reveal">Cómo <em>aplicarlo</em> correctamente</h2>
+    <p class="section-lead reveal">Cuatro pasos para obtener el mejor resultado con el Gel Coat ISO-NPG.</p>
+
+    <div class="steps-grid">
+      <div class="step-card reveal">
+        <span class="step-num">Paso 01</span>
+        <span class="step-icon">🧹</span>
+        <h4>Preparar el molde</h4>
+        <p>Limpiar con disolvente y aplicar agente desmoldeante en capas cruzadas. Dejar secar completamente entre manos.</p>
+        <div class="step-tip"><strong>Tip:</strong> Mínimo 3 capas de cera desmoldeante en molde nuevo.</div>
+      </div>
+      <div class="step-card reveal">
+        <span class="step-num">Paso 02</span>
+        <span class="step-icon">⚗️</span>
+        <h4>Catalizar</h4>
+        <p>Añadir MEKP entre 1,5% y 2% según temperatura ambiente. Mezclar homogéneamente durante 2 minutos.</p>
+        <div class="step-tip"><strong>Frío:</strong> 2% · <strong>Calor:</strong> 1,5% · Nunca superar 3%</div>
+      </div>
+      <div class="step-card reveal">
+        <span class="step-num">Paso 03</span>
+        <span class="step-icon">🔫</span>
+        <h4>Aplicar a pistola</h4>
+        <p>Pistola airless o convencional. 2-3 pasadas cruzadas hasta alcanzar 400-600 μm de espesor seco.</p>
+        <div class="step-tip"><strong>Presión:</strong> 2,5 – 3,5 bar · Boquilla 1,8 – 2,2 mm</div>
+      </div>
+      <div class="step-card reveal">
+        <span class="step-num">Paso 04</span>
+        <span class="step-icon">⏱️</span>
+        <h4>Curado y laminado</h4>
+        <p>Esperar gelado completo (superficie mate al tacto) antes de laminar. Tiempo estimado 20-30 minutos a 23°C.</p>
+        <div class="step-tip"><strong>No laminar</strong> sobre gel coat pegajoso. Riesgo de adhesión deficiente.</div>
+      </div>
+    </div>
+
+    <div class="steps-warning reveal">
+      <span class="steps-warning-icon">⚠️</span>
+      <p><strong>Condiciones de trabajo:</strong> No aplicar con temperatura inferior a 15°C ni superior a 35°C. Humedad relativa máxima 70%. El viento directo puede afectar al curado. Consultar la ficha de seguridad completa antes del uso. Usar EPI recomendados: mascarilla con filtro A2, guantes nitrilo, gafas de protección.</p>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section>
+  <div class="container">
+    <span class="section-tag reveal">Preguntas frecuentes</span>
+    <h2 class="section-h2 reveal">Dudas sobre el <em>ISO-NPG</em></h2>
+    <p class="section-lead reveal">Las preguntas que más nos hacen los profesionales.</p>
+
+    <div class="faq-list reveal">
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          <span class="faq-q-text">¿Qué diferencia hay entre gel coat ISO-NPG y el ortoftálico estándar?</span>
+          <span class="faq-icon">
+            <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+          </span>
+        </button>
+        <div class="faq-a">El gel coat ortoftálico es adecuado para aplicaciones generales donde el contacto con agua es puntual. El ISO-NPG incorpora resina isoftálica y neopentilglicol, que crean una barrera mucho más impermeable. Para piscinas, barcos o cualquier superficie en contacto permanente con agua, el ISO-NPG es el estándar recomendado del sector. El precio es algo superior pero la durabilidad es significativamente mayor, evitando costosas reparaciones de osmosis.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          <span class="faq-q-text">¿Cuántos kilos de gel coat necesito por metro cuadrado?</span>
+          <span class="faq-icon">
+            <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+          </span>
+        </button>
+        <div class="faq-a">El consumo estándar es de 500 a 650 gramos por metro cuadrado para un espesor de 400-600 micras. Para una piscina de 30 m² de superficie total, calcula entre 15 y 20 kg. Siempre compra un 10-15% extra para imprevistos y repasos. Si tienes dudas sobre tu proyecto concreto, llámanos y te calculamos la cantidad exacta.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          <span class="faq-q-text">¿Se puede aplicar con brocha o rodillo en lugar de pistola?</span>
+          <span class="faq-icon">
+            <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+          </span>
+        </button>
+        <div class="faq-a">Es posible pero no recomendable para superficies grandes. La brocha deja marcas y el espesor es irregular. Para reparaciones puntuales o superficies pequeñas es aceptable. Para producciones en serie o piscinas completas, la pistola airless garantiza uniformidad y acabado profesional. Te asesoramos sobre el equipo adecuado si nos consultas.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          <span class="faq-q-text">¿Tenéis el gel coat ISO-NPG en colores o solo en blanco?</span>
+          <span class="faq-icon">
+            <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+          </span>
+        </button>
+        <div class="faq-a">El gel coat ISO-NPG está disponible en blanco estándar con stock permanente. Para otros colores de la carta RAL, fabricamos bajo pedido con un plazo de 5-7 días laborables. Consulta disponibilidad y mínimos de pedido para colores especiales. También podemos añadir pigmentos en pasta para tonos personalizados.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          <span class="faq-q-text">¿Ofrecéis soporte técnico si tengo problemas en la aplicación?</span>
+          <span class="faq-icon">
+            <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+          </span>
+        </button>
+        <div class="faq-a">Sí, el soporte técnico está incluido con todos nuestros productos. Puedes llamarnos directamente al +34 647 594 095 en horario de oficina. Para problemas urgentes en obra, también respondemos por WhatsApp. Con 25 años en el sector, hemos visto casi todos los problemas posibles y podemos ayudarte a resolverlos rápido.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- RELACIONADOS -->
+<section class="related-section">
+  <div class="container">
+    <span class="section-tag reveal">Completa tu proyecto</span>
+    <h2 class="section-h2 reveal">Productos <em>relacionados</em></h2>
+    <p class="section-lead reveal">Todo lo que necesitas para trabajar con fibra de vidrio, en un mismo proveedor.</p>
+
+    <div class="related-grid">
+      <a href="/composites/gel-coat" class="related-card reveal">
+        <div class="related-card-top gc">
+          <span class="related-card-label">Gel Coat</span>
+        </div>
+        <div class="related-card-body">
+          <h4>Más tipos de Gel Coat</h4>
+          <p>Ortoftálico, marino, para carrocería. Ver toda la gama.</p>
+          <div class="related-card-link">
+            Ver gama
+            <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </div>
+        </div>
+      </a>
+      <a href="/composites/resinas" class="related-card reveal">
+        <div class="related-card-top res">
+          <span class="related-card-label">Resinas</span>
+        </div>
+        <div class="related-card-body">
+          <h4>Resinas de laminación</h4>
+          <p>Ortoftálica, isoftálica y vinilester para cada aplicación.</p>
+          <div class="related-card-link">
+            Ver resinas
+            <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </div>
+        </div>
+      </a>
+      <a href="/composites/catalizadores" class="related-card reveal">
+        <div class="related-card-top cat">
+          <span class="related-card-label">Catalizadores</span>
+        </div>
+        <div class="related-card-body">
+          <h4>Catalizador MEKP</h4>
+          <p>Compatible con todos nuestros gel coats y resinas. Varios formatos.</p>
+          <div class="related-card-link">
+            Ver catalizadores
+            <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- CTA FINAL -->
+<section class="cta-section">
+  <h2>¿Listo para tu <em>proyecto</em>?</h2>
+  <p>Pídenos presupuesto o llámanos. Respondemos en menos de 24 horas.</p>
+  <div class="cta-btns">
+    <a href="/contacto" class="cta-btn-primary">
+      Pedir presupuesto
+      <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+    </a>
+    <a href="https://wa.me/34647594095" target="_blank" class="cta-btn-ghost">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+      WhatsApp directo
+    </a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-top">
+    <div class="footer-brand">
+      <a class="footer-logo" href="/">
+        <div class="footer-logo-mark">JC</div>
+        <span class="footer-logo-name">Jasoval Color</span>
+      </a>
+      <p>Fabricantes de Gel Coat y materiales composite en Silla, Valencia. Suministro a profesionales de toda España.</p>
+    </div>
+    <div class="footer-links">
+      <h4>Composites</h4>
+      <ul>
+        <li><a href="/composites/gel-coat">Gel Coats</a></li>
+        <li><a href="/composites/resinas">Resinas</a></li>
+        <li><a href="/composites/catalizadores">Catalizadores</a></li>
+        <li><a href="/composites/fibras">Fibras</a></li>
+      </ul>
+    </div>
+    <div class="footer-links">
+      <h4>Empresa</h4>
+      <ul>
+        <li><a href="/#nosotros">Quiénes somos</a></li>
+        <li><a href="/#especialidades">Especialidades</a></li>
+        <li><a href="/contacto">Contacto</a></li>
+        <li><a href="https://catalogo.jasovalcolor.com" target="_blank">Catálogo B2B</a></li>
+      </ul>
+    </div>
+    <div class="footer-links">
+      <h4>Legal</h4>
+      <ul>
+        <li><a href="/aviso-legal">Aviso Legal</a></li>
+        <li><a href="/privacidad">Política de Privacidad</a></li>
+        <li><a href="/cookies">Política de Cookies</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2025 Jasoval Color · Carr. de Cádiz, Km 889,7 · 46460 Silla, Valencia</p>
+    <p><a href="mailto:javierlopez@jasovalcolor.com">javierlopez@jasovalcolor.com</a> · <a href="tel:+34647594095">+34 647 594 095</a></p>
+  </div>
+</footer>
+
+<!-- WHATSAPP -->
+<a class="wa" href="https://wa.me/34647594095" target="_blank" aria-label="WhatsApp">
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+</a>
+
+<script>
+  /* FAQ toggle */
+  function toggleFaq(btn) {
+    const item = btn.closest('.faq-item');
+    const isOpen = item.classList.contains('open');
+    document.querySelectorAll('.faq-item.open').forEach(el => el.classList.remove('open'));
+    if (!isOpen) item.classList.add('open');
+  }
+
+  /* Reveal on scroll */
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); } });
+  }, { threshold: 0.12 });
+  document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+</script>
+</body>
+</html>
