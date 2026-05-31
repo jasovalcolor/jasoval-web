@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gel Coat — Gama Completa | Jasoval Color</title>
+  <meta name="description" content="Fabricantes de gel coat en Valencia. Gama completa: ISO-NPG, ortoftálico, marino y especiales. Para piscinas, náutica, carrocería y construcción. Suministro a profesionales." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --navy: #0f314a; --navy-dark: #0a2236; --navy-mid: #164469; --navy-lite: #1e5b8a;
+      --accent: #3b9fd1; --accent-2: #2e8bbf;
+      --bg: #f5f5f7; --surface: #ffffff; --border: #d2d2d7; --text: #1d1d1f; --muted: #86868b;
+    }
+    body { font-family: 'Montserrat', sans-serif; background: var(--surface); color: var(--text); -webkit-font-smoothing: antialiased; overflow-x: hidden; }
+
+    /* HEADER */
+    header { position: fixed; top: 0; left: 0; right: 0; z-index: 200; height: 52px; display: flex; align-items: center; justify-content: space-between; padding: 0 40px; background: rgba(255,255,255,.85); backdrop-filter: saturate(180%) blur(20px); border-bottom: 1px solid rgba(0,0,0,.08); }
+    .logo { display: flex; align-items: center; gap: 10px; text-decoration: none; }
+    .logo-mark { width: 28px; height: 28px; background: linear-gradient(135deg, var(--accent), var(--navy-lite)); border-radius: 7px; display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 12px; color: #fff; }
+    .logo-name { font-size: 14px; font-weight: 700; color: var(--text); letter-spacing: -.2px; }
+    nav { display: flex; align-items: center; gap: 2px; }
+    nav a { font-size: 12px; font-weight: 500; color: var(--muted); text-decoration: none; padding: 6px 12px; border-radius: 6px; transition: color .2s, background .2s; }
+    nav a:hover { color: var(--text); background: rgba(0,0,0,.05); }
+    nav a.active { color: var(--navy); font-weight: 700; }
+    .nav-cta { background: var(--accent) !important; color: #fff !important; border-radius: 20px !important; padding: 6px 16px !important; font-weight: 600 !important; }
+    .nav-cta:hover { background: var(--accent-2) !important; }
+    .hamburger { display: none; cursor: pointer; padding: 6px; background: none; border: none; }
+    .hamburger span { display: block; width: 20px; height: 1.5px; background: var(--text); margin: 4px 0; border-radius: 2px; }
+    @media (max-width: 680px) {
+      header { padding: 0 24px; } .hamburger { display: block; }
+      nav { display: none; position: fixed; top: 52px; left: 0; right: 0; bottom: 0; background: rgba(255,255,255,.97); backdrop-filter: blur(20px); flex-direction: column; justify-content: center; align-items: center; gap: 8px; }
+      nav.open { display: flex; } nav a { font-size: 20px; padding: 14px 24px; } .nav-cta { margin-top: 8px; }
+    }
+
+    /* BREADCRUMB */
+    .breadcrumb { margin-top: 52px; padding: 14px 40px; background: var(--bg); border-bottom: 1px solid var(--border); display: flex; align-items: center; gap: 8px; font-size: 12px; color: var(--muted); }
+    .breadcrumb a { color: var(--muted); text-decoration: none; transition: color .2s; }
+    .breadcrumb a:hover { color: var(--accent); }
+    .breadcrumb-sep { color: var(--border); font-size: 10px; }
+    .breadcrumb-current { color: var(--text); font-weight: 600; }
+    @media (max-width: 680px) { .breadcrumb { padding: 12px 24px; } }
+
+    /* PAGE HERO */
+    .page-hero { padding: 80px 40px 72px; background: linear-gradient(160deg, var(--navy-dark) 0%, var(--navy-mid) 100%); position: relative; overflow: hidden; }
+    .page-hero-orb { position: absolute; border-radius: 50%; filter: blur(80px); pointer-events: none; opacity: .15; width: 500px; height: 500px; background: var(--accent); top: -200px; right: -100px; }
+    .container { max-width: 1080px; margin: 0 auto; }
+    .page-hero-tag { font-size: 11px; font-weight: 700; color: var(--accent); letter-spacing: 2.5px; text-transform: uppercase; margin-bottom: 16px; display: block; animation: fadeUp .5s .1s both; }
+    .page-hero h1 { font-size: clamp(36px, 5vw, 56px); font-weight: 800; color: #fff; line-height: 1.1; letter-spacing: -1.5px; animation: fadeUp .5s .2s both; }
+    .page-hero h1 em { font-style: normal; color: var(--accent); }
+    .page-hero p { font-size: 17px; color: rgba(255,255,255,.45); font-weight: 300; margin-top: 16px; line-height: 1.6; max-width: 540px; animation: fadeUp .5s .3s both; }
+    @keyframes fadeUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+    @media (max-width: 680px) { .page-hero { padding: 64px 24px 56px; } }
+
+    /* PRODUCTS GRID */
+    .products-section { padding: 72px 40px 80px; }
+    .section-intro { margin-bottom: 48px; }
+    .section-intro p { font-size: 15px; color: var(--muted); line-height: 1.7; max-width: 600px; }
+    .gc-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; }
+
+    .gc-card {
+      border: 1px solid var(--border); border-radius: 24px; overflow: hidden;
+      text-decoration: none; display: block;
+      transition: border-color .2s, transform .2s, box-shadow .2s;
+      background: var(--surface);
+    }
+    .gc-card:hover { border-color: var(--accent); transform: translateY(-4px); box-shadow: 0 20px 48px rgba(0,0,0,.09); }
+    .gc-card-top {
+      height: 180px; position: relative; overflow: hidden;
+      display: flex; align-items: flex-end; padding: 24px;
+    }
+    .gc-card-top.iso-npg { background: linear-gradient(135deg, #0a2236 0%, #1e5b8a 100%); }
+    .gc-card-top.orto    { background: linear-gradient(135deg, #1a3a4a 0%, #2d6a7a 100%); }
+    .gc-card-top.marino  { background: linear-gradient(135deg, #1e3a5f 0%, #1e5b8a 100%); }
+    .gc-card-top.especial{ background: linear-gradient(135deg, #2d3748 0%, #4a5568 100%); }
+    .gc-card-top-orb {
+      position: absolute; border-radius: 50%; filter: blur(40px); pointer-events: none;
+      width: 200px; height: 200px; opacity: .2;
+      background: var(--accent); top: -60px; right: -40px;
+    }
+    .gc-card-badge {
+      position: absolute; top: 20px; left: 20px;
+      font-size: 10px; font-weight: 800; letter-spacing: 1.5px; text-transform: uppercase;
+      padding: 4px 12px; border-radius: 20px;
+    }
+    .gc-card-badge.premium { background: rgba(59,159,209,.25); color: var(--accent); border: 1px solid rgba(59,159,209,.35); }
+    .gc-card-badge.standard { background: rgba(255,255,255,.1); color: rgba(255,255,255,.6); border: 1px solid rgba(255,255,255,.15); }
+    .gc-card-name { font-size: 22px; font-weight: 800; color: #fff; letter-spacing: -.5px; position: relative; z-index: 1; }
+
+    .gc-card-body { padding: 24px; }
+    .gc-card-desc { font-size: 14px; color: var(--muted); line-height: 1.6; margin-bottom: 20px; }
+    .gc-card-tags { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 20px; }
+    .gc-tag { font-size: 11px; font-weight: 600; color: var(--navy); background: var(--bg); border: 1px solid var(--border); padding: 3px 10px; border-radius: 20px; }
+    .gc-card-footer { display: flex; justify-content: space-between; align-items: center; padding-top: 16px; border-top: 1px solid var(--border); }
+    .gc-card-formats { font-size: 12px; color: var(--muted); font-weight: 500; }
+    .gc-card-link { display: flex; align-items: center; gap: 6px; font-size: 13px; font-weight: 700; color: var(--accent); text-decoration: none; }
+    .gc-card.coming .gc-card-link { color: var(--muted); pointer-events: none; }
+    .coming-label { font-size: 11px; color: var(--muted); font-weight: 600; font-style: italic; }
+
+    @media (max-width: 680px) {
+      .gc-grid { grid-template-columns: 1fr; }
+      .products-section { padding: 56px 24px 64px; }
+    }
+
+    /* WHY US */
+    .why-section { background: var(--bg); padding: 72px 40px; }
+    .why-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin-top: 40px; }
+    .why-card { background: var(--surface); border: 1px solid var(--border); border-radius: 18px; padding: 28px; transition: border-color .2s; }
+    .why-card:hover { border-color: var(--accent); }
+    .why-icon { width: 44px; height: 44px; border-radius: 12px; background: linear-gradient(135deg, var(--accent), var(--navy-lite)); display: flex; align-items: center; justify-content: center; color: #fff; margin-bottom: 16px; }
+    .why-card h4 { font-size: 15px; font-weight: 800; color: var(--text); margin-bottom: 8px; letter-spacing: -.3px; }
+    .why-card p { font-size: 13px; color: var(--muted); line-height: 1.6; }
+    @media (max-width: 768px) { .why-grid { grid-template-columns: 1fr 1fr; } }
+    @media (max-width: 480px) { .why-grid { grid-template-columns: 1fr; } .why-section { padding: 56px 24px; } }
+
+    /* CTA */
+    .cta-section { background: var(--navy-dark); text-align: center; padding: 72px 40px; }
+    .cta-section h2 { font-size: clamp(26px, 3.5vw, 40px); font-weight: 800; color: #fff; letter-spacing: -1px; margin-bottom: 14px; }
+    .cta-section h2 em { font-style: normal; color: var(--accent); }
+    .cta-section p { font-size: 15px; color: rgba(255,255,255,.4); margin-bottom: 32px; }
+    .cta-btns { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+    .cta-btn-p { display: inline-flex; align-items: center; gap: 8px; background: var(--accent); color: #fff; padding: 14px 32px; border-radius: 980px; font-weight: 700; font-size: 14px; text-decoration: none; transition: background .2s, transform .2s; }
+    .cta-btn-p:hover { background: var(--accent-2); transform: scale(1.02); }
+    .cta-btn-g { display: inline-flex; align-items: center; gap: 8px; background: rgba(255,255,255,.08); color: rgba(255,255,255,.8); padding: 14px 28px; border-radius: 980px; font-weight: 600; font-size: 14px; text-decoration: none; border: 1px solid rgba(255,255,255,.15); transition: background .2s; }
+    .cta-btn-g:hover { background: rgba(255,255,255,.14); }
+
+    /* FOOTER */
+    footer { background: var(--text); color: rgba(255,255,255,.45); padding: 56px 40px 40px; }
+    .footer-top { display: flex; justify-content: space-between; align-items: flex-start; gap: 40px; margin-bottom: 48px; flex-wrap: wrap; }
+    .footer-brand { max-width: 280px; }
+    .footer-logo { display: flex; align-items: center; gap: 10px; text-decoration: none; margin-bottom: 14px; }
+    .footer-logo-mark { width: 28px; height: 28px; background: linear-gradient(135deg, var(--accent), var(--navy-lite)); border-radius: 7px; display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 12px; color: #fff; }
+    .footer-logo-name { font-size: 14px; font-weight: 700; color: rgba(255,255,255,.8); }
+    .footer-brand p { font-size: 13px; line-height: 1.6; }
+    .footer-links h4 { font-size: 11px; font-weight: 700; color: rgba(255,255,255,.6); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 14px; }
+    .footer-links ul { list-style: none; }
+    .footer-links li { margin-bottom: 8px; }
+    .footer-links a { font-size: 13px; color: rgba(255,255,255,.45); text-decoration: none; transition: color .2s; }
+    .footer-links a:hover { color: rgba(255,255,255,.9); }
+    .footer-bottom { border-top: 1px solid rgba(255,255,255,.08); padding-top: 24px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px; font-size: 12px; }
+    .footer-bottom a { color: rgba(255,255,255,.45); text-decoration: none; }
+    .footer-bottom a:hover { color: rgba(255,255,255,.8); }
+    @media (max-width: 680px) { footer { padding: 48px 24px 32px; } .footer-top { flex-direction: column; } .footer-bottom { flex-direction: column; text-align: center; } }
+
+    /* WA */
+    .wa { position: fixed; bottom: 28px; right: 28px; z-index: 300; width: 52px; height: 52px; border-radius: 50%; background: #25d366; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 16px rgba(37,211,102,.4); transition: transform .2s; }
+    .wa:hover { transform: scale(1.08); }
+
+    /* reveal */
+    .reveal { opacity: 0; transform: translateY(20px); transition: opacity .55s, transform .55s; }
+    .reveal.visible { opacity: 1; transform: none; }
+  </style>
+</head>
+<body>
+
+<header>
+  <a class="logo" href="/">
+    <div class="logo-mark">JC</div>
+    <span class="logo-name">Jasoval Color</span>
+  </a>
+  <button class="hamburger" onclick="document.getElementById('nav').classList.toggle('open')" aria-label="Menú">
+    <span></span><span></span><span></span>
+  </button>
+  <nav id="nav">
+    <a href="/#especialidades">Especialidades</a>
+    <a href="/composites/gel-coat" class="active">Composites</a>
+    <a href="/#nosotros">Nosotros</a>
+    <a href="/contacto">Contacto</a>
+    <a href="https://catalogo.jasovalcolor.com" target="_blank" class="nav-cta">Catálogo B2B</a>
+  </nav>
+</header>
+
+<nav class="breadcrumb" aria-label="Ruta de navegación">
+  <a href="/">Inicio</a>
+  <span class="breadcrumb-sep">›</span>
+  <a href="/composites/gel-coat">Composites</a>
+  <span class="breadcrumb-sep">›</span>
+  <span class="breadcrumb-current">Gel Coat</span>
+</nav>
+
+<div class="page-hero">
+  <div class="page-hero-orb"></div>
+  <div class="container">
+    <span class="page-hero-tag">Fabricación propia · Silla, Valencia</span>
+    <h1>Gel Coat — <em>Gama completa</em></h1>
+    <p>Formulados y fabricados en Valencia para profesionales de piscinas, náutica, carrocería y construcción. Cada aplicación tiene su gel coat.</p>
+  </div>
+</div>
+
+<section class="products-section">
+  <div class="container">
+    <div class="section-intro reveal">
+      <p>Nuestra gama cubre desde el gel coat estándar para aplicaciones generales hasta el ISO-NPG de máxima calidad para entornos con contacto permanente con agua. Fabricación propia, stock permanente, envío a toda España.</p>
+    </div>
+
+    <div class="gc-grid">
+
+      <!-- ISO-NPG -->
+      <a href="/composites/gel-coat/iso-npg" class="gc-card reveal">
+        <div class="gc-card-top iso-npg">
+          <div class="gc-card-top-orb"></div>
+          <span class="gc-card-badge premium">Premium</span>
+          <span class="gc-card-name">ISO-NPG</span>
+        </div>
+        <div class="gc-card-body">
+          <p class="gc-card-desc">Resina isoftálica + neopentilglicol. Máxima resistencia al agua, osmosis, cloro y UV. El estándar de la industria para piscinas y náutica de alto rendimiento.</p>
+          <div class="gc-card-tags">
+            <span class="gc-tag">Piscinas</span>
+            <span class="gc-tag">Náutica</span>
+            <span class="gc-tag">Spas</span>
+            <span class="gc-tag">Anti-osmosis</span>
+          </div>
+          <div class="gc-card-footer">
+            <span class="gc-card-formats">25 kg · 225 kg</span>
+            <span class="gc-card-link">
+              Ver producto
+              <svg width="13" height="13" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </span>
+          </div>
+        </div>
+      </a>
+
+      <!-- ORTOFTÁLICO -->
+      <div class="gc-card coming reveal">
+        <div class="gc-card-top orto">
+          <div class="gc-card-top-orb"></div>
+          <span class="gc-card-badge standard">Estándar</span>
+          <span class="gc-card-name">Ortoftálico</span>
+        </div>
+        <div class="gc-card-body">
+          <p class="gc-card-desc">Gel coat de uso general para aplicaciones donde el contacto con agua es puntual. Excelente relación calidad-precio para producción en serie.</p>
+          <div class="gc-card-tags">
+            <span class="gc-tag">Uso general</span>
+            <span class="gc-tag">Carrocería</span>
+            <span class="gc-tag">Construcción</span>
+          </div>
+          <div class="gc-card-footer">
+            <span class="gc-card-formats">25 kg · 225 kg</span>
+            <span class="coming-label">Próximamente</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- MARINO -->
+      <div class="gc-card coming reveal">
+        <div class="gc-card-top marino">
+          <div class="gc-card-top-orb"></div>
+          <span class="gc-card-badge premium">Marine</span>
+          <span class="gc-card-name">Marino</span>
+        </div>
+        <div class="gc-card-body">
+          <p class="gc-card-desc">Formulación específica para entornos marinos. Resistencia superior al agua salada, radiación UV intensa y ambientes costeros agresivos.</p>
+          <div class="gc-card-tags">
+            <span class="gc-tag">Barcos</span>
+            <span class="gc-tag">Agua salada</span>
+            <span class="gc-tag">UV extremo</span>
+          </div>
+          <div class="gc-card-footer">
+            <span class="gc-card-formats">25 kg · 225 kg</span>
+            <span class="coming-label">Próximamente</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- ESPECIAL -->
+      <div class="gc-card coming reveal">
+        <div class="gc-card-top especial">
+          <div class="gc-card-top-orb"></div>
+          <span class="gc-card-badge standard">Especial</span>
+          <span class="gc-card-name">Colorimetría</span>
+        </div>
+        <div class="gc-card-body">
+          <p class="gc-card-desc">Gel coat pigmentado a medida en carta RAL completa. Fabricamos el color exacto que necesitas con los mismos niveles de calidad de nuestra gama base.</p>
+          <div class="gc-card-tags">
+            <span class="gc-tag">Carta RAL</span>
+            <span class="gc-tag">A medida</span>
+            <span class="gc-tag">Todos los sectores</span>
+          </div>
+          <div class="gc-card-footer">
+            <span class="gc-card-formats">Mín. 25 kg</span>
+            <span class="coming-label">Consultar</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- POR QUÉ JASOVAL -->
+<section class="why-section">
+  <div class="container">
+    <span class="section-tag reveal" style="font-size:11px;font-weight:700;color:var(--accent);text-transform:uppercase;letter-spacing:2px;display:block;margin-bottom:12px;">Por qué elegirnos</span>
+    <h2 class="reveal" style="font-size:clamp(26px,3.5vw,38px);font-weight:800;color:var(--text);letter-spacing:-1px;margin-bottom:8px;">Fabricantes directos,<br>no intermediarios</h2>
+    <p class="reveal" style="font-size:15px;color:var(--muted);line-height:1.7;max-width:560px;margin-bottom:0;">Formulamos y fabricamos en Silla (Valencia). Sin distribuidores entre medias.</p>
+    <div class="why-grid" style="margin-top:40px;">
+      <div class="why-card reveal">
+        <div class="why-icon">
+          <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        </div>
+        <h4>25 años de experiencia</h4>
+        <p>Más de dos décadas formulando gel coats para los sectores más exigentes de España.</p>
+      </div>
+      <div class="why-card reveal">
+        <div class="why-icon">
+          <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M20 7H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2z"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+        </div>
+        <h4>Stock permanente</h4>
+        <p>Todos los productos disponibles para entrega inmediata. Sin esperas ni mínimos de pedido.</p>
+      </div>
+      <div class="why-card reveal">
+        <div class="why-icon">
+          <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+        </div>
+        <h4>Soporte técnico real</h4>
+        <p>Nuestro equipo resuelve dudas de aplicación. Llamada directa, respuesta el mismo día.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cta-section">
+  <h2>¿No encuentras lo que buscas?<br><em>Llámanos</em></h2>
+  <p>Fabricamos a medida y asesoramos sin compromiso.</p>
+  <div class="cta-btns">
+    <a href="/contacto" class="cta-btn-p">Pedir presupuesto <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+    <a href="https://wa.me/34647594095" target="_blank" class="cta-btn-g">WhatsApp directo</a>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-top">
+    <div class="footer-brand">
+      <a class="footer-logo" href="/"><div class="footer-logo-mark">JC</div><span class="footer-logo-name">Jasoval Color</span></a>
+      <p>Fabricantes de Gel Coat y materiales composite en Silla, Valencia. Suministro a profesionales de toda España.</p>
+    </div>
+    <div class="footer-links">
+      <h4>Gel Coat</h4>
+      <ul>
+        <li><a href="/composites/gel-coat/iso-npg">ISO-NPG</a></li>
+        <li><a href="/composites/gel-coat">Ortoftálico</a></li>
+        <li><a href="/composites/gel-coat">Marino</a></li>
+        <li><a href="/composites/gel-coat">Colorimetría RAL</a></li>
+      </ul>
+    </div>
+    <div class="footer-links">
+      <h4>Empresa</h4>
+      <ul>
+        <li><a href="/#nosotros">Quiénes somos</a></li>
+        <li><a href="/#especialidades">Especialidades</a></li>
+        <li><a href="/contacto">Contacto</a></li>
+        <li><a href="https://catalogo.jasovalcolor.com" target="_blank">Catálogo B2B</a></li>
+      </ul>
+    </div>
+    <div class="footer-links">
+      <h4>Legal</h4>
+      <ul>
+        <li><a href="/aviso-legal">Aviso Legal</a></li>
+        <li><a href="/privacidad">Política de Privacidad</a></li>
+        <li><a href="/cookies">Política de Cookies</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2025 Jasoval Color · Carr. de Cádiz, Km 889,7 · 46460 Silla, Valencia</p>
+    <p><a href="mailto:javierlopez@jasovalcolor.com">javierlopez@jasovalcolor.com</a> · <a href="tel:+34647594095">+34 647 594 095</a></p>
+  </div>
+</footer>
+
+<a class="wa" href="https://wa.me/34647594095" target="_blank" aria-label="WhatsApp">
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+</a>
+
+<script>
+  const obs = new IntersectionObserver(entries => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); obs.unobserve(e.target); } });
+  }, { threshold: 0.1 });
+  document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
+</script>
+</body>
+</html>
