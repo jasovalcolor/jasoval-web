@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contacto — Jasoval Color</title>
+  <meta name="description" content="Contacta con Jasoval Color. Consultas técnicas, presupuestos y pedidos de gel coat, resinas y materiales composite. Respondemos en menos de 24 horas." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --navy:      #0f314a;
+      --navy-dark: #0a2236;
+      --navy-mid:  #164469;
+      --navy-lite: #1e5b8a;
+      --accent:    #3b9fd1;
+      --accent-2:  #2e8bbf;
+      --bg:        #f5f5f7;
+      --surface:   #ffffff;
+      --border:    #d2d2d7;
+      --text:      #1d1d1f;
+      --muted:     #86868b;
+    }
+
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background: var(--surface);
+      color: var(--text);
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* ─────────────────────────────────────────
+       HEADER
+    ───────────────────────────────────────── */
+    header {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 200;
+      height: 52px;
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 0 40px;
+      background: rgba(255,255,255,.85);
+      backdrop-filter: saturate(180%) blur(20px);
+      -webkit-backdrop-filter: saturate(180%) blur(20px);
+      border-bottom: 1px solid rgba(0,0,0,.08);
+    }
+    .logo { display: flex; align-items: center; gap: 10px; text-decoration: none; }
+    .logo-mark {
+      width: 28px; height: 28px;
+      background: linear-gradient(135deg, var(--accent), var(--navy-lite));
+      border-radius: 7px;
+      display: flex; align-items: center; justify-content: center;
+      font-weight: 800; font-size: 12px; color: #fff;
+    }
+    .logo-name { font-size: 14px; font-weight: 700; color: var(--text); letter-spacing: -.2px; }
+    nav { display: flex; align-items: center; gap: 2px; }
+    nav a {
+      font-size: 12px; font-weight: 500; color: var(--muted);
+      text-decoration: none; padding: 6px 12px; border-radius: 6px;
+      transition: color .2s, background .2s; letter-spacing: .1px;
+    }
+    nav a:hover { color: var(--text); background: rgba(0,0,0,.05); }
+    nav a.active { color: var(--navy); font-weight: 700; }
+    .nav-cta {
+      background: var(--accent) !important; color: #fff !important;
+      border-radius: 20px !important; padding: 6px 16px !important;
+      font-weight: 600 !important;
+    }
+    .nav-cta:hover { background: var(--accent-2) !important; }
+    .hamburger { display: none; cursor: pointer; padding: 6px; background: none; border: none; }
+    .hamburger span { display: block; width: 20px; height: 1.5px; background: var(--text); margin: 4px 0; border-radius: 2px; transition: .25s; }
+    @media (max-width: 680px) {
+      header { padding: 0 24px; }
+      .hamburger { display: block; }
+      nav { display: none; position: fixed; top: 52px; left: 0; right: 0; bottom: 0; background: rgba(255,255,255,.97); backdrop-filter: blur(20px); flex-direction: column; justify-content: center; align-items: center; gap: 8px; }
+      nav.open { display: flex; }
+      nav a { font-size: 20px; padding: 14px 24px; }
+      .nav-cta { margin-top: 8px; }
+    }
+
+    /* ─────────────────────────────────────────
+       PAGE HERO
+    ───────────────────────────────────────── */
+    .page-hero {
+      padding: 120px 40px 72px;
+      text-align: center;
+      background: linear-gradient(180deg, #0a2236 0%, #0f314a 100%);
+      position: relative;
+      overflow: hidden;
+    }
+    .page-hero-orb {
+      position: absolute; border-radius: 50%;
+      filter: blur(80px); pointer-events: none; opacity: .18;
+      width: 500px; height: 500px;
+      background: var(--accent);
+      top: -200px; left: 50%; transform: translateX(-50%);
+    }
+    .page-hero-tag {
+      font-size: 11px; font-weight: 700; color: var(--accent);
+      letter-spacing: 2.5px; text-transform: uppercase;
+      margin-bottom: 16px; display: block;
+      animation: fadeUp .6s .1s both;
+    }
+    .page-hero h1 {
+      font-size: clamp(36px, 5vw, 56px);
+      font-weight: 800; color: #fff;
+      line-height: 1.1; letter-spacing: -1.5px;
+      animation: fadeUp .6s .2s both;
+    }
+    .page-hero h1 em { font-style: normal; color: var(--accent); }
+    .page-hero p {
+      font-size: 17px; color: rgba(255,255,255,.5);
+      font-weight: 300; margin-top: 16px; line-height: 1.6;
+      animation: fadeUp .6s .3s both;
+    }
+
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    /* ─────────────────────────────────────────
+       MAIN CONTACT AREA
+    ───────────────────────────────────────── */
+    .contact-wrap {
+      flex: 1;
+      background: var(--surface);
+      padding: 72px 40px 80px;
+    }
+    .container { max-width: 1080px; margin: 0 auto; }
+
+    .cont-grid {
+      display: grid;
+      grid-template-columns: 1fr 1.4fr;
+      gap: 80px;
+    }
+
+    /* Info panel */
+    .cont-info h3 {
+      font-size: 18px; font-weight: 800; color: var(--text);
+      margin-bottom: 28px; letter-spacing: -.3px;
+    }
+    .cont-item { display: flex; gap: 16px; margin-bottom: 24px; align-items: flex-start; }
+    .cont-icon {
+      width: 40px; height: 40px; border-radius: 10px; flex-shrink: 0;
+      background: var(--bg); border: 1px solid var(--border);
+      display: flex; align-items: center; justify-content: center; color: var(--accent);
+    }
+    .cont-label { font-size: 11px; font-weight: 700; color: var(--navy); text-transform: uppercase; letter-spacing: .5px; margin-bottom: 3px; }
+    .cont-val { font-size: 14px; color: var(--muted); }
+    .cont-val a { color: var(--muted); text-decoration: none; transition: color .2s; }
+    .cont-val a:hover { color: var(--accent); }
+    .cont-hours {
+      margin-top: 32px; padding: 20px;
+      background: var(--bg); border-radius: 14px; border: 1px solid var(--border);
+    }
+    .cont-hours-title { font-size: 11px; font-weight: 700; color: var(--navy); text-transform: uppercase; letter-spacing: .5px; margin-bottom: 12px; }
+    .cont-hours-row { display: flex; justify-content: space-between; font-size: 13px; color: var(--muted); padding: 6px 0; border-bottom: 1px solid var(--border); }
+    .cont-hours-row:last-child { border-bottom: none; }
+
+    /* Form */
+    .cont-form { display: flex; flex-direction: column; gap: 14px; }
+    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+    .fg { display: flex; flex-direction: column; gap: 6px; }
+    .fg label { font-size: 11px; font-weight: 700; color: var(--navy); text-transform: uppercase; letter-spacing: .4px; }
+    .fg input, .fg textarea, .fg select {
+      padding: 13px 16px; border: 1.5px solid var(--border); border-radius: 12px;
+      font-size: 14px; font-family: 'Montserrat', sans-serif; color: var(--text);
+      background: var(--bg); outline: none;
+      transition: border-color .2s, box-shadow .2s, background .2s;
+      appearance: none;
+    }
+    .fg input:focus, .fg textarea:focus, .fg select:focus {
+      border-color: var(--accent);
+      box-shadow: 0 0 0 3px rgba(59,159,209,.12);
+      background: #fff;
+    }
+    .fg textarea { resize: vertical; min-height: 120px; }
+    .btn-submit {
+      padding: 16px 32px; background: var(--navy); color: #fff; border: none;
+      border-radius: 980px; font-size: 14px; font-weight: 700;
+      font-family: 'Montserrat', sans-serif; cursor: pointer;
+      transition: background .2s, transform .2s;
+      display: flex; align-items: center; justify-content: center; gap: 8px;
+    }
+    .btn-submit:hover { background: var(--navy-mid); transform: scale(1.02); }
+    .form-note { font-size: 12px; color: var(--muted); text-align: center; }
+
+    @media (max-width: 768px) {
+      .cont-grid { grid-template-columns: 1fr; gap: 48px; }
+      .form-row { grid-template-columns: 1fr; }
+      .contact-wrap { padding: 48px 24px 64px; }
+      .page-hero { padding: 100px 24px 56px; }
+    }
+
+    /* ─────────────────────────────────────────
+       FOOTER
+    ───────────────────────────────────────── */
+    footer {
+      background: var(--text); color: rgba(255,255,255,.45);
+      padding: 56px 40px 40px;
+    }
+    .footer-top { display: flex; justify-content: space-between; align-items: flex-start; gap: 40px; margin-bottom: 48px; flex-wrap: wrap; }
+    .footer-brand { max-width: 280px; }
+    .footer-logo { display: flex; align-items: center; gap: 10px; text-decoration: none; margin-bottom: 14px; }
+    .footer-logo-mark { width: 28px; height: 28px; background: linear-gradient(135deg, var(--accent), var(--navy-lite)); border-radius: 7px; display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 12px; color: #fff; }
+    .footer-logo-name { font-size: 14px; font-weight: 700; color: rgba(255,255,255,.8); }
+    .footer-brand p { font-size: 13px; line-height: 1.6; }
+    .footer-links h4 { font-size: 11px; font-weight: 700; color: rgba(255,255,255,.6); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 14px; }
+    .footer-links ul { list-style: none; }
+    .footer-links li { margin-bottom: 8px; }
+    .footer-links a { font-size: 13px; color: rgba(255,255,255,.45); text-decoration: none; transition: color .2s; }
+    .footer-links a:hover { color: rgba(255,255,255,.9); }
+    .footer-bottom { border-top: 1px solid rgba(255,255,255,.08); padding-top: 24px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px; font-size: 12px; }
+    .footer-bottom a { color: rgba(255,255,255,.45); text-decoration: none; }
+    .footer-bottom a:hover { color: rgba(255,255,255,.8); }
+    @media (max-width: 680px) {
+      footer { padding: 48px 24px 32px; }
+      .footer-top { flex-direction: column; }
+      .footer-bottom { flex-direction: column; text-align: center; }
+    }
+
+    /* WHATSAPP */
+    .wa {
+      position: fixed; bottom: 28px; right: 28px; z-index: 300;
+      width: 52px; height: 52px; border-radius: 50%;
+      background: #25d366;
+      display: flex; align-items: center; justify-content: center;
+      box-shadow: 0 4px 16px rgba(37,211,102,.4);
+      transition: transform .2s, box-shadow .2s;
+    }
+    .wa:hover { transform: scale(1.08); box-shadow: 0 6px 24px rgba(37,211,102,.5); }
+  </style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header id="header">
+  <a class="logo" href="/">
+    <div class="logo-mark">JC</div>
+    <span class="logo-name">Jasoval Color</span>
+  </a>
+  <button class="hamburger" onclick="document.getElementById('nav').classList.toggle('open')" aria-label="Menú">
+    <span></span><span></span><span></span>
+  </button>
+  <nav id="nav">
+    <a href="/#especialidades">Especialidades</a>
+    <a href="/#productos">Productos</a>
+    <a href="/#nosotros">Nosotros</a>
+    <a href="/contacto" class="active">Contacto</a>
+    <a href="https://catalogo.jasovalcolor.com" target="_blank" class="nav-cta">Catálogo B2B</a>
+  </nav>
+</header>
+
+<!-- PAGE HERO -->
+<div class="page-hero">
+  <div class="page-hero-orb"></div>
+  <span class="page-hero-tag">Estamos aquí para ayudarte</span>
+  <h1>Hablemos de tu <em>proyecto</em></h1>
+  <p>Consultas técnicas, presupuestos y pedidos. Respondemos en menos de 24 horas.</p>
+</div>
+
+<!-- CONTACT -->
+<div class="contact-wrap">
+  <div class="container">
+    <div class="cont-grid">
+
+      <!-- INFO -->
+      <div class="cont-info">
+        <h3>Información de contacto</h3>
+
+        <div class="cont-item">
+          <div class="cont-icon">
+            <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          </div>
+          <div>
+            <div class="cont-label">Teléfono</div>
+            <div class="cont-val"><a href="tel:+34647594095">+34 647 594 095</a></div>
+          </div>
+        </div>
+
+        <div class="cont-item">
+          <div class="cont-icon">
+            <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 7L2 7"/></svg>
+          </div>
+          <div>
+            <div class="cont-label">Email</div>
+            <div class="cont-val"><a href="mailto:javierlopez@jasovalcolor.com">javierlopez@jasovalcolor.com</a></div>
+          </div>
+        </div>
+
+        <div class="cont-item">
+          <div class="cont-icon">
+            <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          </div>
+          <div>
+            <div class="cont-label">Dirección</div>
+            <div class="cont-val">Carr. de Cádiz, Km 889,7<br>46460 Silla, Valencia</div>
+          </div>
+        </div>
+
+        <div class="cont-item">
+          <div class="cont-icon" style="background:#dcfce7; border-color:#bbf7d0; color:#16a34a;">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+          </div>
+          <div>
+            <div class="cont-label">WhatsApp</div>
+            <div class="cont-val"><a href="https://wa.me/34647594095" target="_blank">Escríbenos ahora</a></div>
+          </div>
+        </div>
+
+        <div class="cont-hours">
+          <div class="cont-hours-title">Horario de atención</div>
+          <div class="cont-hours-row"><span>Lunes – Jueves</span><span>8:30 – 18:00</span></div>
+          <div class="cont-hours-row"><span>Viernes</span><span>8:30 – 14:00</span></div>
+        </div>
+      </div>
+
+      <!-- FORM -->
+      <form class="cont-form" action="https://formspree.io/f/XXXXXXXX" method="POST">
+        <div class="form-row">
+          <div class="fg">
+            <label>Nombre</label>
+            <input type="text" name="nombre" placeholder="Tu nombre" required />
+          </div>
+          <div class="fg">
+            <label>Empresa</label>
+            <input type="text" name="empresa" placeholder="Tu empresa" />
+          </div>
+        </div>
+        <div class="fg">
+          <label>Email</label>
+          <input type="email" name="email" placeholder="tu@empresa.com" required />
+        </div>
+        <div class="fg">
+          <label>Teléfono</label>
+          <input type="tel" name="telefono" placeholder="+34 600 000 000" />
+        </div>
+        <div class="fg">
+          <label>Asunto</label>
+          <select name="asunto">
+            <option value="">Selecciona una opción</option>
+            <option>Solicitud de presupuesto</option>
+            <option>Consulta técnica</option>
+            <option>Información de producto</option>
+            <option>Hacerme cliente</option>
+            <option>Otro</option>
+          </select>
+        </div>
+        <div class="fg">
+          <label>Mensaje</label>
+          <textarea name="mensaje" placeholder="Cuéntanos en qué podemos ayudarte..." required></textarea>
+        </div>
+        <button type="submit" class="btn-submit">
+          Enviar mensaje
+          <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+        </button>
+        <p class="form-note">Respondemos en menos de 24 h en días laborables.</p>
+      </form>
+
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-top">
+    <div class="footer-brand">
+      <a class="footer-logo" href="/">
+        <div class="footer-logo-mark">JC</div>
+        <span class="footer-logo-name">Jasoval Color</span>
+      </a>
+      <p>Fabricantes de Gel Coat y materiales composite en Silla, Valencia. Suministro a profesionales de toda España.</p>
+    </div>
+    <div class="footer-links">
+      <h4>Empresa</h4>
+      <ul>
+        <li><a href="/#nosotros">Quiénes somos</a></li>
+        <li><a href="/#especialidades">Especialidades</a></li>
+        <li><a href="/#productos">Productos</a></li>
+        <li><a href="/contacto">Contacto</a></li>
+      </ul>
+    </div>
+    <div class="footer-links">
+      <h4>Catálogo</h4>
+      <ul>
+        <li><a href="https://catalogo.jasovalcolor.com" target="_blank">Catálogo B2B</a></li>
+        <li><a href="https://catalogo.jasovalcolor.com" target="_blank">Gel Coats</a></li>
+        <li><a href="https://catalogo.jasovalcolor.com" target="_blank">Resinas</a></li>
+        <li><a href="https://catalogo.jasovalcolor.com" target="_blank">Carta RAL</a></li>
+      </ul>
+    </div>
+    <div class="footer-links">
+      <h4>Legal</h4>
+      <ul>
+        <li><a href="/aviso-legal">Aviso Legal</a></li>
+        <li><a href="/privacidad">Política de Privacidad</a></li>
+        <li><a href="/cookies">Política de Cookies</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2025 Jasoval Color · Carr. de Cádiz, Km 889,7 · 46460 Silla, Valencia</p>
+    <p><a href="mailto:javierlopez@jasovalcolor.com">javierlopez@jasovalcolor.com</a> · <a href="tel:+34647594095">+34 647 594 095</a></p>
+  </div>
+</footer>
+
+<!-- WHATSAPP -->
+<a class="wa" href="https://wa.me/34647594095" target="_blank" aria-label="WhatsApp">
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+</a>
+
+</body>
+</html>
