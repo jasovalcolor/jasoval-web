@@ -17,7 +17,8 @@
     body { font-family: 'Montserrat', sans-serif; background: var(--surface); color: var(--text); -webkit-font-smoothing: antialiased; overflow-x: hidden; }
 
     /* HEADER */
-    header { position: fixed; top: 0; left: 0; right: 0; z-index: 200; height: 52px; display: flex; align-items: center; justify-content: space-between; padding: 0 40px; background: rgba(255,255,255,.85); backdrop-filter: saturate(180%) blur(20px); border-bottom: 1px solid rgba(0,0,0,.08); }
+    header { position: fixed; top: 0; left: 0; right: 0; z-index: 200; height: 52px; display: flex; align-items: center; justify-content: space-between; padding: 0 40px; border-bottom: 1px solid rgba(0,0,0,.08); }
+    header::before { content: ''; position: absolute; inset: 0; background: rgba(255,255,255,.85); backdrop-filter: saturate(180%) blur(20px); z-index: -1; }
     .logo { display: flex; align-items: center; gap: 10px; text-decoration: none; }
     .logo-mark { width: 28px; height: 28px; background: linear-gradient(135deg, var(--accent), var(--navy-lite)); border-radius: 7px; display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 12px; color: #fff; }
     .logo-name { font-size: 14px; font-weight: 700; color: var(--text); letter-spacing: -.2px; }
@@ -31,7 +32,7 @@
     .hamburger span { display: block; width: 20px; height: 1.5px; background: var(--text); margin: 4px 0; border-radius: 2px; }
     @media (max-width: 680px) {
       header { padding: 0 24px; } .hamburger { display: block; }
-      nav { display: none; position: fixed; top: 52px; left: 0; right: 0; bottom: 0; background: rgba(255,255,255,.97); backdrop-filter: blur(20px); flex-direction: column; justify-content: center; align-items: center; gap: 8px; }
+      nav { display: none; position: fixed; top: 52px; left: 0; right: 0; height: calc(100vh - 52px); z-index: 200; background: rgba(255,255,255,.97); backdrop-filter: blur(20px); flex-direction: column; justify-content: center; align-items: center; gap: 8px; }
       nav.open { display: flex; } nav a { font-size: 20px; padding: 14px 24px; } .nav-cta { margin-top: 8px; }
     }
 
