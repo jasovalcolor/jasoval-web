@@ -59,16 +59,11 @@
     header.dark::before {
       background: rgba(15,49,74,.88);
     }
-    .logo { display: flex; align-items: center; gap: 10px; text-decoration: none; }
-    .logo-mark {
-      width: 28px; height: 28px;
-      background: linear-gradient(135deg, var(--accent), var(--navy-lite));
-      border-radius: 7px;
-      display: flex; align-items: center; justify-content: center;
-      font-weight: 800; font-size: 12px; color: #fff;
-    }
-    .logo-name { font-size: 14px; font-weight: 700; color: var(--text); letter-spacing: -.2px; }
-    header.dark .logo-name { color: #fff; }
+    .logo { display: flex; align-items: center; text-decoration: none; }
+    .logo-img { height: 20px; width: auto; display: block; }
+    .logo-white { display: none; }
+    header.dark .logo-color { display: none; }
+    header.dark .logo-white { display: block; }
     nav { display: flex; align-items: center; gap: 2px; }
     nav a {
       font-size: 12px; font-weight: 500; color: var(--muted);
@@ -459,8 +454,8 @@
 <!-- HEADER -->
 <header id="header">
   <a class="logo" href="#inicio">
-    <div class="logo-mark">JC</div>
-    <span class="logo-name">Jasoval Color</span>
+    <img src="/logo.svg" alt="Jasoval Color" class="logo-img logo-color">
+    <img src="/logo-white.svg" alt="" class="logo-img logo-white" aria-hidden="true">
   </a>
   <button class="hamburger" onclick="document.getElementById('nav').classList.toggle('open')" aria-label="Menú">
     <span></span><span></span><span></span>
