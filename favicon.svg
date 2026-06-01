@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <!-- Anillo dividido en 6 segmentos — igual que el logo original -->
+
+  <!-- Rojo: arriba (270° a 330°) -->
+  <path fill="#e84423" d="M50,5 A45,45 0 0,1 88.97,27.5 L69.05,39 A22,22 0 0,0 50,28 Z"/>
+
+  <!-- Amarillo: derecha arriba (330° a 30°) -->
+  <path fill="#ebb110" d="M88.97,27.5 A45,45 0 0,1 88.97,72.5 L69.05,61 A22,22 0 0,0 69.05,39 Z"/>
+
+  <!-- Verde: derecha abajo (30° a 90°) -->
+  <path fill="#56af34" d="M88.97,72.5 A45,45 0 0,1 50,95 L50,72 A22,22 0 0,0 69.05,61 Z"/>
+
+  <!-- Cyan: abajo (90° a 150°) -->
+  <path fill="#229ebd" d="M50,95 A45,45 0 0,1 11.03,72.5 L30.95,61 A22,22 0 0,0 50,72 Z"/>
+
+  <!-- Oscuro: izquierda (150° a 210°) -->
+  <path fill="#0f1726" d="M11.03,72.5 A45,45 0 0,1 11.03,27.5 L30.95,39 A22,22 0 0,0 30.95,61 Z"/>
+
+  <!-- Morado: arriba izquierda (210° a 270°) -->
+  <path fill="#6d3189" d="M11.03,27.5 A45,45 0 0,1 50,5 L50,28 A22,22 0 0,0 30.95,39 Z"/>
+
+  <!-- Separadores blancos entre segmentos -->
+  <line x1="50" y1="5" x2="50" y2="28" stroke="white" stroke-width="2.5"/>
+  <line x1="88.97" y1="27.5" x2="69.05" y2="39" stroke="white" stroke-width="2.5"/>
+  <line x1="88.97" y1="72.5" x2="69.05" y2="61" stroke="white" stroke-width="2.5"/>
+  <line x1="50" y1="95" x2="50" y2="72" stroke="white" stroke-width="2.5"/>
+  <line x1="11.03" y1="72.5" x2="30.95" y2="61" stroke="white" stroke-width="2.5"/>
+  <line x1="11.03" y1="27.5" x2="30.95" y2="39" stroke="white" stroke-width="2.5"/>
+
+  <!-- Círculo blanco interior -->
+  <circle cx="50" cy="50" r="22" fill="white"/>
+</svg>
