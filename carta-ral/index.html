@@ -230,7 +230,7 @@
 </div>
 
 <div class="count-bar">
-  <p class="count-text"><span id="count">217</span> colores</p>
+  <p class="count-text"><span id="count"></span> colores</p>
 </div>
 
 <section class="ral-section">
@@ -577,6 +577,7 @@ function renderGrid(colors) {
 }
 
 renderGrid(RAL_COLORS);
+countEl.textContent = RAL_COLORS.length;
 
 // Filter + search
 let activeGroup = 'all';
