@@ -128,18 +128,18 @@
 
     /* RAL GRID */
     .ral-section { padding: 0 40px 72px; }
-    .ral-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(96px, 1fr)); gap: 8px; max-width: 1080px; margin: 0 auto; }
-    .ral-card { border-radius: 10px; overflow: hidden; border: 1px solid var(--border); background: var(--surface); transition: transform .15s, box-shadow .15s, border-color .15s; }
-    .ral-card:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(0,0,0,.1); border-color: rgba(0,0,0,.2); }
-    .ral-swatch { width: 100%; aspect-ratio: 1; }
-    .ral-info { padding: 7px 8px 8px; }
-    .ral-code { font-size: 11px; font-weight: 700; color: var(--text); display: block; }
-    .ral-name { font-size: 9.5px; color: var(--muted); line-height: 1.35; display: block; margin-top: 2px; }
+    .ral-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(130px, 1fr)); gap: 10px; max-width: 1080px; margin: 0 auto; }
+    .ral-card { border-radius: 12px; overflow: hidden; border: 1px solid var(--border); background: var(--surface); transition: transform .15s, box-shadow .15s, border-color .15s; }
+    .ral-card:hover { transform: translateY(-3px); box-shadow: 0 8px 24px rgba(0,0,0,.12); border-color: rgba(0,0,0,.2); }
+    .ral-swatch { width: 100%; aspect-ratio: 4/3; }
+    .ral-info { padding: 9px 10px 10px; }
+    .ral-code { font-size: 12px; font-weight: 700; color: var(--text); display: block; }
+    .ral-name { font-size: 11px; color: var(--muted); line-height: 1.35; display: block; margin-top: 3px; }
     .ral-card.hidden { display: none; }
     .no-results { display: none; text-align: center; padding: 64px 24px; color: var(--muted); font-size: 14px; max-width: 1080px; margin: 0 auto; }
     .no-results.visible { display: block; }
-    @media (max-width: 680px) { .ral-section { padding: 0 16px 56px; } .ral-grid { grid-template-columns: repeat(auto-fill, minmax(80px, 1fr)); gap: 6px; } }
-    @media (max-width: 380px) { .ral-grid { grid-template-columns: repeat(auto-fill, minmax(68px, 1fr)); } }
+    @media (max-width: 680px) { .ral-section { padding: 0 16px 56px; } .ral-grid { grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); gap: 8px; } }
+    @media (max-width: 380px) { .ral-grid { grid-template-columns: repeat(auto-fill, minmax(88px, 1fr)); } }
 
     /* FAQ */
     .faq { background: var(--surface); border-top: 1px solid var(--border); padding: 72px 40px; }
