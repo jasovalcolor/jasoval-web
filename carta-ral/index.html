@@ -113,11 +113,13 @@
     #ral-search { width: 100%; padding: 10px 14px 10px 38px; border: 1.5px solid var(--border); border-radius: 10px; font-size: 14px; font-family: 'Montserrat', sans-serif; color: var(--text); outline: none; transition: border-color .2s; background: var(--bg); }
     #ral-search:focus { border-color: var(--accent); background: #fff; }
     #ral-search::placeholder { color: var(--muted); }
-    .filter-pills { display: flex; gap: 6px; flex-wrap: wrap; }
-    .pill { padding: 5px 14px; border-radius: 20px; font-size: 11px; font-weight: 700; border: 1.5px solid var(--border); background: none; cursor: pointer; color: var(--muted); font-family: 'Montserrat', sans-serif; transition: all .15s; display: flex; align-items: center; gap: 5px; }
-    .pill:hover { border-color: var(--accent); color: var(--accent); }
-    .pill.active { background: var(--navy); border-color: var(--navy); color: #fff; }
-    .pill-dot { width: 8px; height: 8px; border-radius: 50%; display: inline-block; flex-shrink: 0; }
+    .filter-pills { display: flex; gap: 6px; overflow-x: auto; padding-bottom: 2px; scrollbar-width: none; }
+    .filter-pills::-webkit-scrollbar { display: none; }
+    .pill { flex-shrink: 0; width: 72px; border-radius: 10px; overflow: hidden; border: 2.5px solid transparent; cursor: pointer; font-family: 'Montserrat', sans-serif; transition: all .15s; padding: 0; background: none; }
+    .pill:hover { transform: translateY(-2px); box-shadow: 0 4px 12px rgba(0,0,0,.15); }
+    .pill.active { border-color: var(--navy); box-shadow: 0 0 0 1px var(--navy); }
+    .pill-swatch { height: 40px; width: 100%; display: block; }
+    .pill-label { display: block; font-size: 9px; font-weight: 700; text-align: center; padding: 4px 2px; color: var(--text); background: var(--surface); line-height: 1.2; }
     @media (max-width: 680px) { .controls { padding: 12px 16px; } }
 
     /* COLOR COUNT */
@@ -215,16 +217,46 @@
       <input type="search" id="ral-search" placeholder="Buscar por código o nombre… ej: RAL 3020 o rojo tráfico" autocomplete="off" />
     </div>
     <div class="filter-pills">
-      <button class="pill active" data-group="all">Todos</button>
-      <button class="pill" data-group="yellow"><span class="pill-dot" style="background:#E5BE01"></span>Amarillos</button>
-      <button class="pill" data-group="orange"><span class="pill-dot" style="background:#F44611"></span>Naranjas</button>
-      <button class="pill" data-group="red"><span class="pill-dot" style="background:#CC0605"></span>Rojos</button>
-      <button class="pill" data-group="violet"><span class="pill-dot" style="background:#924E7D"></span>Violetas</button>
-      <button class="pill" data-group="blue"><span class="pill-dot" style="background:#204FA0"></span>Azules</button>
-      <button class="pill" data-group="green"><span class="pill-dot" style="background:#308446"></span>Verdes</button>
-      <button class="pill" data-group="grey"><span class="pill-dot" style="background:#8A9597"></span>Grises</button>
-      <button class="pill" data-group="brown"><span class="pill-dot" style="background:#6F4F28"></span>Marrones</button>
-      <button class="pill" data-group="white"><span class="pill-dot" style="background:#F4F3EF;border:1px solid #d2d2d7"></span>Blancos/Negros</button>
+      <button class="pill active" data-group="all">
+        <span class="pill-swatch" style="background: linear-gradient(to right, #E5BE01, #F44611, #CC0605, #924E7D, #204FA0, #308446, #8A9597, #6F4F28)"></span>
+        <span class="pill-label">Todos</span>
+      </button>
+      <button class="pill" data-group="yellow">
+        <span class="pill-swatch" style="background: linear-gradient(135deg, #FAD201, #E5BE01, #C9A800)"></span>
+        <span class="pill-label">Amarillos</span>
+      </button>
+      <button class="pill" data-group="orange">
+        <span class="pill-swatch" style="background: linear-gradient(135deg, #FF7514, #F44611, #C93C20)"></span>
+        <span class="pill-label">Naranjas</span>
+      </button>
+      <button class="pill" data-group="red">
+        <span class="pill-swatch" style="background: linear-gradient(135deg, #E63244, #CC0605, #75151E)"></span>
+        <span class="pill-label">Rojos</span>
+      </button>
+      <button class="pill" data-group="violet">
+        <span class="pill-swatch" style="background: linear-gradient(135deg, #DE4C8A, #924E7D, #641C34)"></span>
+        <span class="pill-label">Violetas</span>
+      </button>
+      <button class="pill" data-group="blue">
+        <span class="pill-swatch" style="background: linear-gradient(135deg, #3B83BD, #204FA0, #20214F)"></span>
+        <span class="pill-label">Azules</span>
+      </button>
+      <button class="pill" data-group="green">
+        <span class="pill-swatch" style="background: linear-gradient(135deg, #57A639, #308446, #2F4538)"></span>
+        <span class="pill-label">Verdes</span>
+      </button>
+      <button class="pill" data-group="grey">
+        <span class="pill-swatch" style="background: linear-gradient(135deg, #D7D7D7, #8A9597, #2A3439)"></span>
+        <span class="pill-label">Grises</span>
+      </button>
+      <button class="pill" data-group="brown">
+        <span class="pill-swatch" style="background: linear-gradient(135deg, #9C6B30, #6F4F28, #45322E)"></span>
+        <span class="pill-label">Marrones</span>
+      </button>
+      <button class="pill" data-group="white">
+        <span class="pill-swatch" style="background: linear-gradient(135deg, #FAFAF5, #C5C9C2, #0E0E10)"></span>
+        <span class="pill-label">Blancos/Negros</span>
+      </button>
     </div>
   </div>
 </div>
