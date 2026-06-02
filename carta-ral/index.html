@@ -113,7 +113,8 @@
     #ral-search { width: 100%; padding: 10px 14px 10px 38px; border: 1.5px solid var(--border); border-radius: 10px; font-size: 14px; font-family: 'Montserrat', sans-serif; color: var(--text); outline: none; transition: border-color .2s; background: var(--bg); }
     #ral-search:focus { border-color: var(--accent); background: #fff; }
     #ral-search::placeholder { color: var(--muted); }
-    .filter-pills { display: flex; gap: 6px; overflow-x: auto; padding-bottom: 2px; padding-right: 16px; scrollbar-width: none; flex-wrap: nowrap; }
+    .filter-pills { display: flex; gap: 6px; overflow-x: auto; padding-bottom: 2px; scrollbar-width: none; flex-wrap: nowrap; }
+    .filter-pills::after { content: ''; flex-shrink: 0; width: 16px; }
     .filter-pills::-webkit-scrollbar { display: none; }
     .pill { flex-shrink: 0; padding: 6px 14px 6px 8px; border-radius: 20px; font-size: 12px; font-weight: 600; border: 1.5px solid var(--border); background: #fff; cursor: pointer; color: var(--text); font-family: 'Montserrat', sans-serif; transition: all .15s; display: flex; align-items: center; gap: 8px; white-space: nowrap; }
     .pill:hover { border-color: var(--accent); color: var(--accent); }
