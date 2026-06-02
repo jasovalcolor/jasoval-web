@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Carta de Colores RAL — Pinturas y Esmaltes | Jasoval Color</title>
+  <meta name="description" content="Carta completa de colores RAL Classic. Fabricamos esmaltes y pinturas industriales en los 215 tonos RAL bajo pedido. 25 años de experiencia. Jasoval Color, Valencia." />
+  <link rel="canonical" href="https://jasovalcolor.com/carta-ral/" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "¿Qué es la carta de colores RAL?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "La carta RAL Classic es el sistema de codificación de colores más utilizado en Europa para industria, arquitectura y señalización. Cada color tiene un código de 4 dígitos (del 1000 al 9018) y un nombre normalizado. Es el estándar de referencia para especificar colores en pedidos industriales."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Fabricáis pinturas y esmaltes en todos los colores RAL?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Sí. En Jasoval Color fabricamos bajo pedido en todos los colores RAL Classic. Utilizamos pastas pigmentarias de alta calidad compatibles con nuestros gel coats, esmaltes y resinas para reproducir con fidelidad cualquier tono de la carta RAL."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Cuánto tarda un pedido en un color RAL especial?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Los colores más habituales de la carta RAL (blanco, gris, negro, azul tráfico, rojo tráfico, verde...) suelen estar disponibles en 24-48 horas. Para colores menos frecuentes el plazo habitual es de 3 a 5 días laborables. Consúltanos para confirmar disponibilidad."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Los colores son exactamente iguales al estándar RAL?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Trabajamos con tolerancias de color muy ajustadas. Las representaciones digitales en pantalla son aproximaciones, ya que cada monitor reproduce los colores de forma distinta. Para validar el color exacto recomendamos solicitar una muestra física antes de un pedido de producción."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Puedo pedir una muestra de color antes de fabricar?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Sí, ofrecemos muestras físicas de color para que puedas validar el tono antes de confirmar la producción. Contáctanos indicando el código RAL y el producto que necesitas."
+        }
+      }
+    ]
+  }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --navy: #0f314a; --navy-dark: #0a2236; --navy-mid: #164469; --navy-lite: #1e5b8a;
+      --accent: #3b9fd1; --accent-2: #2e8bbf;
+      --bg: #f5f5f7; --surface: #ffffff; --border: #d2d2d7; --text: #1d1d1f; --muted: #86868b;
+    }
+    body { font-family: 'Montserrat', sans-serif; background: var(--bg); color: var(--text); -webkit-font-smoothing: antialiased; overflow-x: hidden; }
+
+    /* HEADER */
+    header { position: fixed; top: 0; left: 0; right: 0; z-index: 200; height: 52px; display: flex; align-items: center; justify-content: space-between; padding: 0 40px; border-bottom: 1px solid rgba(0,0,0,.08); }
+    header::before { content: ''; position: absolute; inset: 0; background: rgba(255,255,255,.85); backdrop-filter: saturate(180%) blur(20px); -webkit-backdrop-filter: saturate(180%) blur(20px); z-index: -1; }
+    .logo { display: flex; align-items: center; text-decoration: none; }
+    .logo-img { height: 36px; width: auto; display: block; }
+    nav { display: flex; align-items: center; gap: 2px; }
+    nav a { font-size: 12px; font-weight: 500; color: var(--muted); text-decoration: none; padding: 6px 12px; border-radius: 6px; transition: color .2s, background .2s; }
+    nav a:hover { color: var(--text); background: rgba(0,0,0,.05); }
+    nav a.active { color: var(--navy); font-weight: 700; }
+    .nav-cta { background: var(--accent) !important; color: #fff !important; border-radius: 20px !important; padding: 6px 16px !important; font-weight: 600 !important; }
+    .nav-cta:hover { background: var(--accent-2) !important; }
+    .hamburger { display: none; cursor: pointer; padding: 6px; background: none; border: none; }
+    .hamburger span { display: block; width: 20px; height: 1.5px; background: var(--text); margin: 4px 0; border-radius: 2px; }
+    @media (max-width: 680px) {
+      header { padding: 0 24px; } .hamburger { display: block; }
+      nav { display: none; position: fixed; top: 52px; left: 0; right: 0; height: calc(100vh - 52px); z-index: 200; background: rgba(255,255,255,.97); backdrop-filter: blur(20px); flex-direction: column; justify-content: center; align-items: center; gap: 8px; }
+      nav.open { display: flex; } nav a { font-size: 20px; padding: 14px 24px; } .nav-cta { margin-top: 8px; }
+    }
+
+    /* BREADCRUMB */
+    .breadcrumb { position: static; height: auto; margin-top: 52px; padding: 14px 40px; background: var(--surface); border-bottom: 1px solid var(--border); display: flex; flex-direction: row; align-items: center; gap: 8px; font-size: 12px; color: var(--muted); flex-wrap: wrap; }
+    .breadcrumb a { color: var(--accent); text-decoration: none; transition: color .2s; font-size: inherit; padding: 0; }
+    .breadcrumb a:hover { color: var(--accent-2); text-decoration: underline; }
+    .breadcrumb a::before { content: '‹\00a0'; font-weight: 700; }
+    .breadcrumb a:first-child::before { content: none; }
+    .breadcrumb-sep { color: var(--border); font-size: 10px; }
+    .breadcrumb-current { color: var(--text); font-weight: 600; }
+    @media (max-width: 680px) { .breadcrumb { padding: 10px 16px; gap: 4px; font-size: 14px; } }
+
+    /* HERO */
+    .hero { background: linear-gradient(160deg, var(--navy-dark), var(--navy-mid)); padding: 64px 40px 56px; }
+    .container { max-width: 1080px; margin: 0 auto; }
+    .hero-tag { font-size: 11px; font-weight: 700; color: var(--accent); letter-spacing: 2.5px; text-transform: uppercase; margin-bottom: 14px; display: block; animation: fadeUp .5s .1s both; }
+    .hero h1 { font-size: clamp(28px, 4vw, 48px); font-weight: 800; color: #fff; line-height: 1.1; letter-spacing: -1.5px; animation: fadeUp .5s .2s both; }
+    .hero h1 em { font-style: normal; color: var(--accent); }
+    .hero-desc { font-size: 15px; color: rgba(255,255,255,.5); font-weight: 400; margin-top: 14px; max-width: 580px; line-height: 1.65; animation: fadeUp .5s .3s both; }
+    @keyframes fadeUp { from { opacity: 0; transform: translateY(16px); } to { opacity: 1; transform: translateY(0); } }
+    @media (max-width: 680px) { .hero { padding: 48px 24px 40px; } }
+
+    /* SEARCH + FILTERS */
+    .controls { background: var(--surface); border-bottom: 1px solid var(--border); padding: 16px 40px; position: sticky; top: 52px; z-index: 100; }
+    .controls-inner { display: flex; flex-direction: column; gap: 12px; max-width: 1080px; margin: 0 auto; }
+    .search-wrap { position: relative; }
+    .search-wrap svg { position: absolute; left: 13px; top: 50%; transform: translateY(-50%); color: var(--muted); pointer-events: none; }
+    #ral-search { width: 100%; padding: 10px 14px 10px 38px; border: 1.5px solid var(--border); border-radius: 10px; font-size: 14px; font-family: 'Montserrat', sans-serif; color: var(--text); outline: none; transition: border-color .2s; background: var(--bg); }
+    #ral-search:focus { border-color: var(--accent); background: #fff; }
+    #ral-search::placeholder { color: var(--muted); }
+    .filter-pills { display: flex; gap: 6px; flex-wrap: wrap; }
+    .pill { padding: 5px 14px; border-radius: 20px; font-size: 11px; font-weight: 700; border: 1.5px solid var(--border); background: none; cursor: pointer; color: var(--muted); font-family: 'Montserrat', sans-serif; transition: all .15s; display: flex; align-items: center; gap: 5px; }
+    .pill:hover { border-color: var(--accent); color: var(--accent); }
+    .pill.active { background: var(--navy); border-color: var(--navy); color: #fff; }
+    .pill-dot { width: 8px; height: 8px; border-radius: 50%; display: inline-block; flex-shrink: 0; }
+    @media (max-width: 680px) { .controls { padding: 12px 16px; } }
+
+    /* COLOR COUNT */
+    .count-bar { padding: 12px 40px; max-width: 1080px; margin: 0 auto; }
+    .count-text { font-size: 12px; color: var(--muted); font-weight: 500; }
+    .count-text span { color: var(--text); font-weight: 700; }
+    @media (max-width: 680px) { .count-bar { padding: 10px 16px; } }
+
+    /* RAL GRID */
+    .ral-section { padding: 0 40px 72px; }
+    .ral-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(96px, 1fr)); gap: 8px; max-width: 1080px; margin: 0 auto; }
+    .ral-card { border-radius: 10px; overflow: hidden; border: 1px solid var(--border); background: var(--surface); transition: transform .15s, box-shadow .15s, border-color .15s; }
+    .ral-card:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(0,0,0,.1); border-color: rgba(0,0,0,.2); }
+    .ral-swatch { width: 100%; aspect-ratio: 1; }
+    .ral-info { padding: 7px 8px 8px; }
+    .ral-code { font-size: 11px; font-weight: 700; color: var(--text); display: block; }
+    .ral-name { font-size: 9.5px; color: var(--muted); line-height: 1.35; display: block; margin-top: 2px; }
+    .ral-card.hidden { display: none; }
+    .no-results { display: none; text-align: center; padding: 64px 24px; color: var(--muted); font-size: 14px; max-width: 1080px; margin: 0 auto; }
+    .no-results.visible { display: block; }
+    @media (max-width: 680px) { .ral-section { padding: 0 16px 56px; } .ral-grid { grid-template-columns: repeat(auto-fill, minmax(80px, 1fr)); gap: 6px; } }
+    @media (max-width: 380px) { .ral-grid { grid-template-columns: repeat(auto-fill, minmax(68px, 1fr)); } }
+
+    /* FAQ */
+    .faq { background: var(--surface); border-top: 1px solid var(--border); padding: 72px 40px; }
+    .faq .container { max-width: 720px; }
+    .faq-tag { font-size: 11px; font-weight: 700; color: var(--accent); letter-spacing: 2.5px; text-transform: uppercase; margin-bottom: 10px; display: block; }
+    .faq h2 { font-size: clamp(24px, 3vw, 36px); font-weight: 800; color: var(--text); letter-spacing: -1px; margin-bottom: 40px; }
+    .faq-item { border-bottom: 1px solid var(--border); }
+    .faq-q { width: 100%; text-align: left; background: none; border: none; padding: 20px 0; font-size: 15px; font-weight: 700; color: var(--text); font-family: 'Montserrat', sans-serif; cursor: pointer; display: flex; justify-content: space-between; align-items: center; gap: 16px; }
+    .faq-q svg { flex-shrink: 0; transition: transform .25s; color: var(--muted); }
+    .faq-item.open .faq-q svg { transform: rotate(180deg); }
+    .faq-a { max-height: 0; overflow: hidden; transition: max-height .3s ease; }
+    .faq-item.open .faq-a { max-height: 200px; }
+    .faq-a p { padding-bottom: 20px; font-size: 14px; color: var(--muted); line-height: 1.7; }
+    @media (max-width: 680px) { .faq { padding: 56px 24px; } }
+
+    /* FOOTER */
+    footer { background: var(--text); color: rgba(255,255,255,.45); padding: 56px 40px 40px; }
+    .footer-top { display: flex; justify-content: space-between; align-items: flex-start; gap: 40px; margin-bottom: 48px; flex-wrap: wrap; }
+    .footer-brand { max-width: 280px; }
+    .footer-logo { display: flex; align-items: center; gap: 10px; text-decoration: none; margin-bottom: 14px; }
+    .footer-logo-mark { width: 28px; height: 28px; background: linear-gradient(135deg, var(--accent), var(--navy-lite)); border-radius: 7px; display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 12px; color: #fff; }
+    .footer-logo-name { font-size: 14px; font-weight: 700; color: rgba(255,255,255,.8); }
+    .footer-brand p { font-size: 13px; line-height: 1.6; }
+    .footer-links h4 { font-size: 11px; font-weight: 700; color: rgba(255,255,255,.6); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 14px; }
+    .footer-links ul { list-style: none; }
+    .footer-links li { margin-bottom: 8px; }
+    .footer-links a { font-size: 13px; color: rgba(255,255,255,.45); text-decoration: none; transition: color .2s; }
+    .footer-links a:hover { color: rgba(255,255,255,.9); }
+    .footer-bottom { border-top: 1px solid rgba(255,255,255,.08); padding-top: 24px; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 8px; font-size: 12px; }
+    .footer-bottom a { color: rgba(255,255,255,.45); text-decoration: none; }
+    @media (max-width: 680px) { footer { padding: 48px 24px 32px; } .footer-top { flex-direction: column; } .footer-bottom { flex-direction: column; text-align: center; } }
+
+    .wa { position: fixed; bottom: 28px; right: 28px; z-index: 300; width: 52px; height: 52px; border-radius: 50%; background: #25d366; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 16px rgba(37,211,102,.4); transition: transform .2s; }
+    .wa:hover { transform: scale(1.08); }
+  </style>
+</head>
+<body>
+
+<header>
+  <a class="logo" href="/"><img src="/logo.svg" alt="Jasoval Color" class="logo-img"></a>
+  <button class="hamburger" onclick="document.getElementById('nav').classList.toggle('open')" aria-label="Menú">
+    <span></span><span></span><span></span>
+  </button>
+  <nav id="nav">
+    <a href="/#especialidades">Especialidades</a>
+    <a href="/composites/gel-coat">Composites</a>
+    <a href="/#nosotros">Nosotros</a>
+    <a href="/blog">Blog</a>
+    <a href="/carta-ral" class="active">Carta RAL</a>
+    <a href="/contacto">Contacto</a>
+    <a href="https://catalogo.jasovalcolor.com" target="_blank" class="nav-cta">Catálogo B2B</a>
+  </nav>
+</header>
+
+<nav class="breadcrumb">
+  <a href="/">Inicio</a>
+  <span class="breadcrumb-sep">›</span>
+  <span class="breadcrumb-current">Carta RAL</span>
+</nav>
+
+<div class="hero">
+  <div class="container">
+    <span class="hero-tag">Colores estándar europeos</span>
+    <h1>Carta de <em>Colores RAL</em></h1>
+    <p class="hero-desc">En Jasoval Color fabricamos esmaltes y pinturas en cualquier tono de la carta RAL Classic. Más de 215 colores disponibles bajo pedido para industria, construcción, náutica y automoción.</p>
+  </div>
+</div>
+
+<div class="controls">
+  <div class="controls-inner">
+    <div class="search-wrap">
+      <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+      <input type="search" id="ral-search" placeholder="Buscar por código o nombre… ej: RAL 3020 o rojo tráfico" autocomplete="off" />
+    </div>
+    <div class="filter-pills">
+      <button class="pill active" data-group="all">Todos</button>
+      <button class="pill" data-group="yellow"><span class="pill-dot" style="background:#E5BE01"></span>Amarillos</button>
+      <button class="pill" data-group="orange"><span class="pill-dot" style="background:#F44611"></span>Naranjas</button>
+      <button class="pill" data-group="red"><span class="pill-dot" style="background:#CC0605"></span>Rojos</button>
+      <button class="pill" data-group="violet"><span class="pill-dot" style="background:#924E7D"></span>Violetas</button>
+      <button class="pill" data-group="blue"><span class="pill-dot" style="background:#204FA0"></span>Azules</button>
+      <button class="pill" data-group="green"><span class="pill-dot" style="background:#308446"></span>Verdes</button>
+      <button class="pill" data-group="grey"><span class="pill-dot" style="background:#8A9597"></span>Grises</button>
+      <button class="pill" data-group="brown"><span class="pill-dot" style="background:#6F4F28"></span>Marrones</button>
+      <button class="pill" data-group="white"><span class="pill-dot" style="background:#F4F3EF;border:1px solid #d2d2d7"></span>Blancos/Negros</button>
+    </div>
+  </div>
+</div>
+
+<div class="count-bar">
+  <p class="count-text"><span id="count">217</span> colores</p>
+</div>
+
+<section class="ral-section">
+  <div id="ral-grid" class="ral-grid"></div>
+  <p class="no-results" id="no-results">No se encontraron colores para tu búsqueda.</p>
+</section>
+
+<section class="faq">
+  <div class="container">
+    <span class="faq-tag">Preguntas frecuentes</span>
+    <h2>Sobre la carta RAL</h2>
+
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)">
+        ¿Qué es la carta de colores RAL?
+        <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg>
+      </button>
+      <div class="faq-a"><p>La carta RAL Classic es el sistema de codificación de colores más utilizado en Europa para industria, arquitectura y señalización. Cada color tiene un código de 4 dígitos (del 1000 al 9018) y un nombre normalizado. Es el estándar de referencia para especificar colores en pedidos industriales.</p></div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)">
+        ¿Fabricáis pinturas y esmaltes en todos los colores RAL?
+        <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg>
+      </button>
+      <div class="faq-a"><p>Sí. En Jasoval Color fabricamos bajo pedido en todos los colores RAL Classic. Utilizamos pastas pigmentarias de alta calidad compatibles con nuestros gel coats, esmaltes y resinas para reproducir con fidelidad cualquier tono de la carta RAL.</p></div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)">
+        ¿Cuánto tarda un pedido en un color RAL especial?
+        <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg>
+      </button>
+      <div class="faq-a"><p>Los colores más habituales (blanco, gris, negro, azul tráfico, rojo tráfico, verde…) suelen estar disponibles en 24–48 horas. Para colores menos frecuentes el plazo habitual es de 3 a 5 días laborables. Consúltanos para confirmar disponibilidad.</p></div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)">
+        ¿Los colores en pantalla son exactos al estándar RAL?
+        <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg>
+      </button>
+      <div class="faq-a"><p>Las representaciones digitales son aproximaciones, ya que cada monitor reproduce los colores de forma distinta. Para validar el color exacto recomendamos solicitar una muestra física antes de un pedido de producción.</p></div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)">
+        ¿Puedo pedir una muestra de color antes de fabricar?
+        <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg>
+      </button>
+      <div class="faq-a"><p>Sí, ofrecemos muestras físicas de color para que puedas validar el tono antes de confirmar la producción. Contáctanos indicando el código RAL y el producto que necesitas.</p></div>
+    </div>
+
+  </div>
+</section>
+
+<footer>
+  <div class="footer-top">
+    <div class="footer-brand">
+      <a class="footer-logo" href="/"><div class="footer-logo-mark">JC</div><span class="footer-logo-name">Jasoval Color</span></a>
+      <p>Fabricantes de Gel Coat y materiales composite en Silla, Valencia. Suministro a profesionales de toda España.</p>
+    </div>
+    <div class="footer-links">
+      <h4>Colores</h4>
+      <ul>
+        <li><a href="/carta-ral">Carta RAL completa</a></li>
+        <li><a href="/carta-ral#amarillos">Amarillos RAL</a></li>
+        <li><a href="/carta-ral#rojos">Rojos RAL</a></li>
+        <li><a href="/carta-ral#azules">Azules RAL</a></li>
+      </ul>
+    </div>
+    <div class="footer-links">
+      <h4>Composites</h4>
+      <ul>
+        <li><a href="/composites/gel-coat">Gel Coats</a></li>
+        <li><a href="/composites/resinas">Resinas</a></li>
+        <li><a href="/composites/catalizadores">Catalizadores</a></li>
+        <li><a href="/composites/fibras">Fibras</a></li>
+      </ul>
+    </div>
+    <div class="footer-links">
+      <h4>Empresa</h4>
+      <ul>
+        <li><a href="/#nosotros">Quiénes somos</a></li>
+        <li><a href="/blog">Blog</a></li>
+        <li><a href="/contacto">Contacto</a></li>
+        <li><a href="https://catalogo.jasovalcolor.com" target="_blank">Catálogo B2B</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 Jasoval Color · Carr. de Cádiz, Km 889,7 · 46460 Silla, Valencia</p>
+    <p><a href="mailto:javier@jasovalcolor.com">javier@jasovalcolor.com</a> · <a href="tel:+34647594095">+34 647 594 095</a></p>
+  </div>
+</footer>
+
+<a class="wa" href="https://wa.me/34647594095" target="_blank" aria-label="WhatsApp">
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+</a>
+
+<script>
+const RAL_COLORS = [
+  // Amarillos
+  {code:'1000',name:'Beige verdoso',hex:'#CDBA88',group:'yellow'},
+  {code:'1001',name:'Beige',hex:'#C7B446',group:'yellow'},
+  {code:'1002',name:'Amarillo arena',hex:'#C2955B',group:'yellow'},
+  {code:'1003',name:'Amarillo señales',hex:'#E5BE01',group:'yellow'},
+  {code:'1004',name:'Amarillo oro',hex:'#C9A800',group:'yellow'},
+  {code:'1005',name:'Amarillo miel',hex:'#B89000',group:'yellow'},
+  {code:'1006',name:'Amarillo maíz',hex:'#D4B000',group:'yellow'},
+  {code:'1007',name:'Amarillo narciso',hex:'#BFA500',group:'yellow'},
+  {code:'1011',name:'Beige pardo',hex:'#8E6B24',group:'yellow'},
+  {code:'1012',name:'Amarillo limón',hex:'#D4C000',group:'yellow'},
+  {code:'1013',name:'Blanco perla',hex:'#EAE6CA',group:'yellow'},
+  {code:'1014',name:'Marfil',hex:'#E1CC4F',group:'yellow'},
+  {code:'1015',name:'Marfil claro',hex:'#E6D690',group:'yellow'},
+  {code:'1016',name:'Amarillo azufre',hex:'#EDFF21',group:'yellow'},
+  {code:'1017',name:'Amarillo azafrán',hex:'#F5D033',group:'yellow'},
+  {code:'1018',name:'Amarillo de zinc',hex:'#F8F32B',group:'yellow'},
+  {code:'1019',name:'Beige agrisado',hex:'#9E9764',group:'yellow'},
+  {code:'1020',name:'Amarillo oliva',hex:'#999950',group:'yellow'},
+  {code:'1021',name:'Amarillo colza',hex:'#F3DA0B',group:'yellow'},
+  {code:'1023',name:'Amarillo tráfico',hex:'#FAD201',group:'yellow'},
+  {code:'1024',name:'Amarillo ocre',hex:'#AEA04B',group:'yellow'},
+  {code:'1026',name:'Amarillo brillante',hex:'#FFFF00',group:'yellow'},
+  {code:'1027',name:'Amarillo curry',hex:'#9D9101',group:'yellow'},
+  {code:'1028',name:'Amarillo melón',hex:'#F4A900',group:'yellow'},
+  {code:'1032',name:'Amarillo retama',hex:'#C4A000',group:'yellow'},
+  {code:'1033',name:'Amarillo dalía',hex:'#F3A505',group:'yellow'},
+  {code:'1034',name:'Amarillo pastel',hex:'#EFC050',group:'yellow'},
+  {code:'1035',name:'Beige perlado',hex:'#D3C9B0',group:'yellow'},
+  {code:'1036',name:'Oro perlado',hex:'#705335',group:'yellow'},
+  {code:'1037',name:'Amarillo sol',hex:'#F39F18',group:'yellow'},
+  // Naranjas
+  {code:'2000',name:'Amarillo naranja',hex:'#ED760E',group:'orange'},
+  {code:'2001',name:'Rojo anaranjado',hex:'#C93C20',group:'orange'},
+  {code:'2002',name:'Naranja sanguíneo',hex:'#CB2821',group:'orange'},
+  {code:'2003',name:'Naranja pálido',hex:'#FF7514',group:'orange'},
+  {code:'2004',name:'Naranja puro',hex:'#F44611',group:'orange'},
+  {code:'2005',name:'Naranja brillante',hex:'#FF2301',group:'orange'},
+  {code:'2007',name:'Naranja claro brillante',hex:'#FFA420',group:'orange'},
+  {code:'2008',name:'Rojo claro anaranjado',hex:'#F75E25',group:'orange'},
+  {code:'2009',name:'Naranja tráfico',hex:'#F54021',group:'orange'},
+  {code:'2010',name:'Naranja señales',hex:'#D05C17',group:'orange'},
+  {code:'2011',name:'Naranja intenso',hex:'#EC7C26',group:'orange'},
+  {code:'2012',name:'Naranja salmón',hex:'#E55137',group:'orange'},
+  {code:'2013',name:'Naranja perlado',hex:'#C35831',group:'orange'},
+  {code:'2017',name:'Naranja RAL',hex:'#DF6117',group:'orange'},
+  // Rojos
+  {code:'3000',name:'Rojo vivo',hex:'#AF2B1E',group:'red'},
+  {code:'3001',name:'Rojo señales',hex:'#A52019',group:'red'},
+  {code:'3002',name:'Rojo carmín',hex:'#A2231D',group:'red'},
+  {code:'3003',name:'Rojo rubí',hex:'#9B111E',group:'red'},
+  {code:'3004',name:'Rojo púrpura',hex:'#75151E',group:'red'},
+  {code:'3005',name:'Rojo vino',hex:'#5E2129',group:'red'},
+  {code:'3007',name:'Rojo negruzco',hex:'#412227',group:'red'},
+  {code:'3009',name:'Rojo óxido',hex:'#642424',group:'red'},
+  {code:'3010',name:'Rojo teja',hex:'#B11A14',group:'red'},
+  {code:'3011',name:'Rojo pardo',hex:'#781F19',group:'red'},
+  {code:'3012',name:'Rojo beige',hex:'#C1876B',group:'red'},
+  {code:'3013',name:'Rojo tomate',hex:'#A12312',group:'red'},
+  {code:'3014',name:'Rojo viejo',hex:'#D36E70',group:'red'},
+  {code:'3015',name:'Rosa claro',hex:'#EA899A',group:'red'},
+  {code:'3016',name:'Rojo coral',hex:'#B32821',group:'red'},
+  {code:'3017',name:'Rosa',hex:'#E63244',group:'red'},
+  {code:'3018',name:'Rojo fresa',hex:'#D53032',group:'red'},
+  {code:'3020',name:'Rojo tráfico',hex:'#CC0605',group:'red'},
+  {code:'3022',name:'Rojo salmón',hex:'#D95030',group:'red'},
+  {code:'3024',name:'Rojo brillante',hex:'#FE0000',group:'red'},
+  {code:'3026',name:'Rojo claro brillante',hex:'#FF4B00',group:'red'},
+  {code:'3027',name:'Rojo frambuesa',hex:'#C51D34',group:'red'},
+  {code:'3028',name:'Rojo puro',hex:'#CB3234',group:'red'},
+  {code:'3031',name:'Rojo oriente',hex:'#B32428',group:'red'},
+  {code:'3032',name:'Rojo rubí perlado',hex:'#851427',group:'red'},
+  {code:'3033',name:'Rosa perlado',hex:'#B44C43',group:'red'},
+  // Violetas
+  {code:'4001',name:'Rojo lila',hex:'#6D3F5B',group:'violet'},
+  {code:'4002',name:'Rojo violeta',hex:'#922B3E',group:'violet'},
+  {code:'4003',name:'Violeta érica',hex:'#DE4C8A',group:'violet'},
+  {code:'4004',name:'Burdeos',hex:'#641C34',group:'violet'},
+  {code:'4005',name:'Lila azulado',hex:'#6C4675',group:'violet'},
+  {code:'4006',name:'Púrpura tráfico',hex:'#A03472',group:'violet'},
+  {code:'4007',name:'Violeta púrpura',hex:'#4A192C',group:'violet'},
+  {code:'4008',name:'Violeta señales',hex:'#924E7D',group:'violet'},
+  {code:'4009',name:'Violeta pastel',hex:'#A18594',group:'violet'},
+  {code:'4010',name:'Magenta tele',hex:'#CF3476',group:'violet'},
+  {code:'4011',name:'Violeta perlado',hex:'#8673A1',group:'violet'},
+  {code:'4012',name:'Morado perlado',hex:'#6C6874',group:'violet'},
+  // Azules
+  {code:'5000',name:'Azul violeta',hex:'#354D73',group:'blue'},
+  {code:'5001',name:'Azul verdoso',hex:'#1F3438',group:'blue'},
+  {code:'5002',name:'Azul ultramar',hex:'#20214F',group:'blue'},
+  {code:'5003',name:'Azul zafiro',hex:'#1D2163',group:'blue'},
+  {code:'5004',name:'Azul negruzco',hex:'#14151F',group:'blue'},
+  {code:'5005',name:'Azul señales',hex:'#204FA0',group:'blue'},
+  {code:'5007',name:'Azul brillante',hex:'#3E5F8A',group:'blue'},
+  {code:'5008',name:'Azul grisáceo',hex:'#3E4452',group:'blue'},
+  {code:'5009',name:'Azul azur',hex:'#025669',group:'blue'},
+  {code:'5010',name:'Azul genciana',hex:'#0E294B',group:'blue'},
+  {code:'5011',name:'Azul acero',hex:'#232B35',group:'blue'},
+  {code:'5012',name:'Azul luminoso',hex:'#3B83BD',group:'blue'},
+  {code:'5013',name:'Azul cobalto',hex:'#1F3B7B',group:'blue'},
+  {code:'5014',name:'Azul colombino',hex:'#6C8EBF',group:'blue'},
+  {code:'5015',name:'Azul celeste',hex:'#2271B3',group:'blue'},
+  {code:'5017',name:'Azul tráfico',hex:'#063971',group:'blue'},
+  {code:'5018',name:'Azul turquesa',hex:'#3F888F',group:'blue'},
+  {code:'5019',name:'Azul capri',hex:'#1B5583',group:'blue'},
+  {code:'5020',name:'Azul oceano',hex:'#1D3143',group:'blue'},
+  {code:'5021',name:'Azul agua',hex:'#256D7B',group:'blue'},
+  {code:'5022',name:'Azul noche',hex:'#2F2B3B',group:'blue'},
+  {code:'5023',name:'Azul lejanía',hex:'#4D7C8A',group:'blue'},
+  {code:'5024',name:'Azul pastel',hex:'#5D9B9B',group:'blue'},
+  {code:'5025',name:'Genciana perlado',hex:'#2A6478',group:'blue'},
+  {code:'5026',name:'Azul noche perlado',hex:'#122246',group:'blue'},
+  // Verdes
+  {code:'6000',name:'Verde pátina',hex:'#327662',group:'green'},
+  {code:'6001',name:'Verde esmeralda',hex:'#287233',group:'green'},
+  {code:'6002',name:'Verde hoja',hex:'#295415',group:'green'},
+  {code:'6003',name:'Verde oliva',hex:'#355D2C',group:'green'},
+  {code:'6004',name:'Verde azulado',hex:'#1F3A3D',group:'green'},
+  {code:'6005',name:'Verde musgo',hex:'#2F4538',group:'green'},
+  {code:'6006',name:'Oliva grisáceo',hex:'#554E3A',group:'green'},
+  {code:'6007',name:'Verde botella',hex:'#2B3E22',group:'green'},
+  {code:'6008',name:'Verde parduzco',hex:'#39352A',group:'green'},
+  {code:'6009',name:'Verde abeto',hex:'#313729',group:'green'},
+  {code:'6010',name:'Verde hierba',hex:'#35682D',group:'green'},
+  {code:'6011',name:'Verde reseda',hex:'#587246',group:'green'},
+  {code:'6012',name:'Verde negruzco',hex:'#343E40',group:'green'},
+  {code:'6013',name:'Verde caña',hex:'#6C7C59',group:'green'},
+  {code:'6014',name:'Oliva amarillo',hex:'#4A4327',group:'green'},
+  {code:'6015',name:'Oliva negruzco',hex:'#363933',group:'green'},
+  {code:'6016',name:'Verde turquesa',hex:'#1F5F38',group:'green'},
+  {code:'6017',name:'Verde mayo',hex:'#4E7837',group:'green'},
+  {code:'6018',name:'Verde amarillento',hex:'#57A639',group:'green'},
+  {code:'6019',name:'Verde blanquecino',hex:'#BDECB6',group:'green'},
+  {code:'6020',name:'Verde cromo',hex:'#263120',group:'green'},
+  {code:'6021',name:'Verde pálido',hex:'#89AC76',group:'green'},
+  {code:'6022',name:'Oliva parduzco',hex:'#25221B',group:'green'},
+  {code:'6024',name:'Verde tráfico',hex:'#308446',group:'green'},
+  {code:'6025',name:'Verde helecho',hex:'#3D642D',group:'green'},
+  {code:'6026',name:'Verde ópalo',hex:'#1C542D',group:'green'},
+  {code:'6027',name:'Verde luminoso',hex:'#84C3BE',group:'green'},
+  {code:'6028',name:'Verde pino',hex:'#2C5545',group:'green'},
+  {code:'6029',name:'Verde menta',hex:'#1A6B52',group:'green'},
+  {code:'6032',name:'Verde señales',hex:'#2A7A3B',group:'green'},
+  {code:'6033',name:'Turquesa menta',hex:'#497E76',group:'green'},
+  {code:'6034',name:'Turquesa pastel',hex:'#7FB5B5',group:'green'},
+  {code:'6035',name:'Verde perlado',hex:'#1D4C3B',group:'green'},
+  {code:'6036',name:'Verde ópalo perlado',hex:'#193737',group:'green'},
+  {code:'6037',name:'Verde puro',hex:'#008F39',group:'green'},
+  {code:'6038',name:'Verde brillante',hex:'#00BB2D',group:'green'},
+  // Grises
+  {code:'7000',name:'Gris ardilla',hex:'#7E8B92',group:'grey'},
+  {code:'7001',name:'Gris plata',hex:'#8A9597',group:'grey'},
+  {code:'7002',name:'Gris oliva',hex:'#817F68',group:'grey'},
+  {code:'7003',name:'Gris musgo',hex:'#7A7B6D',group:'grey'},
+  {code:'7004',name:'Gris señales',hex:'#9EA0A1',group:'grey'},
+  {code:'7005',name:'Gris ratón',hex:'#6C7059',group:'grey'},
+  {code:'7006',name:'Gris beige',hex:'#756F61',group:'grey'},
+  {code:'7007',name:'Gris elefante',hex:'#5B6367',group:'grey'},
+  {code:'7008',name:'Gris caqui',hex:'#625F46',group:'grey'},
+  {code:'7009',name:'Gris verdoso',hex:'#494B44',group:'grey'},
+  {code:'7010',name:'Gris lona',hex:'#52636D',group:'grey'},
+  {code:'7011',name:'Gris hierro',hex:'#434B4D',group:'grey'},
+  {code:'7012',name:'Gris basalto',hex:'#4C4F4E',group:'grey'},
+  {code:'7013',name:'Gris parduzco',hex:'#50493A',group:'grey'},
+  {code:'7014',name:'Gris sepia',hex:'#9E9E90',group:'grey'},
+  {code:'7015',name:'Gris pizarra',hex:'#3A3E4A',group:'grey'},
+  {code:'7016',name:'Gris antracita',hex:'#2A3439',group:'grey'},
+  {code:'7021',name:'Gris negruzco',hex:'#222A2C',group:'grey'},
+  {code:'7022',name:'Gris sombra',hex:'#332F2C',group:'grey'},
+  {code:'7023',name:'Gris hormigón',hex:'#686C5E',group:'grey'},
+  {code:'7024',name:'Gris grafita',hex:'#4A4E59',group:'grey'},
+  {code:'7026',name:'Gris granito',hex:'#2D3840',group:'grey'},
+  {code:'7030',name:'Gris piedra',hex:'#8B8C7A',group:'grey'},
+  {code:'7031',name:'Gris azulado',hex:'#566573',group:'grey'},
+  {code:'7032',name:'Gris guijarro',hex:'#B8B799',group:'grey'},
+  {code:'7033',name:'Gris cemento',hex:'#7D8471',group:'grey'},
+  {code:'7034',name:'Gris amarillento',hex:'#8F8B66',group:'grey'},
+  {code:'7035',name:'Gris luminoso',hex:'#D7D7D7',group:'grey'},
+  {code:'7036',name:'Gris platino',hex:'#7F7679',group:'grey'},
+  {code:'7037',name:'Gris polvo',hex:'#7D7F7D',group:'grey'},
+  {code:'7038',name:'Gris ágata',hex:'#B5B8B1',group:'grey'},
+  {code:'7039',name:'Gris cuarzo',hex:'#665F5A',group:'grey'},
+  {code:'7040',name:'Gris ventana',hex:'#8FA0AD',group:'grey'},
+  {code:'7042',name:'Gris tráfico A',hex:'#8A9190',group:'grey'},
+  {code:'7043',name:'Gris tráfico B',hex:'#4A5360',group:'grey'},
+  {code:'7044',name:'Gris seda',hex:'#CAC4B0',group:'grey'},
+  {code:'7045',name:'Gris tele 1',hex:'#959595',group:'grey'},
+  {code:'7046',name:'Gris tele 2',hex:'#757B7F',group:'grey'},
+  {code:'7047',name:'Gris tele 4',hex:'#C9C9C9',group:'grey'},
+  {code:'7048',name:'Gris musgo perlado',hex:'#898176',group:'grey'},
+  // Marrones
+  {code:'8000',name:'Pardo verdoso',hex:'#887142',group:'brown'},
+  {code:'8001',name:'Pardo ocre',hex:'#9C6B30',group:'brown'},
+  {code:'8002',name:'Marrón señales',hex:'#7B5141',group:'brown'},
+  {code:'8003',name:'Pardo arcilla',hex:'#80542A',group:'brown'},
+  {code:'8004',name:'Pardo cobre',hex:'#8E402A',group:'brown'},
+  {code:'8007',name:'Pardo corzo',hex:'#6F4A2F',group:'brown'},
+  {code:'8008',name:'Pardo oliva',hex:'#6F4F28',group:'brown'},
+  {code:'8011',name:'Pardo nuez',hex:'#53332B',group:'brown'},
+  {code:'8012',name:'Pardo rojo',hex:'#582D1D',group:'brown'},
+  {code:'8014',name:'Sepia',hex:'#4A2B22',group:'brown'},
+  {code:'8015',name:'Castaño',hex:'#5B3A2E',group:'brown'},
+  {code:'8016',name:'Caoba',hex:'#4C2F27',group:'brown'},
+  {code:'8017',name:'Chocolate',hex:'#45322E',group:'brown'},
+  {code:'8019',name:'Pardo grisáceo',hex:'#403A3A',group:'brown'},
+  {code:'8022',name:'Pardo negruzco',hex:'#2A2320',group:'brown'},
+  {code:'8023',name:'Pardo anaranjado',hex:'#A65E2E',group:'brown'},
+  {code:'8024',name:'Pardo beige',hex:'#79553D',group:'brown'},
+  {code:'8025',name:'Pardo pálido',hex:'#755C48',group:'brown'},
+  {code:'8027',name:'Marrón cuero',hex:'#6E3B2A',group:'brown'},
+  {code:'8028',name:'Marrón tierra',hex:'#523623',group:'brown'},
+  {code:'8029',name:'Cobre perlado',hex:'#9C4F38',group:'brown'},
+  // Blancos y negros
+  {code:'9001',name:'Blanco crema',hex:'#FDF4E3',group:'white'},
+  {code:'9002',name:'Blanco grisáceo',hex:'#E7EBDA',group:'white'},
+  {code:'9003',name:'Blanco señales',hex:'#F4F3EF',group:'white'},
+  {code:'9004',name:'Negro señales',hex:'#2E3030',group:'white'},
+  {code:'9005',name:'Negro intenso',hex:'#0E0E10',group:'white'},
+  {code:'9006',name:'Aluminio blanco',hex:'#A5A8A6',group:'white'},
+  {code:'9007',name:'Aluminio gris',hex:'#838482',group:'white'},
+  {code:'9010',name:'Blanco puro',hex:'#FAFAF5',group:'white'},
+  {code:'9011',name:'Negro grafito',hex:'#161817',group:'white'},
+  {code:'9016',name:'Blanco tráfico',hex:'#EDEEE8',group:'white'},
+  {code:'9017',name:'Negro tráfico',hex:'#252728',group:'white'},
+  {code:'9018',name:'Blanco papiro',hex:'#C5C9C2',group:'white'},
+];
+
+// Render grid
+const grid = document.getElementById('ral-grid');
+const noResults = document.getElementById('no-results');
+const countEl = document.getElementById('count');
+
+function renderGrid(colors) {
+  grid.innerHTML = colors.map(c => `
+    <div class="ral-card" data-group="${c.group}" data-search="ral ${c.code} ${c.name.toLowerCase()}">
+      <div class="ral-swatch" style="background:${c.hex}"></div>
+      <div class="ral-info">
+        <span class="ral-code">RAL ${c.code}</span>
+        <span class="ral-name">${c.name}</span>
+      </div>
+    </div>
+  `).join('');
+}
+
+renderGrid(RAL_COLORS);
+
+// Filter + search
+let activeGroup = 'all';
+let searchVal = '';
+
+function applyFilters() {
+  const q = searchVal.trim().toLowerCase();
+  let visible = 0;
+  document.querySelectorAll('.ral-card').forEach(card => {
+    const groupMatch = activeGroup === 'all' || card.dataset.group === activeGroup;
+    const searchMatch = !q || card.dataset.search.includes(q);
+    if (groupMatch && searchMatch) {
+      card.classList.remove('hidden');
+      visible++;
+    } else {
+      card.classList.add('hidden');
+    }
+  });
+  countEl.textContent = visible;
+  noResults.classList.toggle('visible', visible === 0);
+}
+
+document.querySelectorAll('.pill').forEach(pill => {
+  pill.addEventListener('click', () => {
+    document.querySelectorAll('.pill').forEach(p => p.classList.remove('active'));
+    pill.classList.add('active');
+    activeGroup = pill.dataset.group;
+    applyFilters();
+  });
+});
+
+document.getElementById('ral-search').addEventListener('input', e => {
+  searchVal = e.target.value;
+  applyFilters();
+});
+
+// FAQ
+function toggleFaq(btn) {
+  const item = btn.closest('.faq-item');
+  const isOpen = item.classList.contains('open');
+  document.querySelectorAll('.faq-item.open').forEach(i => i.classList.remove('open'));
+  if (!isOpen) item.classList.add('open');
+}
+</script>
+</body>
+</html>
