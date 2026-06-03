@@ -459,6 +459,11 @@
     .nav-dropdown-menu a:hover { background: var(--bg); color: var(--navy); }
     .nav-dropdown-menu a.soon { color: var(--muted); pointer-events: none; }
     .dd-dot { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; }
+    /* override dark-header for dropdown */
+    header.dark .nav-dropdown-menu { background: #fff; }
+    header.dark .nav-dropdown-menu a { color: var(--text) !important; }
+    header.dark .nav-dropdown-menu a:hover { color: var(--navy) !important; background: var(--bg); }
+    header.dark .nav-dropdown-menu a.soon { color: var(--muted) !important; }
     @media (max-width: 680px) {
       .nav-dropdown-menu { position: static !important; transform: none !important; box-shadow: none !important; border: none !important; border-left: 2px solid var(--border) !important; border-radius: 0 !important; padding: 0 0 0 12px !important; margin: 4px 0 4px 12px; background: transparent !important; }
     }
