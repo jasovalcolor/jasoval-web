@@ -266,9 +266,9 @@
     /* ─────────────────────────────────────────
        NOSOTROS
     ───────────────────────────────────────── */
-    #nosotros { background: var(--surface); }
-    .nos-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center; margin-top: 80px; }
-    .nos-text { min-width: 0; }
+    #nosotros { background: var(--surface); padding-top: 120px; padding-bottom: 120px; }
+    .nos-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: stretch; margin-top: 60px; }
+    .nos-text { min-width: 0; display: flex; flex-direction: column; }
     .nos-text p { font-size: 16px; color: var(--muted); line-height: 1.8; margin-bottom: 16px; }
     .nos-text p strong { color: var(--text); font-weight: 600; }
     .nos-chips { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 28px; }
@@ -277,32 +277,26 @@
       border-radius: 980px; padding: 7px 18px;
       font-size: 12.5px; font-weight: 600; color: var(--navy);
     }
-    .nosotros-ticker { overflow: hidden; margin-top: 32px; -webkit-mask: linear-gradient(90deg, transparent, black 8%, black 92%, transparent); mask: linear-gradient(90deg, transparent, black 8%, black 92%, transparent); }
+    .nosotros-ticker { overflow: hidden; margin-top: auto; padding-top: 56px; -webkit-mask: linear-gradient(90deg, transparent, black 8%, black 92%, transparent); mask: linear-gradient(90deg, transparent, black 8%, black 92%, transparent); }
     .nosotros-ticker:hover .nosotros-track { animation-play-state: paused; }
     .nosotros-track { display: flex; gap: 12px; width: max-content; animation: ticker-scroll 22s linear infinite; }
     .nosotros-val { display: flex; align-items: center; gap: 10px; background: var(--bg); border: 1px solid var(--border); border-radius: 10px; padding: 12px 18px; flex-shrink: 0; white-space: nowrap; font-size: 13.5px; font-weight: 600; color: var(--navy); }
     .nosotros-val svg { flex-shrink: 0; color: var(--accent); }
     @keyframes ticker-scroll { from { transform: translateX(0); } to { transform: translateX(-50%); } }
     .nos-visual {
-      aspect-ratio: 4/3; border-radius: 24px;
+      border-radius: 24px; min-height: 400px;
       background: linear-gradient(145deg, #0d1f3c 0%, #1a3a5c 60%, #0e2a45 100%);
-      display: grid; grid-template-columns: 1fr 1fr; gap: 14px; padding: 28px;
-      position: relative; overflow: hidden; align-items: stretch;
+      display: flex; flex-direction: column; align-items: center; justify-content: center;
+      gap: 18px; position: relative; overflow: hidden;
     }
     .nos-visual::before {
       content: ''; position: absolute; inset: 0; pointer-events: none;
-      background: radial-gradient(circle at 25% 75%, rgba(59,159,209,.25), transparent 55%),
-                  radial-gradient(circle at 80% 20%, rgba(255,120,0,.15), transparent 45%);
+      background: radial-gradient(circle at 30% 70%, rgba(59,159,209,.2), transparent 55%),
+                  radial-gradient(circle at 75% 25%, rgba(255,120,0,.12), transparent 45%);
     }
-    .nos-prod-card {
-      background: rgba(255,255,255,.07); border: 1px solid rgba(255,255,255,.12);
-      border-radius: 14px; padding: 18px 16px; display: flex; flex-direction: column;
-      gap: 8px; position: relative; z-index: 1; backdrop-filter: blur(4px);
-    }
-    .nos-prod-card:hover { background: rgba(255,255,255,.12); }
-    .nos-prod-icon { font-size: 28px; line-height: 1; }
-    .nos-prod-name { font-size: 13px; font-weight: 700; color: #fff; }
-    .nos-prod-refs { font-size: 11px; color: rgba(255,255,255,.45); font-weight: 500; }
+    .nos-visual-icon-wrap { position: relative; z-index: 1; width: 72px; height: 72px; border-radius: 20px; background: rgba(255,255,255,.08); border: 1px solid rgba(255,255,255,.15); display: flex; align-items: center; justify-content: center; }
+    .nos-visual-label { position: relative; z-index: 1; font-size: 20px; font-weight: 700; color: rgba(255,255,255,.55); letter-spacing: .06em; text-transform: uppercase; }
+    .nos-visual-sub { position: relative; z-index: 1; font-size: 13px; color: rgba(255,255,255,.28); font-weight: 500; }
     @media (max-width: 768px) {
       .nos-grid { grid-template-columns: 1fr; gap: 40px; }
       .nos-visual { aspect-ratio: 16/9; }
@@ -611,26 +605,14 @@
         </div>
       </div>
       <div class="nos-visual reveal">
-        <div class="nos-prod-card">
-          <div class="nos-prod-icon">🎨</div>
-          <div class="nos-prod-name">Gel Coats</div>
-          <div class="nos-prod-refs">Orto · Iso · Iso-NPG · Viniléster</div>
+        <div class="nos-visual-icon-wrap">
+          <svg width="32" height="32" fill="none" stroke="rgba(255,255,255,.5)" stroke-width="1.5" viewBox="0 0 24 24">
+            <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/>
+            <circle cx="12" cy="13" r="4"/>
+          </svg>
         </div>
-        <div class="nos-prod-card">
-          <div class="nos-prod-icon">🧪</div>
-          <div class="nos-prod-name">Resinas</div>
-          <div class="nos-prod-refs">Poliéster · Viniléster · Colada</div>
-        </div>
-        <div class="nos-prod-card">
-          <div class="nos-prod-icon">🧵</div>
-          <div class="nos-prod-name">Fibra de Vidrio</div>
-          <div class="nos-prod-refs">Mat CSM · Roving</div>
-        </div>
-        <div class="nos-prod-card">
-          <div class="nos-prod-icon">⚗️</div>
-          <div class="nos-prod-name">Catalizadores</div>
-          <div class="nos-prod-refs">MEKP · Octoato · DMA</div>
-        </div>
+        <span class="nos-visual-label">Próximamente</span>
+        <span class="nos-visual-sub">Foto instalaciones · Silla, Valencia</span>
       </div>
     </div>
   </div>
