@@ -326,43 +326,6 @@
     @media (max-width: 900px) { .prod-grid { grid-template-columns: repeat(2, 1fr); } }
     @media (max-width: 480px) { .prod-grid { grid-template-columns: 1fr; } }
 
-    /* ─────────────────────────────────────────
-       CATÁLOGO CTA
-    ───────────────────────────────────────── */
-    #catalogo { background: var(--navy-dark); padding: var(--section-gap) 40px; }
-    .cat-inner { max-width: 800px; margin: 0 auto; text-align: center; }
-    .cat-inner .section-tag { color: rgba(59,159,209,.8); justify-content: center; display: flex; }
-    .cat-h2 {
-      font-size: clamp(36px, 5vw, 80px); font-weight: 800; color: #fff;
-      line-height: 1.08; letter-spacing: -2px; margin-top: 16px;
-    }
-    .cat-sub { font-size: 17px; color: rgba(255,255,255,.5); margin-top: 20px; line-height: 1.6; font-weight: 300; }
-    .cat-actions { display: flex; gap: 14px; justify-content: center; margin-top: 44px; flex-wrap: wrap; }
-    .btn-cat {
-      display: inline-flex; align-items: center; gap: 9px;
-      background: var(--accent); color: #fff;
-      padding: 18px 44px; border-radius: 980px;
-      font-weight: 700; font-size: 16px; text-decoration: none;
-      transition: background .2s, transform .2s;
-    }
-    .btn-cat:hover { background: var(--accent-2); transform: scale(1.02); }
-    .btn-cat-ghost {
-      display: inline-flex; align-items: center; gap: 9px;
-      background: transparent; color: rgba(255,255,255,.7);
-      padding: 18px 36px; border-radius: 980px;
-      font-weight: 600; font-size: 16px; text-decoration: none;
-      border: 1px solid rgba(255,255,255,.2);
-      transition: border-color .2s, color .2s, transform .2s;
-    }
-    .btn-cat-ghost:hover { border-color: rgba(255,255,255,.5); color: #fff; transform: scale(1.02); }
-    .cat-features {
-      display: flex; justify-content: center; gap: 32px;
-      margin-top: 48px; flex-wrap: wrap;
-    }
-    @media (max-width: 480px) { .cat-features { gap: 16px; justify-content: space-around; } .cat-feat { flex: 1; min-width: 80px; } }
-    .cat-feat { text-align: center; }
-    .cat-feat-num { font-size: 28px; font-weight: 800; color: var(--accent); display: block; letter-spacing: -1px; }
-    .cat-feat-label { font-size: 11px; color: rgba(255,255,255,.35); text-transform: uppercase; letter-spacing: 1px; font-weight: 500; }
 
     /* ─────────────────────────────────────────
        CONTACTO
@@ -650,27 +613,6 @@
         <div class="prod-desc">Mat CSM y Roving en múltiples gramajes. Compatible con todos los sistemas de resina.</div>
         <div class="prod-count">2 referencias</div>
       </div>
-    </div>
-  </div>
-</section>
-
-<!-- CATÁLOGO CTA -->
-<section id="catalogo">
-  <div class="cat-inner">
-    <span class="section-tag reveal">Catálogo B2B</span>
-    <h2 class="cat-h2 reveal reveal-delay-1">26 productos.<br>Un solo catálogo.</h2>
-    <p class="cat-sub reveal reveal-delay-2">Busca por aplicación, filtra por categoría y solicita cotización directamente. Con carta RAL completa de 216 colores.</p>
-    <div class="cat-actions reveal reveal-delay-3">
-      <a href="https://catalogo.jasovalcolor.com" target="_blank" class="btn-cat">
-        Acceder al catálogo
-        <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-      </a>
-      <a href="/contacto" class="btn-cat-ghost">Hablar con nosotros</a>
-    </div>
-    <div class="cat-features reveal reveal-delay-4">
-      <div class="cat-feat"><span class="cat-feat-num">26</span><span class="cat-feat-label">Productos</span></div>
-      <div class="cat-feat"><span class="cat-feat-num">216</span><span class="cat-feat-label">Colores RAL</span></div>
-      <div class="cat-feat"><span class="cat-feat-num">7</span><span class="cat-feat-label">Categorías</span></div>
     </div>
   </div>
 </section>
