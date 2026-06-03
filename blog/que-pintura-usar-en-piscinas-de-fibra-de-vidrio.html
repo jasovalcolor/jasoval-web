@@ -321,6 +321,8 @@
     .nav-dropdown.open .nav-dropdown-trigger svg { transform: rotate(180deg); }
     .nav-dropdown-menu { display: none !important; position: absolute; top: calc(100% + 8px); left: 50%; transform: translateX(-50%); background: #fff; border: 1.5px solid var(--border); border-radius: 12px; padding: 6px; min-width: 190px; box-shadow: 0 8px 28px rgba(0,0,0,.12); z-index: 300; flex-direction: column; }
     .nav-dropdown.open .nav-dropdown-menu { display: flex !important; }
+    .nav-dropdown:hover .nav-dropdown-menu { display: flex !important; }
+    .nav-dropdown:hover .nav-dropdown-trigger svg { transform: rotate(180deg); }
     .nav-dropdown-menu a { font-size: 12px; font-weight: 500; padding: 8px 12px; color: var(--text); text-decoration: none; border-radius: 7px; white-space: nowrap; display: flex; align-items: center; gap: 8px; transition: background .15s; }
     .nav-dropdown-menu a:hover { background: var(--bg); color: var(--navy); }
     .nav-dropdown-menu a.soon { color: var(--muted); pointer-events: none; }
@@ -813,17 +815,7 @@
     });
   }
 
-  // Composites dropdown
-  const dd = document.querySelector('.nav-dropdown');
-  if (dd) {
-    dd.querySelector('.nav-dropdown-trigger').addEventListener('click', function(e) {
-      e.preventDefault();
-      dd.classList.toggle('open');
-    });
-    document.addEventListener('click', function(e) {
-      if (!dd.contains(e.target)) dd.classList.remove('open');
-    });
-  }
+
 </script>
 </body>
 </html>

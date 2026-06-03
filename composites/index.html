@@ -370,17 +370,7 @@
   }, { threshold: 0.1 });
   document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
 
-  // Composites dropdown
-  const dd = document.querySelector('.nav-dropdown');
-  if (dd) {
-    dd.querySelector('.nav-dropdown-trigger').addEventListener('click', function(e) {
-      e.preventDefault();
-      dd.classList.toggle('open');
-    });
-    document.addEventListener('click', function(e) {
-      if (!dd.contains(e.target)) dd.classList.remove('open');
-    });
-  }
+
 </script>
 </body>
 </html>
