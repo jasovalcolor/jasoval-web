@@ -4,8 +4,8 @@
     {
       "name": "jasoval-web",
       "runtimeExecutable": "npx",
-      "runtimeArgs": ["serve", "-p", "4200", "/tmp/jasoval-web"],
-      "port": 4200
+      "runtimeArgs": ["serve", "-p", "4321", "/tmp/jasoval-web"],
+      "port": 4321
     }
   ]
 }

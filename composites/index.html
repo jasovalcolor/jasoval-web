@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Materiales Composite — Gel Coat, Resinas y más | Jasoval Color</title>
+  <meta name="description" content="Fabricantes de materiales composite en Valencia: gel coat, resinas, catalizadores y fibras para profesionales. Fabricación propia, stock permanente y asesoramiento técnico." />
+  <link rel="canonical" href="https://jasovalcolor.com/composites/" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --navy: #0f314a; --navy-dark: #0a2236; --navy-mid: #164469; --navy-lite: #1e5b8a;
+      --accent: #3b9fd1; --accent-2: #2e8bbf;
+      --bg: #f5f5f7; --surface: #ffffff; --border: #d2d2d7; --text: #1d1d1f; --muted: #86868b;
+    }
+    body { font-family: 'Montserrat', sans-serif; background: var(--bg); color: var(--text); -webkit-font-smoothing: antialiased; overflow-x: hidden; }
+
+    /* HEADER */
+    header { position: fixed; top: 0; left: 0; right: 0; z-index: 200; height: 52px; display: flex; align-items: center; justify-content: space-between; padding: 0 40px; border-bottom: 1px solid rgba(0,0,0,.08); }
+    header::before { content: ''; position: absolute; inset: 0; background: rgba(255,255,255,.85); backdrop-filter: saturate(180%) blur(20px); z-index: -1; }
+    .logo { display: flex; align-items: center; text-decoration: none; }
+    .logo-img { height: 36px; width: auto; display: block; }
+    nav { display: flex; align-items: center; gap: 2px; }
+    nav a { font-size: 12px; font-weight: 500; color: var(--muted); text-decoration: none; padding: 6px 12px; border-radius: 6px; transition: color .2s, background .2s; }
+    nav a:hover { color: var(--text); background: rgba(0,0,0,.05); }
+    nav a.active { color: var(--navy); font-weight: 700; }
+    .nav-cta { background: var(--accent) !important; color: #fff !important; border-radius: 20px !important; padding: 6px 16px !important; font-weight: 600 !important; }
+    .nav-cta:hover { background: var(--accent-2) !important; }
+    .hamburger { display: none; cursor: pointer; padding: 6px; background: none; border: none; }
+    .hamburger span { display: block; width: 20px; height: 1.5px; background: var(--text); margin: 4px 0; border-radius: 2px; }
+    @media (max-width: 680px) {
+      header { padding: 0 24px; } .hamburger { display: block; }
+      nav { display: none; position: fixed; top: 52px; left: 0; right: 0; height: calc(100vh - 52px); z-index: 200; background: rgba(255,255,255,.97); backdrop-filter: blur(20px); flex-direction: column; justify-content: center; align-items: center; gap: 8px; }
+      nav.open { display: flex; } nav a { font-size: 20px; padding: 14px 24px; } .nav-cta { margin-top: 8px; }
+    }
+
+    /* BREADCRUMB */
+    .breadcrumb { margin-top: 52px; padding: 14px 40px; background: var(--surface); border-bottom: 1px solid var(--border); display: flex; align-items: center; gap: 8px; font-size: 12px; color: var(--muted); flex-wrap: wrap; }
+    .breadcrumb a { color: var(--accent); text-decoration: none; transition: color .2s; font-size: inherit; padding: 0; }
+    .breadcrumb a:hover { color: var(--accent-2); text-decoration: underline; }
+    .breadcrumb-sep { color: var(--border); font-size: 10px; }
+    .breadcrumb-current { color: var(--text); font-weight: 600; }
+    @media (max-width: 680px) { .breadcrumb { padding: 10px 16px; gap: 4px; } }
+
+    /* HERO */
+    .page-hero { background: linear-gradient(160deg, var(--navy-dark) 0%, var(--navy-mid) 100%); padding: 64px 40px 60px; position: relative; overflow: hidden; }
+    .page-hero-orb { position: absolute; width: 500px; height: 500px; border-radius: 50%; background: radial-gradient(circle, rgba(59,159,209,.18) 0%, transparent 70%); top: -120px; right: -80px; pointer-events: none; }
+    .container { max-width: 1080px; margin: 0 auto; }
+    .page-hero-tag { font-size: 11px; font-weight: 700; color: var(--accent); letter-spacing: 2.5px; text-transform: uppercase; margin-bottom: 14px; display: block; animation: fadeUp .5s .1s both; }
+    .page-hero h1 { font-size: clamp(28px, 4vw, 48px); font-weight: 800; color: #fff; line-height: 1.1; letter-spacing: -1.5px; animation: fadeUp .5s .2s both; }
+    .page-hero h1 em { font-style: normal; color: var(--accent); }
+    .page-hero p { font-size: 15px; color: rgba(255,255,255,.55); font-weight: 400; margin-top: 14px; max-width: 580px; line-height: 1.65; animation: fadeUp .5s .3s both; }
+    @keyframes fadeUp { from { opacity: 0; transform: translateY(16px); } to { opacity: 1; transform: translateY(0); } }
+    @media (max-width: 680px) { .page-hero { padding: 48px 24px 44px; } }
+
+    /* PRODUCTS GRID */
+    .products-section { padding: 56px 40px; }
+    .section-label { font-size: 11px; font-weight: 700; color: var(--accent); letter-spacing: 2px; text-transform: uppercase; margin-bottom: 32px; }
+    .products-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 20px; }
+    @media (max-width: 680px) { .products-section { padding: 40px 20px; } .products-grid { grid-template-columns: 1fr; } }
+
+    /* PRODUCT CARD */
+    .prod-card { background: var(--surface); border: 1.5px solid var(--border); border-radius: 16px; overflow: hidden; text-decoration: none; color: inherit; display: flex; flex-direction: column; transition: transform .2s, box-shadow .2s, border-color .2s; }
+    .prod-card:hover { transform: translateY(-4px); box-shadow: 0 12px 32px rgba(0,0,0,.1); border-color: var(--accent); }
+    .prod-card.coming-soon { opacity: .55; pointer-events: none; cursor: default; }
+    .prod-card-visual { height: 160px; display: flex; align-items: center; justify-content: center; position: relative; }
+    .prod-card-body { padding: 22px 24px 26px; flex: 1; display: flex; flex-direction: column; }
+    .prod-badge { position: absolute; top: 14px; right: 14px; font-size: 10px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; padding: 4px 10px; border-radius: 20px; }
+    .badge-new { background: var(--accent); color: #fff; }
+    .badge-soon { background: rgba(0,0,0,.12); color: rgba(0,0,0,.5); }
+    .prod-card-icon { width: 56px; height: 56px; border-radius: 14px; display: flex; align-items: center; justify-content: center; }
+    .prod-card-title { font-size: 18px; font-weight: 800; color: var(--text); margin-bottom: 8px; letter-spacing: -.3px; }
+    .prod-card-desc { font-size: 13px; color: var(--muted); line-height: 1.6; flex: 1; }
+    .prod-card-tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 16px; }
+    .prod-tag { font-size: 10px; font-weight: 600; background: var(--bg); border: 1px solid var(--border); color: var(--muted); padding: 3px 9px; border-radius: 20px; }
+    .prod-card-arrow { display: flex; align-items: center; gap: 6px; margin-top: 20px; font-size: 12px; font-weight: 700; color: var(--accent); }
+
+    /* WHY */
+    .why-section { background: var(--surface); padding: 56px 40px; border-top: 1px solid var(--border); }
+    .why-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 24px; margin-top: 32px; }
+    .why-card { background: var(--bg); border-radius: 14px; padding: 24px; }
+    .why-icon { width: 40px; height: 40px; background: rgba(59,159,209,.12); border-radius: 10px; display: flex; align-items: center; justify-content: center; color: var(--accent); margin-bottom: 14px; }
+    .why-card h4 { font-size: 13px; font-weight: 700; color: var(--text); margin-bottom: 6px; }
+    .why-card p { font-size: 12px; color: var(--muted); line-height: 1.6; }
+    @media (max-width: 680px) { .why-section { padding: 40px 20px; } }
+
+    /* CTA */
+    .cta-section { background: linear-gradient(135deg, var(--navy-dark), var(--navy-mid)); padding: 64px 40px; text-align: center; }
+    .cta-section h2 { font-size: clamp(24px, 3vw, 36px); font-weight: 800; color: #fff; letter-spacing: -1px; line-height: 1.2; }
+    .cta-section h2 em { font-style: normal; color: var(--accent); }
+    .cta-section p { font-size: 15px; color: rgba(255,255,255,.55); margin-top: 12px; }
+    .cta-btns { display: flex; gap: 12px; justify-content: center; margin-top: 28px; flex-wrap: wrap; }
+    .cta-btn-p { background: var(--accent); color: #fff; padding: 13px 28px; border-radius: 25px; font-size: 14px; font-weight: 700; text-decoration: none; display: flex; align-items: center; gap: 8px; transition: background .2s; }
+    .cta-btn-p:hover { background: var(--accent-2); }
+    .cta-btn-g { background: rgba(255,255,255,.1); color: #fff; padding: 13px 28px; border-radius: 25px; font-size: 14px; font-weight: 700; text-decoration: none; border: 1.5px solid rgba(255,255,255,.2); transition: background .2s; }
+    .cta-btn-g:hover { background: rgba(255,255,255,.18); }
+
+    /* FOOTER */
+    footer { background: var(--navy-dark); color: rgba(255,255,255,.6); font-size: 12px; }
+    .footer-top { max-width: 1080px; margin: 0 auto; padding: 48px 40px 32px; display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 40px; }
+    .footer-brand p { font-size: 12px; color: rgba(255,255,255,.4); line-height: 1.7; margin-top: 12px; max-width: 260px; }
+    .footer-logo { display: flex; align-items: center; gap: 8px; text-decoration: none; }
+    .footer-logo-mark { width: 28px; height: 28px; background: linear-gradient(135deg,var(--accent),var(--navy-lite)); border-radius: 7px; display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 12px; color: #fff; }
+    .footer-logo-name { font-size: 14px; font-weight: 700; color: #fff; }
+    .footer-links h4 { font-size: 11px; font-weight: 700; color: rgba(255,255,255,.9); letter-spacing: 1.5px; text-transform: uppercase; margin-bottom: 14px; }
+    .footer-links ul { list-style: none; display: flex; flex-direction: column; gap: 8px; }
+    .footer-links a { color: rgba(255,255,255,.45); text-decoration: none; transition: color .2s; }
+    .footer-links a:hover { color: #fff; }
+    .footer-bottom { border-top: 1px solid rgba(255,255,255,.08); max-width: 1080px; margin: 0 auto; padding: 20px 40px; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 6px; }
+    .footer-bottom a { color: rgba(255,255,255,.45); text-decoration: none; }
+    .footer-bottom a:hover { color: #fff; }
+    @media (max-width: 860px) { .footer-top { grid-template-columns: 1fr 1fr; } }
+    @media (max-width: 680px) { .footer-top { grid-template-columns: 1fr; padding: 32px 20px 24px; gap: 28px; } .footer-bottom { padding: 16px 20px; flex-direction: column; } }
+
+    /* WA */
+    .wa { position: fixed; bottom: 24px; right: 24px; width: 52px; height: 52px; background: #25D366; border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 16px rgba(37,211,102,.4); z-index: 300; transition: transform .2s; }
+    .wa:hover { transform: scale(1.08); }
+
+    /* reveal */
+    .reveal { opacity: 0; transform: translateY(20px); transition: opacity .55s, transform .55s; }
+    .reveal.visible { opacity: 1; transform: none; }
+  </style>
+</head>
+<body>
+
+<header>
+  <a class="logo" href="/">
+    <img src="/logo.svg" alt="Jasoval Color" class="logo-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+    <div class="logo-mark" style="display:none">JC</div>
+  </a>
+  <button class="hamburger" onclick="document.getElementById('nav').classList.toggle('open')" aria-label="Menú">
+    <span></span><span></span><span></span>
+  </button>
+  <nav id="nav">
+    <a href="/composites/" class="active">Composites</a>
+    <a href="/blog">Blog</a>
+    <a href="/carta-ral">Carta RAL</a>
+    <a href="/contacto">Contacto</a>
+    <a href="https://catalogo.jasovalcolor.com" target="_blank" class="nav-cta">Catálogo B2B</a>
+  </nav>
+</header>
+
+<nav class="breadcrumb" aria-label="Ruta de navegación">
+  <a href="/">Inicio</a>
+  <span class="breadcrumb-sep">›</span>
+  <span class="breadcrumb-current">Composites</span>
+</nav>
+
+<div class="page-hero">
+  <div class="page-hero-orb"></div>
+  <div class="container">
+    <span class="page-hero-tag">Fabricación propia · Silla, Valencia</span>
+    <h1>Materiales <em>Composite</em></h1>
+    <p>Fabricamos y suministramos gel coat, resinas y materiales auxiliares para profesionales de la construcción, náutica, piscinas y carrocería. Fabricación propia, stock permanente.</p>
+  </div>
+</div>
+
+<section class="products-section">
+  <div class="container">
+    <p class="section-label">Nuestros productos</p>
+    <div class="products-grid">
+
+      <!-- Gel Coat -->
+      <a href="/composites/gel-coat" class="prod-card reveal">
+        <div class="prod-card-visual" style="background: linear-gradient(135deg, #0a2236 0%, #1e5b8a 100%);">
+          <span class="prod-badge badge-new">Disponible</span>
+          <div class="prod-card-icon" style="background: rgba(59,159,209,.2);">
+            <svg width="28" height="28" fill="none" stroke="#3b9fd1" stroke-width="2" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"/><path d="M12 6v6l4 2"/></svg>
+          </div>
+        </div>
+        <div class="prod-card-body">
+          <h2 class="prod-card-title">Gel Coat</h2>
+          <p class="prod-card-desc">Gama completa de gel coat para piscinas, náutica, carrocería y construcción. ISO-NPG, ortoftálico, marino y especiales en cualquier color RAL.</p>
+          <div class="prod-card-tags">
+            <span class="prod-tag">ISO-NPG</span>
+            <span class="prod-tag">Ortoftálico</span>
+            <span class="prod-tag">Marino</span>
+            <span class="prod-tag">RAL a medida</span>
+          </div>
+          <div class="prod-card-arrow">
+            Ver gama completa
+            <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </div>
+        </div>
+      </a>
+
+      <!-- Resinas — próximamente -->
+      <div class="prod-card coming-soon reveal">
+        <div class="prod-card-visual" style="background: linear-gradient(135deg, #1a2e1a 0%, #2d4f2d 100%);">
+          <span class="prod-badge badge-soon">Próximamente</span>
+          <div class="prod-card-icon" style="background: rgba(100,180,100,.15);">
+            <svg width="28" height="28" fill="none" stroke="#7ab87a" stroke-width="2" viewBox="0 0 24 24"><path d="M9 3H5a2 2 0 0 0-2 2v4m6-6h10a2 2 0 0 1 2 2v4M9 3v18m0 0h10a2 2 0 0 0 2-2V9M9 21H5a2 2 0 0 1-2-2V9m0 0h18"/></svg>
+          </div>
+        </div>
+        <div class="prod-card-body">
+          <h2 class="prod-card-title">Resinas</h2>
+          <p class="prod-card-desc">Resinas de poliéster y viniléster para laminación manual, infusión y RTM. Alta resistencia química y mecánica.</p>
+          <div class="prod-card-tags">
+            <span class="prod-tag">Poliéster</span>
+            <span class="prod-tag">Viniléster</span>
+            <span class="prod-tag">Infusión</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Catalizadores — próximamente -->
+      <div class="prod-card coming-soon reveal">
+        <div class="prod-card-visual" style="background: linear-gradient(135deg, #1e1a0a 0%, #4f3d0a 100%);">
+          <span class="prod-badge badge-soon">Próximamente</span>
+          <div class="prod-card-icon" style="background: rgba(200,160,50,.15);">
+            <svg width="28" height="28" fill="none" stroke="#c8a032" stroke-width="2" viewBox="0 0 24 24"><path d="M10 2v7.31"/><path d="M14 9.3V1.99"/><path d="M8.5 2h7"/><path d="M14 9.3a6.5 6.5 0 1 1-4 0"/></svg>
+          </div>
+        </div>
+        <div class="prod-card-body">
+          <h2 class="prod-card-title">Catalizadores</h2>
+          <p class="prod-card-desc">Peróxidos y activadores compatibles con nuestra gama de resinas y gel coats. Distintas velocidades de gelificación.</p>
+          <div class="prod-card-tags">
+            <span class="prod-tag">MEKP</span>
+            <span class="prod-tag">Acelerador de cobalto</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Fibras — próximamente -->
+      <div class="prod-card coming-soon reveal">
+        <div class="prod-card-visual" style="background: linear-gradient(135deg, #0e1a2e 0%, #1a3050 100%);">
+          <span class="prod-badge badge-soon">Próximamente</span>
+          <div class="prod-card-icon" style="background: rgba(59,159,209,.15);">
+            <svg width="28" height="28" fill="none" stroke="#3b9fd1" stroke-width="2" viewBox="0 0 24 24"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+          </div>
+        </div>
+        <div class="prod-card-body">
+          <h2 class="prod-card-title">Fibras y Refuerzos</h2>
+          <p class="prod-card-desc">Mats, tejidos y rovings de fibra de vidrio para todo tipo de laminados. Diferentes gramajes y formatos.</p>
+          <div class="prod-card-tags">
+            <span class="prod-tag">Mat 300/450</span>
+            <span class="prod-tag">Roving</span>
+            <span class="prod-tag">Tejido biaxial</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="why-section">
+  <div class="container">
+    <p class="section-label">Por qué Jasoval</p>
+    <div class="why-grid">
+      <div class="why-card reveal">
+        <div class="why-icon">
+          <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+        </div>
+        <h4>Fabricación propia</h4>
+        <p>Producimos en nuestra planta de Silla, Valencia. Sin intermediarios, con control total de calidad.</p>
+      </div>
+      <div class="why-card reveal">
+        <div class="why-icon">
+          <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        </div>
+        <h4>25 años de experiencia</h4>
+        <p>Desde 1999 suministrando a profesionales de toda España. Conocemos cada aplicación.</p>
+      </div>
+      <div class="why-card reveal">
+        <div class="why-icon">
+          <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M20 7H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2z"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+        </div>
+        <h4>Stock permanente</h4>
+        <p>Entrega en 24–48 h en productos estándar. Sin mínimos de pedido en la mayoría de referencias.</p>
+      </div>
+      <div class="why-card reveal">
+        <div class="why-icon">
+          <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+        </div>
+        <h4>Soporte técnico real</h4>
+        <p>Asesoramiento directo por parte del equipo técnico. Respuesta el mismo día.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cta-section">
+  <h2>¿Tienes un proyecto composite?<br><em>Cuéntanoslo</em></h2>
+  <p>Presupuesto sin compromiso y asesoramiento técnico incluido.</p>
+  <div class="cta-btns">
+    <a href="/contacto" class="cta-btn-p">Pedir presupuesto <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+    <a href="https://wa.me/34647594095" target="_blank" class="cta-btn-g">WhatsApp directo</a>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-top">
+    <div class="footer-brand">
+      <a class="footer-logo" href="/"><div class="footer-logo-mark">JC</div><span class="footer-logo-name">Jasoval Color</span></a>
+      <p>Fabricantes de materiales composite en Silla, Valencia. Suministro a profesionales de toda España.</p>
+    </div>
+    <div class="footer-links">
+      <h4>Composites</h4>
+      <ul>
+        <li><a href="/composites/gel-coat">Gel Coat</a></li>
+        <li><a href="/composites/gel-coat/iso-npg">Gel Coat ISO-NPG</a></li>
+      </ul>
+    </div>
+    <div class="footer-links">
+      <h4>Empresa</h4>
+      <ul>
+        <li><a href="/contacto">Contacto</a></li>
+        <li><a href="/carta-ral">Carta RAL</a></li>
+        <li><a href="/blog">Blog</a></li>
+        <li><a href="https://catalogo.jasovalcolor.com" target="_blank">Catálogo B2B</a></li>
+      </ul>
+    </div>
+    <div class="footer-links">
+      <h4>Legal</h4>
+      <ul>
+        <li><a href="/aviso-legal">Aviso Legal</a></li>
+        <li><a href="/privacidad">Política de Privacidad</a></li>
+        <li><a href="/cookies">Política de Cookies</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 Jasoval Color · Carr. de Cádiz, Km 889,7 · 46460 Silla, Valencia</p>
+    <p><a href="mailto:javier@jasovalcolor.com">javier@jasovalcolor.com</a> · <a href="tel:+34647594095">+34 647 594 095</a></p>
+  </div>
+</footer>
+
+<a class="wa" href="https://wa.me/34647594095" target="_blank" aria-label="WhatsApp">
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+</a>
+
+<script>
+  const obs = new IntersectionObserver(entries => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); obs.unobserve(e.target); } });
+  }, { threshold: 0.1 });
+  document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
+</script>
+</body>
+</html>
