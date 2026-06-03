@@ -628,6 +628,18 @@ function toggleFaq(btn) {
   document.querySelectorAll('.faq-item.open').forEach(i => i.classList.remove('open'));
   if (!isOpen) item.classList.add('open');
 }
+
+  // Composites dropdown
+  const dd = document.querySelector('.nav-dropdown');
+  if (dd) {
+    dd.querySelector('.nav-dropdown-trigger').addEventListener('click', function(e) {
+      e.preventDefault();
+      dd.classList.toggle('open');
+    });
+    document.addEventListener('click', function(e) {
+      if (!dd.contains(e.target)) dd.classList.remove('open');
+    });
+  }
 </script>
 </body>
 </html>
