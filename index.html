@@ -201,7 +201,7 @@
     #especialidades { background: var(--bg); }
     .esp-grid {
       display: grid;
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: repeat(3, 1fr);
       gap: 16px; margin-top: 56px;
     }
     .esp-card {
@@ -246,9 +246,6 @@
     }
     @media (max-width: 768px) {
       .esp-grid { grid-template-columns: 1fr; }
-      .esp-card-big { grid-column: span 1; grid-template-columns: 1fr; }
-      .esp-card-big-visual { display: none; }
-      .esp-card-big-text { padding: 36px 32px; }
     }
 
     /* ─────────────────────────────────────────
@@ -528,20 +525,16 @@
     <p class="section-lead reveal reveal-delay-2">Formulamos y fabricamos recubrimientos específicos para cada aplicación. No vendemos lo mismo para todo — cada sector tiene su producto.</p>
 
     <div class="esp-grid">
-      <!-- Card grande: piscinas -->
-      <div class="esp-card esp-card-big reveal reveal-delay-1">
-        <div class="esp-card-big-text">
-          <span class="esp-tag">Especialidad destacada</span>
-          <h3 class="esp-title" style="font-size:28px; letter-spacing:-.5px;">Gel Coat para Piscinas</h3>
-          <p class="esp-desc">Gel coat Iso-NPG de alto rendimiento. Resistencia UV superior al 85% tras 1.000h, impermeabilidad total y vida útil de 10–15 años. Disponible en cualquier color RAL o NCS.</p>
-          <a href="/contacto" class="esp-link" style="color:var(--accent);">
-            Solicitar información
-            <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-          </a>
-        </div>
-        <div class="esp-card-big-visual">
-          <span class="esp-icon-big">🏊</span>
-        </div>
+
+      <!-- Piscinas -->
+      <div class="esp-card reveal reveal-delay-1">
+        <span class="esp-tag">Piscinas</span>
+        <h3 class="esp-title">Gel Coat para Piscinas</h3>
+        <p class="esp-desc">Gel coat Iso-NPG de alto rendimiento. Resistencia UV superior al 85% tras 1.000h, impermeabilidad total y vida útil de 10–15 años. Disponible en cualquier color RAL.</p>
+        <a href="/contacto" class="esp-link">
+          Solicitar información <svg width="13" height="13" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <div class="esp-card-bg">🏊</div>
       </div>
 
       <!-- Barcos -->
@@ -555,19 +548,8 @@
         <div class="esp-card-bg">⚓</div>
       </div>
 
-      <!-- Carrocerías -->
-      <div class="esp-card reveal reveal-delay-3">
-        <span class="esp-tag">Automoción</span>
-        <h3 class="esp-title">Gel Coat para Carrocerías</h3>
-        <p class="esp-desc">Resistencia química a combustibles y disolventes. Estabilidad térmica hasta 100°C. Para carrocerías de fibra de vidrio, furgones, caravanas y vehículos eléctricos.</p>
-        <a href="/contacto" class="esp-link">
-          Saber más <svg width="13" height="13" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-        </a>
-        <div class="esp-card-bg">🚐</div>
-      </div>
-
       <!-- Platos ducha -->
-      <div class="esp-card reveal reveal-delay-4">
+      <div class="esp-card reveal reveal-delay-3">
         <span class="esp-tag">Sanitario</span>
         <h3 class="esp-title">Pintura para Platos de Ducha</h3>
         <p class="esp-desc">Poliuretano antideslizante bicomponente o gel coat Iso-NPG. Renovación hasta un 70% más económica que la sustitución. Durabilidad mínima de 5 años.</p>
@@ -576,6 +558,7 @@
         </a>
         <div class="esp-card-bg">🚿</div>
       </div>
+
     </div>
   </div>
 </section>
