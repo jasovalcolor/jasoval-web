@@ -268,6 +268,7 @@
     ───────────────────────────────────────── */
     #nosotros { background: var(--surface); }
     .nos-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center; margin-top: 80px; }
+    .nos-text { min-width: 0; }
     .nos-text p { font-size: 16px; color: var(--muted); line-height: 1.8; margin-bottom: 16px; }
     .nos-text p strong { color: var(--text); font-weight: 600; }
     .nos-chips { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 28px; }
@@ -276,24 +277,32 @@
       border-radius: 980px; padding: 7px 18px;
       font-size: 12.5px; font-weight: 600; color: var(--navy);
     }
-    .nosotros-ticker { overflow: hidden; margin-top: 32px; -webkit-mask: linear-gradient(90deg, transparent, black 10%, black 90%, transparent); mask: linear-gradient(90deg, transparent, black 10%, black 90%, transparent); }
+    .nosotros-ticker { overflow: hidden; margin-top: 32px; -webkit-mask: linear-gradient(90deg, transparent, black 8%, black 92%, transparent); mask: linear-gradient(90deg, transparent, black 8%, black 92%, transparent); }
     .nosotros-ticker:hover .nosotros-track { animation-play-state: paused; }
-    .nosotros-track { display: flex; gap: 14px; width: max-content; animation: ticker-scroll 22s linear infinite; }
-    .nosotros-val { display: flex; align-items: center; gap: 12px; background: var(--bg); border: 1px solid var(--border); border-radius: 12px; padding: 14px 22px; flex-shrink: 0; white-space: nowrap; font-size: 14px; font-weight: 600; color: var(--navy); }
+    .nosotros-track { display: flex; gap: 12px; width: max-content; animation: ticker-scroll 22s linear infinite; }
+    .nosotros-val { display: flex; align-items: center; gap: 10px; background: var(--bg); border: 1px solid var(--border); border-radius: 10px; padding: 12px 18px; flex-shrink: 0; white-space: nowrap; font-size: 13.5px; font-weight: 600; color: var(--navy); }
     .nosotros-val svg { flex-shrink: 0; color: var(--accent); }
     @keyframes ticker-scroll { from { transform: translateX(0); } to { transform: translateX(-50%); } }
     .nos-visual {
       aspect-ratio: 4/3; border-radius: 24px;
-      background: linear-gradient(135deg, var(--navy-mid), var(--navy-lite));
-      display: flex; flex-direction: column; align-items: center; justify-content: center;
-      gap: 12px; position: relative; overflow: hidden;
+      background: linear-gradient(145deg, #0d1f3c 0%, #1a3a5c 60%, #0e2a45 100%);
+      display: grid; grid-template-columns: 1fr 1fr; gap: 14px; padding: 28px;
+      position: relative; overflow: hidden; align-items: stretch;
     }
     .nos-visual::before {
-      content: ''; position: absolute; inset: 0;
-      background: radial-gradient(circle at 30% 70%, rgba(59,159,209,.3), transparent 60%);
+      content: ''; position: absolute; inset: 0; pointer-events: none;
+      background: radial-gradient(circle at 25% 75%, rgba(59,159,209,.25), transparent 55%),
+                  radial-gradient(circle at 80% 20%, rgba(255,120,0,.15), transparent 45%);
     }
-    .nos-visual-icon { font-size: 72px; opacity: .2; }
-    .nos-visual-text { font-size: 13px; color: rgba(255,255,255,.35); font-weight: 500; }
+    .nos-prod-card {
+      background: rgba(255,255,255,.07); border: 1px solid rgba(255,255,255,.12);
+      border-radius: 14px; padding: 18px 16px; display: flex; flex-direction: column;
+      gap: 8px; position: relative; z-index: 1; backdrop-filter: blur(4px);
+    }
+    .nos-prod-card:hover { background: rgba(255,255,255,.12); }
+    .nos-prod-icon { font-size: 28px; line-height: 1; }
+    .nos-prod-name { font-size: 13px; font-weight: 700; color: #fff; }
+    .nos-prod-refs { font-size: 11px; color: rgba(255,255,255,.45); font-weight: 500; }
     @media (max-width: 768px) {
       .nos-grid { grid-template-columns: 1fr; gap: 40px; }
       .nos-visual { aspect-ratio: 16/9; }
@@ -575,10 +584,6 @@
 <section id="nosotros">
   <div class="container">
     <div class="nos-grid">
-      <div class="nos-visual reveal">
-        <span class="nos-visual-icon">🏭</span>
-        <span class="nos-visual-text">Foto instalaciones · Silla, Valencia</span>
-      </div>
       <div class="nos-text">
         <span class="section-tag reveal">Quiénes somos</span>
         <h2 class="section-h2 reveal reveal-delay-1">Más que<br>proveedores</h2>
@@ -603,6 +608,28 @@
             <div class="nosotros-val"><svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/><line x1="3" y1="6" x2="3.01" y2="6"/><line x1="3" y1="12" x2="3.01" y2="12"/><line x1="3" y1="18" x2="3.01" y2="18"/></svg>Gama completa en un solo proveedor</div>
             <div class="nosotros-val"><svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>Trato directo con el fabricante</div>
           </div>
+        </div>
+      </div>
+      <div class="nos-visual reveal">
+        <div class="nos-prod-card">
+          <div class="nos-prod-icon">🎨</div>
+          <div class="nos-prod-name">Gel Coats</div>
+          <div class="nos-prod-refs">Orto · Iso · Iso-NPG · Viniléster</div>
+        </div>
+        <div class="nos-prod-card">
+          <div class="nos-prod-icon">🧪</div>
+          <div class="nos-prod-name">Resinas</div>
+          <div class="nos-prod-refs">Poliéster · Viniléster · Colada</div>
+        </div>
+        <div class="nos-prod-card">
+          <div class="nos-prod-icon">🧵</div>
+          <div class="nos-prod-name">Fibra de Vidrio</div>
+          <div class="nos-prod-refs">Mat CSM · Roving</div>
+        </div>
+        <div class="nos-prod-card">
+          <div class="nos-prod-icon">⚗️</div>
+          <div class="nos-prod-name">Catalizadores</div>
+          <div class="nos-prod-refs">MEKP · Octoato · DMA</div>
         </div>
       </div>
     </div>
