@@ -113,13 +113,13 @@
     #ral-search { width: 100%; padding: 10px 14px 10px 38px; border: 1.5px solid var(--border); border-radius: 10px; font-size: 14px; font-family: 'Montserrat', sans-serif; color: var(--text); outline: none; transition: border-color .2s; background: var(--bg); }
     #ral-search:focus { border-color: var(--accent); background: #fff; }
     #ral-search::placeholder { color: var(--muted); }
-    .filter-pills { display: flex; gap: 6px; overflow-x: auto; padding-bottom: 2px; scrollbar-width: none; flex-wrap: nowrap; }
+    .filter-pills { display: flex; gap: 6px; flex-wrap: wrap; }
     .filter-pills::-webkit-scrollbar { display: none; }
     .pill { flex-shrink: 0; padding: 7px 16px; border-radius: 20px; font-size: 13px; font-weight: 600; border: 1.5px solid var(--border); background: #fff; cursor: pointer; color: var(--text); font-family: 'Montserrat', sans-serif; transition: all .15s; display: flex; align-items: center; gap: 6px; white-space: nowrap; }
     .pill:hover { border-color: var(--accent); color: var(--accent); }
     .pill.active { background: var(--navy); border-color: var(--navy); color: #fff; }
     .pill-dot { width: 12px; height: 12px; border-radius: 50%; display: inline-block; flex-shrink: 0; }
-    @media (max-width: 680px) { .controls { padding: 12px 16px; } }
+    @media (max-width: 680px) { .controls { padding: 12px 16px; } .filter-pills { flex-wrap: nowrap; overflow-x: auto; scrollbar-width: none; } }
 
     /* COLOR COUNT */
     .count-bar { padding: 12px 40px; max-width: 1080px; margin: 0 auto; }
