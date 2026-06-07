@@ -195,58 +195,6 @@
     .reveal-delay-3 { transition-delay: .3s; }
     .reveal-delay-4 { transition-delay: .4s; }
 
-    /* ─────────────────────────────────────────
-       ESPECIALIDADES
-    ───────────────────────────────────────── */
-    #especialidades { background: var(--bg); }
-    .esp-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 16px; margin-top: 56px;
-    }
-    .esp-card {
-      background: var(--surface); border-radius: 20px;
-      padding: 44px 40px; position: relative; overflow: hidden;
-      border: 1px solid var(--border);
-      transition: transform .3s, box-shadow .3s;
-      cursor: default;
-    }
-    .esp-card:hover { transform: translateY(-4px); box-shadow: 0 24px 60px rgba(0,0,0,.1); }
-    .esp-card-big { grid-column: span 2; display: grid; grid-template-columns: 1fr 1fr; gap: 0; padding: 0; background: var(--navy); border-color: transparent; }
-    .esp-card-big:hover { transform: translateY(-4px); box-shadow: 0 24px 60px rgba(15,49,74,.35); }
-    .esp-card-big-text { padding: 52px 52px; display: flex; flex-direction: column; justify-content: center; }
-    .esp-card-big .esp-tag { color: rgba(59,159,209,.8); }
-    .esp-card-big .esp-title { color: #fff; }
-    .esp-card-big .esp-desc { color: rgba(255,255,255,.55); }
-    .esp-card-big-visual {
-      background: linear-gradient(135deg, var(--navy-mid), var(--navy-lite));
-      display: flex; align-items: center; justify-content: center;
-      border-radius: 0 20px 20px 0; min-height: 280px;
-      position: relative; overflow: hidden;
-    }
-    .esp-card-big-visual::after {
-      content: ''; position: absolute; inset: 0;
-      background: radial-gradient(circle at 70% 50%, rgba(59,159,209,.25), transparent 60%);
-    }
-    .esp-icon-big { font-size: 96px; opacity: .25; }
-    .esp-tag { font-size: 11px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; color: var(--accent); margin-bottom: 12px; display: block; }
-    .esp-title { font-size: 22px; font-weight: 800; color: var(--text); margin-bottom: 12px; letter-spacing: -.5px; line-height: 1.2; }
-    .esp-desc { font-size: 14px; color: var(--muted); line-height: 1.65; }
-    .esp-link {
-      display: inline-flex; align-items: center; gap: 6px;
-      font-size: 13px; font-weight: 600; color: var(--accent);
-      text-decoration: none; margin-top: 20px;
-      transition: gap .2s;
-    }
-    .esp-link:hover { gap: 10px; }
-    .esp-card-bg {
-      position: absolute; right: -20px; bottom: -20px;
-      font-size: 120px; opacity: .04; line-height: 1;
-      user-select: none; pointer-events: none;
-    }
-    @media (max-width: 768px) {
-      .esp-grid { grid-template-columns: 1fr; }
-    }
 
     /* ─────────────────────────────────────────
        STATS
@@ -489,51 +437,6 @@
   </div>
 </section>
 
-<!-- ESPECIALIDADES -->
-<section id="especialidades">
-  <div class="container">
-    <span class="section-tag reveal">Especialidades</span>
-    <h2 class="section-h2 reveal reveal-delay-1">Soluciones para <em>cada sector</em></h2>
-    <p class="section-lead reveal reveal-delay-2">Formulamos y fabricamos recubrimientos específicos para cada aplicación. No vendemos lo mismo para todo — cada sector tiene su producto.</p>
-
-    <div class="esp-grid">
-
-      <!-- Piscinas -->
-      <div class="esp-card reveal reveal-delay-1">
-        <span class="esp-tag">Piscinas</span>
-        <h3 class="esp-title">Gel Coat para Piscinas</h3>
-        <p class="esp-desc">Gel coat Iso-NPG de alto rendimiento. Resistencia UV superior al 85% tras 1.000h, impermeabilidad total y vida útil de 10–15 años. Disponible en cualquier color RAL.</p>
-        <a href="/contacto" class="esp-link">
-          Solicitar información <svg width="13" height="13" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-        </a>
-        <div class="esp-card-bg">🏊</div>
-      </div>
-
-      <!-- Barcos -->
-      <div class="esp-card reveal reveal-delay-2">
-        <span class="esp-tag">Náutica</span>
-        <h3 class="esp-title">Gel Coat para Barcos</h3>
-        <p class="esp-desc">Formulación específica contra ósmosis y agua salada. Dureza Barcol 40–50 y absorción de agua inferior al 0,2%. Para cascos, cubiertas e interiores.</p>
-        <a href="/contacto" class="esp-link">
-          Saber más <svg width="13" height="13" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-        </a>
-        <div class="esp-card-bg">⚓</div>
-      </div>
-
-      <!-- Platos ducha -->
-      <div class="esp-card reveal reveal-delay-3">
-        <span class="esp-tag">Sanitario</span>
-        <h3 class="esp-title">Pintura para Platos de Ducha</h3>
-        <p class="esp-desc">Poliuretano antideslizante bicomponente o gel coat Iso-NPG. Renovación hasta un 70% más económica que la sustitución. Durabilidad mínima de 5 años.</p>
-        <a href="/contacto" class="esp-link">
-          Saber más <svg width="13" height="13" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-        </a>
-        <div class="esp-card-bg">🚿</div>
-      </div>
-
-    </div>
-  </div>
-</section>
 
 <!-- STATS -->
 
