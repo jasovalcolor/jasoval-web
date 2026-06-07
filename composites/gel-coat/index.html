@@ -76,10 +76,10 @@
       height: 180px; position: relative; overflow: hidden;
       display: flex; align-items: flex-end; padding: 24px;
     }
-    .gc-card-top.iso-npg { background: linear-gradient(135deg, #0a2236 0%, #1e5b8a 100%); }
-    .gc-card-top.orto    { background: linear-gradient(135deg, #1a3a4a 0%, #2d6a7a 100%); }
-    .gc-card-top.marino  { background: linear-gradient(135deg, #1e3a5f 0%, #1e5b8a 100%); }
-    .gc-card-top.especial{ background: linear-gradient(135deg, #2d3748 0%, #4a5568 100%); }
+    .gc-card-top.iso-npg  { background: linear-gradient(135deg, #0a2236 0%, #1e5b8a 100%); }
+    .gc-card-top.orto     { background: linear-gradient(135deg, #1a3a4a 0%, #2d6a7a 100%); }
+    .gc-card-top.marino   { background: linear-gradient(135deg, #1a3a5f 0%, #2e6da8 100%); }
+    .gc-card-top.especial { background: linear-gradient(135deg, #1a2a1a 0%, #2d5a2d 100%); }
     .gc-card-top-orb {
       position: absolute; border-radius: 50%; filter: blur(40px); pointer-events: none;
       width: 200px; height: 200px; opacity: .2;
@@ -244,6 +244,50 @@
 
     <div class="gc-grid">
 
+      <!-- ORTOFTÁLICO -->
+      <div class="gc-card coming reveal">
+        <div class="gc-card-top orto">
+          <div class="gc-card-top-orb"></div>
+          <span class="gc-card-badge standard">Estándar</span>
+          <span class="gc-card-name">Ortoftálico</span>
+        </div>
+        <div class="gc-card-body">
+          <p class="gc-card-desc">Gel coat de uso general con base ortoftálica. Excelente relación calidad-precio para aplicaciones interiores, carrocería y piezas sin contacto permanente con agua.</p>
+          <div class="gc-card-tags">
+            <span class="gc-tag">Uso general</span>
+            <span class="gc-tag">Carrocería</span>
+            <span class="gc-tag">Construcción</span>
+            <span class="gc-tag">Interior</span>
+          </div>
+          <div class="gc-card-footer">
+            <span class="gc-card-formats">25 kg · 225 kg</span>
+            <span class="coming-label">Próximamente</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- ISOFTÁLICO -->
+      <div class="gc-card coming reveal">
+        <div class="gc-card-top marino">
+          <div class="gc-card-top-orb"></div>
+          <span class="gc-card-badge premium">Superior</span>
+          <span class="gc-card-name">Isoftálico</span>
+        </div>
+        <div class="gc-card-body">
+          <p class="gc-card-desc">Base isoftálica con mayor resistencia química e hídrica que el ortoftálico. Ideal para piezas en contacto frecuente con agua, ambientes húmedos y exterior.</p>
+          <div class="gc-card-tags">
+            <span class="gc-tag">Exterior</span>
+            <span class="gc-tag">Piscinas</span>
+            <span class="gc-tag">Sanitario</span>
+            <span class="gc-tag">Resistencia química</span>
+          </div>
+          <div class="gc-card-footer">
+            <span class="gc-card-formats">25 kg · 225 kg</span>
+            <span class="coming-label">Próximamente</span>
+          </div>
+        </div>
+      </div>
+
       <!-- ISO-NPG -->
       <a href="/composites/gel-coat/iso-npg" class="gc-card reveal">
         <div class="gc-card-top iso-npg">
@@ -269,65 +313,24 @@
         </div>
       </a>
 
-      <!-- ORTOFTÁLICO -->
-      <div class="gc-card coming reveal">
-        <div class="gc-card-top orto">
-          <div class="gc-card-top-orb"></div>
-          <span class="gc-card-badge standard">Estándar</span>
-          <span class="gc-card-name">Ortoftálico</span>
-        </div>
-        <div class="gc-card-body">
-          <p class="gc-card-desc">Gel coat de uso general para aplicaciones donde el contacto con agua es puntual. Excelente relación calidad-precio para producción en serie.</p>
-          <div class="gc-card-tags">
-            <span class="gc-tag">Uso general</span>
-            <span class="gc-tag">Carrocería</span>
-            <span class="gc-tag">Construcción</span>
-          </div>
-          <div class="gc-card-footer">
-            <span class="gc-card-formats">25 kg · 225 kg</span>
-            <span class="coming-label">Próximamente</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- MARINO -->
-      <div class="gc-card coming reveal">
-        <div class="gc-card-top marino">
-          <div class="gc-card-top-orb"></div>
-          <span class="gc-card-badge premium">Marine</span>
-          <span class="gc-card-name">Marino</span>
-        </div>
-        <div class="gc-card-body">
-          <p class="gc-card-desc">Formulación específica para entornos marinos. Resistencia superior al agua salada, radiación UV intensa y ambientes costeros agresivos.</p>
-          <div class="gc-card-tags">
-            <span class="gc-tag">Barcos</span>
-            <span class="gc-tag">Agua salada</span>
-            <span class="gc-tag">UV extremo</span>
-          </div>
-          <div class="gc-card-footer">
-            <span class="gc-card-formats">25 kg · 225 kg</span>
-            <span class="coming-label">Próximamente</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- ESPECIAL -->
+      <!-- VINILÉSTER -->
       <div class="gc-card coming reveal">
         <div class="gc-card-top especial">
           <div class="gc-card-top-orb"></div>
-          <span class="gc-card-badge standard">Especial</span>
-          <span class="gc-card-name">Colorimetría</span>
+          <span class="gc-card-badge premium">Alta gama</span>
+          <span class="gc-card-name">Viniléster</span>
         </div>
         <div class="gc-card-body">
-          <p class="gc-card-desc">Gel coat pigmentado a medida en carta RAL completa. Fabricamos el color exacto que necesitas con los mismos niveles de calidad de nuestra gama base.</p>
+          <p class="gc-card-desc">Máxima resistencia química y mecánica. Formulado para ambientes agresivos, contacto con solventes, ácidos y condiciones extremas de temperatura y humedad.</p>
           <div class="gc-card-tags">
-            <span class="gc-tag">Carta RAL</span>
-            <span class="gc-tag">A medida</span>
-            <span class="gc-tag">Todos los sectores</span>
+            <span class="gc-tag">Industria química</span>
+            <span class="gc-tag">Alta resistencia</span>
+            <span class="gc-tag">Náutica premium</span>
+            <span class="gc-tag">Ambientes agresivos</span>
           </div>
           <div class="gc-card-footer">
-            <span class="gc-card-formats">Mín. 25 kg</span>
-            <span class="coming-label">Consultar</span>
+            <span class="gc-card-formats">25 kg · 225 kg</span>
+            <span class="coming-label">Próximamente</span>
           </div>
         </div>
       </div>
