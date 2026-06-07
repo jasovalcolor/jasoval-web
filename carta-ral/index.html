@@ -116,10 +116,10 @@
     .filter-pills { display: flex; gap: 6px; overflow-x: auto; padding-bottom: 2px; scrollbar-width: none; flex-wrap: nowrap; }
     .filter-pills::after { content: ''; flex-shrink: 0; width: 16px; }
     .filter-pills::-webkit-scrollbar { display: none; }
-    .pill { flex-shrink: 0; padding: 5px 11px 5px 7px; border-radius: 20px; font-size: 11px; font-weight: 600; border: 1.5px solid var(--border); background: #fff; cursor: pointer; color: var(--text); font-family: 'Montserrat', sans-serif; transition: all .15s; display: flex; align-items: center; gap: 6px; white-space: nowrap; }
+    .pill { flex-shrink: 0; padding: 7px 16px; border-radius: 20px; font-size: 13px; font-weight: 600; border: 1.5px solid var(--border); background: #fff; cursor: pointer; color: var(--text); font-family: 'Montserrat', sans-serif; transition: all .15s; display: flex; align-items: center; gap: 6px; white-space: nowrap; }
     .pill:hover { border-color: var(--accent); color: var(--accent); }
     .pill.active { background: var(--navy); border-color: var(--navy); color: #fff; }
-    .pill-dot { width: 12px; height: 12px; border-radius: 50%; display: inline-block; flex-shrink: 0; }
+    .pill-dot { display: none; }
     @media (max-width: 680px) { .controls { padding: 12px 16px; } }
 
     /* COLOR COUNT */
@@ -246,16 +246,16 @@
       <input type="search" id="ral-search" placeholder="Buscar por código o nombre… ej: RAL 3020 o rojo tráfico" autocomplete="off" />
     </div>
     <div class="filter-pills">
-      <button class="pill active" data-group="all"><span class="pill-dot" style="background:linear-gradient(135deg,#FAD201,#CC0605,#204FA0,#308446)"></span>Todos</button>
-      <button class="pill" data-group="yellow"><span class="pill-dot" style="background:linear-gradient(135deg,#FAD201,#C9A800)"></span>Amarillos</button>
-      <button class="pill" data-group="orange"><span class="pill-dot" style="background:linear-gradient(135deg,#FF7514,#C93C20)"></span>Naranjas</button>
-      <button class="pill" data-group="red"><span class="pill-dot" style="background:linear-gradient(135deg,#E63244,#75151E)"></span>Rojos</button>
-      <button class="pill" data-group="violet"><span class="pill-dot" style="background:linear-gradient(135deg,#DE4C8A,#641C34)"></span>Violetas</button>
-      <button class="pill" data-group="blue"><span class="pill-dot" style="background:linear-gradient(135deg,#3B83BD,#20214F)"></span>Azules</button>
-      <button class="pill" data-group="green"><span class="pill-dot" style="background:linear-gradient(135deg,#57A639,#2F4538)"></span>Verdes</button>
-      <button class="pill" data-group="grey"><span class="pill-dot" style="background:linear-gradient(135deg,#D7D7D7,#2A3439)"></span>Grises</button>
-      <button class="pill" data-group="brown"><span class="pill-dot" style="background:linear-gradient(135deg,#9C6B30,#45322E)"></span>Marrones</button>
-      <button class="pill" data-group="white"><span class="pill-dot" style="background:linear-gradient(135deg,#FAFAF5,#0E0E10);border:1px solid #d2d2d7"></span>Blancos/Negros</button>
+      <button class="pill active" data-group="all">Todos</button>
+      <button class="pill" data-group="yellow">Amarillos</button>
+      <button class="pill" data-group="orange">Naranjas</button>
+      <button class="pill" data-group="red">Rojos</button>
+      <button class="pill" data-group="violet">Violetas</button>
+      <button class="pill" data-group="blue">Azules</button>
+      <button class="pill" data-group="green">Verdes</button>
+      <button class="pill" data-group="grey">Grises</button>
+      <button class="pill" data-group="brown">Marrones</button>
+      <button class="pill" data-group="white">Blancos/Negros</button>
     </div>
   </div>
 </div>
