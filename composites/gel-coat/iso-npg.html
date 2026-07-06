@@ -112,6 +112,24 @@
     .env-tag { background: var(--bg); border: 1px solid var(--border); border-radius: 8px; padding: 6px 12px; font-size: 13px; font-weight: 800; color: var(--navy); }
     @media (max-width: 760px) { .product-grid { grid-template-columns: 1fr; gap: 32px; } }
 
+    /* PRODUCTOS DERIVADOS */
+    .derived-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    .derived-card { border: 1px solid var(--border); border-radius: 14px; padding: 24px; background: var(--surface); }
+    .derived-card:hover { border-color: var(--accent); }
+    .derived-top { display: flex; align-items: center; gap: 12px; margin-bottom: 14px; }
+    .derived-icon { width: 40px; height: 40px; border-radius: 10px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+    .derived-icon.metal { background: linear-gradient(135deg, #e8e8e8, #c0c0c0); color: #888; }
+    .derived-icon.granite { background: linear-gradient(135deg, #e2e8f0, #94a3b8); color: #7a6040; }
+    .derived-card h3 { font-size: 14px; font-weight: 800; color: var(--navy); margin-bottom: 2px; }
+    .derived-card .derived-base { font-size: 11px; color: var(--accent); font-weight: 700; letter-spacing: .5px; }
+    .derived-card p { font-size: 13px; color: var(--muted); line-height: 1.6; margin-bottom: 14px; }
+    .derived-specs { display: flex; flex-direction: column; gap: 4px; }
+    .derived-spec { display: flex; justify-content: space-between; font-size: 12px; padding: 5px 0; border-bottom: 1px solid var(--bg); }
+    .derived-spec:last-child { border-bottom: none; }
+    .derived-spec span:first-child { color: var(--muted); }
+    .derived-spec span:last-child { color: var(--navy); font-weight: 600; }
+    @media (max-width: 600px) { .derived-grid { grid-template-columns: 1fr; } }
+
     /* PDF */
     .pdf-card { display: flex; align-items: center; gap: 18px; background: var(--surface); border: 1px solid var(--border); border-radius: 14px; padding: 22px 24px; max-width: 640px; }
     .pdf-ico { width: 48px; height: 48px; background: var(--bg); border: 1px solid var(--border); border-radius: 10px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
@@ -288,28 +306,6 @@
             </div>
             <span>Alta exposición UV</span>
           </div>
-          <!-- Metalizado: destello / efecto metálico -->
-          <div class="app-row">
-            <div class="app-ico c6">
-              <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
-                <path d="M12 2l1.8 5.4L19 9l-5.2 1.6L12 16l-1.8-5.4L5 9l5.2-1.6z"/>
-                <path d="M5 18l.8 2.2L8 21l-2.2.8L5 24"/>
-                <path d="M19 3l.6 1.6L21 5l-1.4.4L19 7"/>
-              </svg>
-            </div>
-            <span>Gel Coat Metalizado</span>
-          </div>
-          <!-- Granibeit: efecto mármol / granito -->
-          <div class="app-row">
-            <div class="app-ico c7">
-              <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
-                <rect x="3" y="3" width="18" height="18" rx="2"/>
-                <path d="M3 9c3-3 5-1 7 1s4 4 7 1"/>
-                <path d="M3 15c3-3 5-1 7 1s4 4 7 1"/>
-              </svg>
-            </div>
-            <span>Gel Coat Granibeit</span>
-          </div>
         </div>
 
         <span class="sidebar-label">Formatos</span>
@@ -318,6 +314,61 @@
           <span class="env-tag">25 kg</span>
           <span class="env-tag">225 kg</span>
           <span class="env-tag">1.000 kg</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- PRODUCTOS DERIVADOS -->
+<div class="sec alt">
+  <div class="wrap">
+    <span class="sec-label r">También en base ISO-NPG</span>
+    <div class="derived-grid">
+
+      <div class="derived-card r">
+        <div class="derived-top">
+          <div class="derived-icon metal">
+            <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+              <path d="M12 2l1.8 5.4L19 9l-5.2 1.6L12 16l-1.8-5.4L5 9l5.2-1.6z"/>
+              <path d="M19 3l.5 1.5L21 5l-1.5.5L19 7l-.5-1.5L17 5l1.5-.5z"/>
+            </svg>
+          </div>
+          <div>
+            <div class="derived-base">Base ISO-NPG</div>
+            <h3>Gel Coat Metalizado</h3>
+          </div>
+        </div>
+        <p>Acabados decorativos con efecto metálico en piezas de poliéster. Alto impacto visual, buenas propiedades mecánicas y resistencia a agentes atmosféricos.</p>
+        <div class="derived-specs">
+          <div class="derived-spec"><span>Aplicación</span><span>Aerógrafo de gravedad</span></div>
+          <div class="derived-spec"><span>Espesor</span><span>300 – 400 µ</span></div>
+          <div class="derived-spec"><span>Colores</span><span>Carta RAL</span></div>
+          <div class="derived-spec"><span>Envasado</span><span>25 kg</span></div>
+        </div>
+      </div>
+
+      <div class="derived-card r">
+        <div class="derived-top">
+          <div class="derived-icon granite">
+            <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+              <rect x="3" y="3" width="18" height="18" rx="2"/>
+              <path d="M3 9c3-3 5-1 7 1s4 4 7 1"/>
+              <path d="M3 15c3-3 5-1 7 1s4 4 7 1"/>
+            </svg>
+          </div>
+          <div>
+            <div class="derived-base">Base ISO-NPG</div>
+            <h3>Gel Coat Granibeit</h3>
+          </div>
+        </div>
+        <p>Efectos estéticos tipo mármol o superficies granilladas. Estabilidad de color y brillo, indicado para aplicaciones donde la estética superficial es clave.</p>
+        <div class="derived-specs">
+          <div class="derived-spec"><span>Aplicación</span><span>Aerógrafo de gravedad</span></div>
+          <div class="derived-spec"><span>Espesor</span><span>350 – 450 µ</span></div>
+          <div class="derived-spec"><span>Colores</span><span>Carta dedicada Granibeit</span></div>
+          <div class="derived-spec"><span>Envasado</span><span>25 kg</span></div>
         </div>
       </div>
 
