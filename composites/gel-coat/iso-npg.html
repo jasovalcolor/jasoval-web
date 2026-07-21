@@ -113,21 +113,25 @@
     @media (max-width: 760px) { .product-grid { grid-template-columns: 1fr; gap: 32px; } }
 
     /* PRODUCTOS DERIVADOS */
-    .derived-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
-    .derived-card { border: 1px solid var(--border); border-radius: 14px; padding: 24px; background: var(--surface); }
-    .derived-card:hover { border-color: var(--accent); }
-    .derived-top { display: flex; align-items: center; gap: 12px; margin-bottom: 14px; }
-    .derived-icon { width: 40px; height: 40px; border-radius: 10px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
-    .derived-icon.metal { background: linear-gradient(135deg, #e8e8e8, #c0c0c0); color: #888; }
-    .derived-icon.granite { background: linear-gradient(135deg, #e2e8f0, #94a3b8); color: #7a6040; }
-    .derived-card h3 { font-size: 14px; font-weight: 800; color: var(--navy); margin-bottom: 2px; }
-    .derived-card .derived-base { font-size: 11px; color: var(--accent); font-weight: 700; letter-spacing: .5px; }
-    .derived-card p { font-size: 13px; color: var(--muted); line-height: 1.6; margin-bottom: 14px; }
-    .derived-specs { display: flex; flex-direction: column; gap: 4px; }
-    .derived-spec { display: flex; justify-content: space-between; font-size: 12px; padding: 5px 0; border-bottom: 1px solid var(--bg); }
+    .derived-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+    .derived-card { border: 1px solid var(--border); border-radius: 16px; overflow: hidden; background: var(--surface); transition: box-shadow .2s, border-color .2s; }
+    .derived-card:hover { border-color: rgba(59,159,209,.4); box-shadow: 0 8px 28px rgba(0,0,0,.07); }
+    .derived-head { padding: 28px 24px 22px; display: flex; align-items: flex-start; gap: 14px; }
+    .metal-head { background: linear-gradient(140deg, #f7f7f7 0%, #e3e3e3 55%, #d2d2d2 100%); }
+    .granite-head { background: linear-gradient(140deg, #eef3f7 0%, #d9e8f2 55%, #c8d8e8 100%); }
+    .derived-icon { width: 44px; height: 44px; border-radius: 10px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+    .derived-icon.metal { background: rgba(255,255,255,.8); color: #666; box-shadow: 0 1px 4px rgba(0,0,0,.12); }
+    .derived-icon.granite { background: rgba(255,255,255,.8); color: #7a6a50; box-shadow: 0 1px 4px rgba(0,0,0,.12); }
+    .derived-tag { font-size: 10px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; color: var(--accent); margin-bottom: 5px; }
+    .derived-head h3 { font-size: 16px; font-weight: 800; color: var(--navy); line-height: 1.2; }
+    .derived-body { padding: 20px 24px 24px; }
+    .derived-body > p { font-size: 13px; color: var(--muted); line-height: 1.65; margin-bottom: 18px; }
+    .derived-specs { display: flex; flex-direction: column; margin-bottom: 20px; border: 1px solid var(--border); border-radius: 10px; overflow: hidden; }
+    .derived-spec { display: flex; justify-content: space-between; align-items: center; font-size: 12px; padding: 8px 12px; border-bottom: 1px solid var(--border); }
     .derived-spec:last-child { border-bottom: none; }
-    .derived-spec span:first-child { color: var(--muted); }
-    .derived-spec span:last-child { color: var(--navy); font-weight: 600; }
+    .derived-spec:nth-child(even) { background: var(--bg); }
+    .derived-spec span:first-child { color: var(--muted); font-weight: 600; }
+    .derived-spec span:last-child { color: var(--navy); font-weight: 700; }
     @media (max-width: 600px) { .derived-grid { grid-template-columns: 1fr; } }
 
     /* PDF */
@@ -321,69 +325,6 @@
   </div>
 </div>
 
-<!-- PRODUCTOS DERIVADOS -->
-<div class="sec alt">
-  <div class="wrap">
-    <span class="sec-label r">También en base ISO-NPG</span>
-    <div class="derived-grid">
-
-      <div class="derived-card r">
-        <div class="derived-top">
-          <div class="derived-icon metal">
-            <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
-              <path d="M12 2l1.8 5.4L19 9l-5.2 1.6L12 16l-1.8-5.4L5 9l5.2-1.6z"/>
-              <path d="M19 3l.5 1.5L21 5l-1.5.5L19 7l-.5-1.5L17 5l1.5-.5z"/>
-            </svg>
-          </div>
-          <div>
-            <div class="derived-base">Base ISO-NPG</div>
-            <h3>Gel Coat Metalizado</h3>
-          </div>
-        </div>
-        <p>Acabados decorativos con efecto metálico en piezas de poliéster. Alto impacto visual, buenas propiedades mecánicas y resistencia a agentes atmosféricos.</p>
-        <div class="derived-specs">
-          <div class="derived-spec"><span>Aplicación</span><span>Aerógrafo de gravedad</span></div>
-          <div class="derived-spec"><span>Espesor</span><span>300 – 400 µ</span></div>
-          <div class="derived-spec"><span>Colores</span><span>Carta RAL</span></div>
-          <div class="derived-spec"><span>Envasado</span><span>25 kg</span></div>
-        </div>
-        <a href="/composites/gel-coat/metalizado-ficha" target="_blank" class="btn-dl" style="margin-top:16px;display:inline-flex;">
-          <svg width="13" height="13" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7,10 12,15 17,10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-          Ficha técnica
-        </a>
-      </div>
-
-      <div class="derived-card r">
-        <div class="derived-top">
-          <div class="derived-icon granite">
-            <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
-              <rect x="3" y="3" width="18" height="18" rx="2"/>
-              <path d="M3 9c3-3 5-1 7 1s4 4 7 1"/>
-              <path d="M3 15c3-3 5-1 7 1s4 4 7 1"/>
-            </svg>
-          </div>
-          <div>
-            <div class="derived-base">Base ISO-NPG</div>
-            <h3>Gel Coat Granibeit</h3>
-          </div>
-        </div>
-        <p>Efectos estéticos tipo mármol o superficies granilladas. Estabilidad de color y brillo, indicado para aplicaciones donde la estética superficial es clave.</p>
-        <div class="derived-specs">
-          <div class="derived-spec"><span>Aplicación</span><span>Aerógrafo de gravedad</span></div>
-          <div class="derived-spec"><span>Espesor</span><span>350 – 450 µ</span></div>
-          <div class="derived-spec"><span>Colores</span><span>Carta dedicada Granibeit</span></div>
-          <div class="derived-spec"><span>Envasado</span><span>25 kg</span></div>
-        </div>
-        <a href="/composites/gel-coat/granibeit-ficha" target="_blank" class="btn-dl" style="margin-top:16px;display:inline-flex;">
-          <svg width="13" height="13" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7,10 12,15 17,10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-          Ficha técnica
-        </a>
-      </div>
-
-    </div>
-  </div>
-</div>
-
 <!-- FICHA TÉCNICA -->
 <div class="sec alt">
   <div class="wrap">
@@ -408,8 +349,75 @@
   </div>
 </div>
 
-<!-- FAQ -->
+<!-- PRODUCTOS DERIVADOS -->
 <div class="sec">
+  <div class="wrap">
+    <span class="sec-label r">También en base ISO-NPG</span>
+    <div class="derived-grid">
+
+      <div class="derived-card r">
+        <div class="derived-head metal-head">
+          <div class="derived-icon metal">
+            <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+              <path d="M12 2l1.8 5.4L19 9l-5.2 1.6L12 16l-1.8-5.4L5 9l5.2-1.6z"/>
+              <path d="M19 3l.5 1.5L21 5l-1.5.5L19 7l-.5-1.5L17 5l1.5-.5z"/>
+            </svg>
+          </div>
+          <div>
+            <div class="derived-tag">Base ISO-NPG</div>
+            <h3>Gel Coat Metalizado</h3>
+          </div>
+        </div>
+        <div class="derived-body">
+          <p>Acabados decorativos con efecto metálico en piezas de poliéster. Alto impacto visual, buenas propiedades mecánicas y resistencia a agentes atmosféricos.</p>
+          <div class="derived-specs">
+            <div class="derived-spec"><span>Espesor</span><span>300 – 400 µ</span></div>
+            <div class="derived-spec"><span>Aplicación</span><span>Aerógrafo de gravedad</span></div>
+            <div class="derived-spec"><span>Colores</span><span>Carta RAL completa</span></div>
+            <div class="derived-spec"><span>Envasado</span><span>25 kg</span></div>
+          </div>
+          <a href="/composites/gel-coat/metalizado-ficha" target="_blank" class="btn-dl">
+            <svg width="13" height="13" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7,10 12,15 17,10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            Ficha técnica
+          </a>
+        </div>
+      </div>
+
+      <div class="derived-card r">
+        <div class="derived-head granite-head">
+          <div class="derived-icon granite">
+            <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+              <rect x="3" y="3" width="18" height="18" rx="2"/>
+              <path d="M3 9c3-3 5-1 7 1s4 4 7 1"/>
+              <path d="M3 15c3-3 5-1 7 1s4 4 7 1"/>
+            </svg>
+          </div>
+          <div>
+            <div class="derived-tag">Base ISO-NPG</div>
+            <h3>Gel Coat Granibeit</h3>
+          </div>
+        </div>
+        <div class="derived-body">
+          <p>Efectos estéticos tipo mármol y superficies granilladas. Estabilidad de color y brillo, para aplicaciones donde la estética superficial es diferenciadora.</p>
+          <div class="derived-specs">
+            <div class="derived-spec"><span>Espesor</span><span>350 – 450 µ</span></div>
+            <div class="derived-spec"><span>Aplicación</span><span>Aerógrafo de gravedad</span></div>
+            <div class="derived-spec"><span>Colores</span><span>Carta Granibeit</span></div>
+            <div class="derived-spec"><span>Envasado</span><span>25 kg</span></div>
+          </div>
+          <a href="/composites/gel-coat/granibeit-ficha" target="_blank" class="btn-dl">
+            <svg width="13" height="13" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7,10 12,15 17,10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            Ficha técnica
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- FAQ -->
+<div class="sec alt">
   <div class="wrap">
     <span class="sec-label r">Preguntas frecuentes</span>
     <div class="faq-list">
