@@ -128,12 +128,8 @@
     .derived-head h3 { font-size: 16px; font-weight: 800; color: var(--navy); line-height: 1.2; }
     .derived-body { padding: 20px 24px 24px; }
     .derived-body > p { font-size: 13px; color: var(--muted); line-height: 1.65; margin-bottom: 18px; }
-    .derived-specs { display: flex; flex-direction: column; margin-bottom: 20px; border: 1px solid var(--border); border-radius: 10px; overflow: hidden; }
-    .derived-spec { display: flex; justify-content: space-between; align-items: center; font-size: 12px; padding: 8px 12px; border-bottom: 1px solid var(--border); }
-    .derived-spec:last-child { border-bottom: none; }
-    .derived-spec:nth-child(even) { background: var(--bg); }
-    .derived-spec span:first-child { color: var(--muted); font-weight: 600; }
-    .derived-spec span:last-child { color: var(--navy); font-weight: 700; }
+    .derived-sectors { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 20px; }
+    .sector-tag { background: rgba(59,159,209,.08); border: 1px solid rgba(59,159,209,.2); color: var(--navy); font-size: 12px; font-weight: 600; padding: 4px 10px; border-radius: 20px; }
     @media (max-width: 600px) { .derived-grid { grid-template-columns: 1fr; } }
 
     /* PDF */
@@ -364,12 +360,12 @@
           </div>
         </div>
         <div class="derived-body">
-          <p>Acabados decorativos con efecto metálico en piezas de poliéster. Alto impacto visual, buenas propiedades mecánicas y resistencia a agentes atmosféricos.</p>
-          <div class="derived-specs">
-            <div class="derived-spec"><span>Espesor</span><span>300 – 400 µ</span></div>
-            <div class="derived-spec"><span>Aplicación</span><span>Aerógrafo de gravedad</span></div>
-            <div class="derived-spec"><span>Colores</span><span>Carta RAL completa</span></div>
-            <div class="derived-spec"><span>Envasado</span><span>25 kg</span></div>
+          <p>Efecto metálico de alto impacto visual aplicado con aerógrafo de gravedad. Disponible en toda la carta RAL, consigue el acabado cromado y la profundidad visual que un gel coat convencional no puede ofrecer. Muy usado en toboganes, piezas de baño premium y componentes de vehículo.</p>
+          <div class="derived-sectors">
+            <span class="sector-tag">Parques de atracciones</span>
+            <span class="sector-tag">Sanitario</span>
+            <span class="sector-tag">Transporte</span>
+            <span class="sector-tag">Mobiliario</span>
           </div>
           <a href="/composites/gel-coat/metalizado-ficha" target="_blank" class="btn-dl">
             <svg width="13" height="13" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7,10 12,15 17,10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
@@ -393,12 +389,12 @@
           </div>
         </div>
         <div class="derived-body">
-          <p>Efectos estéticos tipo mármol y superficies granilladas. Estabilidad de color y brillo, para aplicaciones donde la estética superficial es diferenciadora.</p>
-          <div class="derived-specs">
-            <div class="derived-spec"><span>Espesor</span><span>350 – 450 µ</span></div>
-            <div class="derived-spec"><span>Aplicación</span><span>Aerógrafo de gravedad</span></div>
-            <div class="derived-spec"><span>Colores</span><span>Carta Granibeit</span></div>
-            <div class="derived-spec"><span>Envasado</span><span>25 kg</span></div>
+          <p>Reproduce la estética del granito, el mármol y la piedra natural sobre cualquier pieza composite. Con carta de color propia Granibeit, es la solución para platos de ducha, encimeras de cocina y mobiliario que buscan la belleza de la piedra con la ligereza del poliéster.</p>
+          <div class="derived-sectors">
+            <span class="sector-tag">Sanitario</span>
+            <span class="sector-tag">Encimeras de cocina</span>
+            <span class="sector-tag">Mobiliario</span>
+            <span class="sector-tag">Decoración</span>
           </div>
           <a href="/composites/gel-coat/granibeit-ficha" target="_blank" class="btn-dl">
             <svg width="13" height="13" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7,10 12,15 17,10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
