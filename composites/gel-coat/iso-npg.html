@@ -132,15 +132,15 @@
     .sector-tag { background: rgba(59,159,209,.08); border: 1px solid rgba(59,159,209,.2); color: var(--navy); font-size: 12px; font-weight: 600; padding: 4px 10px; border-radius: 20px; }
     @media (max-width: 600px) { .derived-grid { grid-template-columns: 1fr; } }
 
-    /* PDF */
-    .pdf-card { display: flex; align-items: center; gap: 18px; background: var(--surface); border: 1px solid var(--border); border-radius: 14px; padding: 22px 24px; max-width: 640px; }
-    .pdf-ico { width: 48px; height: 48px; background: var(--bg); border: 1px solid var(--border); border-radius: 10px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
-    .pdf-text { flex: 1; }
-    .pdf-text strong { display: block; font-size: 14px; font-weight: 700; color: var(--navy); margin-bottom: 3px; }
-    .pdf-text span { font-size: 12px; color: var(--muted); }
+    /* PDF inline */
+    .pdf-inline { display: flex; align-items: center; gap: 14px; margin-top: 28px; padding: 16px 18px; background: var(--bg); border-radius: 12px; border: 1px solid var(--border); }
+    .pdf-ico { width: 40px; height: 40px; background: var(--surface); border: 1px solid var(--border); border-radius: 9px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+    .pdf-info { flex: 1; }
+    .pdf-info strong { display: block; font-size: 13px; font-weight: 700; color: var(--navy); margin-bottom: 2px; }
+    .pdf-info span { font-size: 12px; color: var(--muted); }
     .btn-dl { display: inline-flex; align-items: center; gap: 7px; background: var(--navy); color: #fff; padding: 10px 20px; border-radius: 980px; font-weight: 700; font-size: 13px; text-decoration: none; white-space: nowrap; flex-shrink: 0; transition: background .2s; }
     .btn-dl:hover { background: var(--navy-mid); }
-    @media (max-width: 580px) { .pdf-card { flex-direction: column; align-items: flex-start; } }
+    @media (max-width: 580px) { .pdf-inline { flex-wrap: wrap; } }
 
     /* FAQ */
     .faq-list { display: flex; flex-direction: column; gap: 8px; max-width: 760px; }
@@ -241,6 +241,23 @@
         <p>El Gel Coat ISO-NPG es la formulación de referencia del sector para cualquier superficie en contacto permanente con agua, humedad o exposición UV intensa. La combinación de resina isoftálica y neopentilglicol (NPG) crea una red polimérica de baja permeabilidad que actúa como barrera frente a la osmosis, protegiendo la laminación durante muchos más años que un gel coat ortoftálico convencional.</p>
         <p>Su solidez de color es una de sus grandes ventajas: no amarillea bajo exposición solar prolongada y mantiene el blanco y los tonos RAL sin degradación visible. Disponible en versión <strong>Gel Coat</strong> (con parafina, para superficie exterior de molde) y <strong>Top Coat</strong> (sin parafina, para aplicación sobre pieza ya curada), adecuado tanto para fabricación en serie como para renovación y reparación.</p>
         <p>Se aplica con brocha, rodillo o pistola airless, con un consumo orientativo de 600–800 g/m² a un espesor de 0,4–0,5 mm. Fabricamos en todos los colores de la carta RAL y NCS bajo pedido, con plazo habitual de 5–7 días laborables.</p>
+        <div class="pdf-inline">
+          <div class="pdf-ico">
+            <svg width="20" height="20" fill="none" viewBox="0 0 24 24">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" stroke="#cc0000" stroke-width="1.8"/>
+              <polyline points="14,2 14,8 20,8" stroke="#cc0000" stroke-width="1.8" fill="none"/>
+              <text x="6.5" y="18.5" fill="#cc0000" font-size="5" font-weight="800" font-family="Montserrat, sans-serif" letter-spacing=".5">PDF</text>
+            </svg>
+          </div>
+          <div class="pdf-info">
+            <strong>Ficha Técnica Gel Coat ISO-NPG</strong>
+            <span>Especificaciones y condiciones de aplicación</span>
+          </div>
+          <a href="/composites/gel-coat/iso-npg-ficha" target="_blank" class="btn-dl">
+            <svg width="13" height="13" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7,10 12,15 17,10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            Descargar
+          </a>
+        </div>
       </div>
 
       <!-- Sidebar -->
@@ -312,30 +329,6 @@
         </div>
       </div>
 
-    </div>
-  </div>
-</div>
-
-<!-- FICHA TÉCNICA -->
-<div class="sec alt">
-  <div class="wrap">
-    <span class="sec-label r">Documentación técnica</span>
-    <div class="pdf-card r">
-      <div class="pdf-ico">
-        <svg width="24" height="24" fill="none" viewBox="0 0 24 24">
-          <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" stroke="#cc0000" stroke-width="1.8"/>
-          <polyline points="14,2 14,8 20,8" stroke="#cc0000" stroke-width="1.8" fill="none"/>
-          <text x="6.5" y="18.5" fill="#cc0000" font-size="5" font-weight="800" font-family="Montserrat, sans-serif" letter-spacing=".5">PDF</text>
-        </svg>
-      </div>
-      <div class="pdf-text">
-        <strong>Ficha Técnica Gel Coat ISO-NPG</strong>
-        <span>Especificaciones, proporciones de catalizador y condiciones de aplicación</span>
-      </div>
-      <a href="/composites/gel-coat/iso-npg-ficha" target="_blank" class="btn-dl">
-        <svg width="13" height="13" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7,10 12,15 17,10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-        Descargar
-      </a>
     </div>
   </div>
 </div>
