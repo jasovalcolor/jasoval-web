@@ -100,6 +100,10 @@
     .nav-dropdown-menu a:hover { background: var(--bg); }
     .nav-dropdown-menu a.soon { opacity: .45; pointer-events: none; }
     .dd-dot { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; }
+    .dd-sub { padding-left: 28px !important; font-size: 11px !important; color: var(--muted) !important; }
+    .dd-sub.active-sub { color: var(--navy) !important; font-weight: 600 !important; }
+    .dd-sub:not(.soon):hover { color: var(--navy) !important; }
+    .dd-divider { height: 1px; background: var(--border); margin: 4px 6px; }
     @media (max-width: 1200px) {
       header { padding: 0 20px; }
       .hamburger { display: block; }
@@ -240,9 +244,14 @@
       <a href="/composites/" class="nav-dropdown-trigger active">Composites <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></a>
       <div class="nav-dropdown-menu">
         <a href="/composites/gel-coat"><span class="dd-dot" style="background:#3b9fd1"></span>Gel Coat</a>
-        <a href="/composites/resinas" class="soon"><span class="dd-dot" style="background:#ccc"></span>Resinas <small style="font-size:10px;margin-left:auto;opacity:.6">pronto</small></a>
-        <a href="/composites/catalizadores" class="soon"><span class="dd-dot" style="background:#ccc"></span>Catalizadores <small style="font-size:10px;margin-left:auto;opacity:.6">pronto</small></a>
-        <a href="/composites/fibras" class="soon"><span class="dd-dot" style="background:#ccc"></span>Fibras <small style="font-size:10px;margin-left:auto;opacity:.6">pronto</small></a>
+        <a href="/composites/gel-coat/iso-npg" class="dd-sub active-sub"><span class="dd-dot" style="background:#3b9fd1"></span>ISO-NPG</a>
+        <a class="dd-sub soon"><span class="dd-dot" style="background:#ccc"></span>Ortoftálico <small style="margin-left:auto;opacity:.6">pronto</small></a>
+        <a class="dd-sub soon"><span class="dd-dot" style="background:#ccc"></span>Marino <small style="margin-left:auto;opacity:.6">pronto</small></a>
+        <a class="dd-sub soon"><span class="dd-dot" style="background:#ccc"></span>Transparente <small style="margin-left:auto;opacity:.6">pronto</small></a>
+        <div class="dd-divider"></div>
+        <a href="/composites/resinas" class="soon"><span class="dd-dot" style="background:#ccc"></span>Resinas <small style="margin-left:auto;opacity:.6">pronto</small></a>
+        <a href="/composites/catalizadores" class="soon"><span class="dd-dot" style="background:#ccc"></span>Catalizadores <small style="margin-left:auto;opacity:.6">pronto</small></a>
+        <a href="/composites/fibras" class="soon"><span class="dd-dot" style="background:#ccc"></span>Fibras <small style="margin-left:auto;opacity:.6">pronto</small></a>
       </div>
     </div>
     <a href="/blog">Blog</a>
