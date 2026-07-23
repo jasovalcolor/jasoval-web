@@ -85,7 +85,7 @@
     .logo { display: flex; align-items: center; text-decoration: none; }
     .logo-img { height: 48px; width: auto; display: block; }
     nav { display: flex; align-items: center; gap: 2px; }
-    nav a { font-size: 18px; font-weight: 600; color: var(--muted); text-decoration: none; padding: 7px 14px; border-radius: 7px; transition: color .2s, background .2s; }
+    nav a { font-size: 18px; font-weight: 600; color: var(--muted); text-decoration: none; padding: 7px 14px; border-radius: 7px; transition: color .2s, background .2s; white-space: nowrap; }
     nav a:hover { color: var(--text); background: rgba(0,0,0,.05); }
     nav a.active { color: var(--navy); font-weight: 700; }
     .nav-cta { background: var(--accent) !important; color: #fff !important; border-radius: 20px !important; padding: 6px 16px !important; font-size: 13px !important; font-weight: 600 !important; }
@@ -100,7 +100,7 @@
     .nav-dropdown-menu a:hover { background: var(--bg); }
     .nav-dropdown-menu a.soon { opacity: .45; pointer-events: none; }
     .dd-dot { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; }
-    @media (max-width: 1024px) {
+    @media (max-width: 1200px) {
       header { padding: 0 20px; }
       .hamburger { display: block; }
       nav { display: none; position: fixed; top: 80px; left: 0; right: 0; height: calc(100vh - 80px); z-index: 200; background: rgba(255,255,255,.97); backdrop-filter: blur(20px); flex-direction: column; justify-content: center; align-items: center; gap: 8px; }
