@@ -186,7 +186,8 @@
     .pdf-info span { font-size: 12px; color: var(--muted); }
     .btn-dl { display: inline-flex; align-items: center; gap: 7px; background: var(--navy); color: #fff; padding: 10px 20px; border-radius: 980px; font-weight: 700; font-size: 13px; text-decoration: none; white-space: nowrap; flex-shrink: 0; transition: background .2s; }
     .btn-dl:hover { background: var(--navy-mid); }
-    @media (max-width: 580px) { .pdf-inline { flex-wrap: wrap; } }
+    .pdf-short { display: none; }
+    @media (max-width: 580px) { .pdf-inline { flex-wrap: wrap; } .pdf-short { display: inline; } .pdf-long { display: none; } }
 
     /* FAQ */
     .faq-list { display: flex; flex-direction: column; gap: 8px; max-width: 760px; }
@@ -295,7 +296,7 @@
             </svg>
           </div>
           <div class="pdf-info">
-            <strong>Ficha Técnica - Gel Coat ISO-NPG</strong>
+            <strong>Ficha Técnica <span class="pdf-short">ISO-NPG</span><span class="pdf-long">- Gel Coat ISO-NPG</span></strong>
             <span>Especificaciones y condiciones de aplicación</span>
           </div>
           <a href="/composites/gel-coat/FT-Gel-Coat-ISO-NPG.pdf" download class="btn-dl">
