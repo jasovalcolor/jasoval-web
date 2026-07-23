@@ -256,23 +256,21 @@
     #productos { background: var(--bg); }
     .prod-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin-top: 56px; }
     .prod-card {
-      background: var(--surface); border-radius: 16px; padding: 32px 28px;
-      border: 1px solid var(--border);
+      border-radius: 20px; padding: 28px 24px; height: 190px;
+      display: flex; flex-direction: column; justify-content: space-between; align-items: flex-start;
+      border: none; position: relative; overflow: hidden; cursor: default;
       transition: transform .3s, box-shadow .3s;
-      display: flex; flex-direction: column; gap: 10px;
     }
-    .prod-card:hover { transform: translateY(-4px); box-shadow: 0 16px 40px rgba(0,0,0,.08); }
-    .prod-icon {
-      width: 48px; height: 48px; border-radius: 12px;
-      background: linear-gradient(135deg, var(--accent), var(--navy-lite));
-      display: flex; align-items: center; justify-content: center;
-      font-size: 22px; margin-bottom: 8px;
-    }
-    .prod-name { font-size: 15px; font-weight: 800; color: var(--navy); letter-spacing: -.3px; }
-    .prod-desc { font-size: 13px; color: var(--muted); line-height: 1.6; flex: 1; }
-    .prod-count { font-size: 11px; font-weight: 700; color: var(--accent); letter-spacing: .5px; }
+    .prod-card::before { content: ''; position: absolute; inset: 0; background: linear-gradient(160deg, rgba(255,255,255,.07) 0%, transparent 60%); pointer-events: none; }
+    .prod-card:hover { transform: translateY(-4px); box-shadow: 0 20px 48px rgba(0,0,0,.22); }
+    .prod-card:nth-child(1) { background: linear-gradient(135deg, #0a2236 0%, #1e5b8a 100%); }
+    .prod-card:nth-child(2) { background: linear-gradient(135deg, #0f2d1e 0%, #1a6640 100%); }
+    .prod-card:nth-child(3) { background: linear-gradient(135deg, #1a1a2e 0%, #3b3b7a 100%); }
+    .prod-card:nth-child(4) { background: linear-gradient(135deg, #2a1a0a 0%, #7a4a1e 100%); }
+    .prod-icon { font-size: 36px; line-height: 1; }
+    .prod-name { font-size: 17px; font-weight: 800; color: #fff; letter-spacing: -.3px; }
     @media (max-width: 900px) { .prod-grid { grid-template-columns: repeat(2, 1fr); } }
-    @media (max-width: 480px) { .prod-grid { grid-template-columns: 1fr; } }
+    @media (max-width: 480px) { .prod-grid { grid-template-columns: repeat(2, 1fr); } }
 
 
     /* ─────────────────────────────────────────
@@ -504,26 +502,18 @@
       <div class="prod-card reveal reveal-delay-1">
         <div class="prod-icon">🎨</div>
         <div class="prod-name">Gel Coats</div>
-        <div class="prod-desc">Orto, Iso, Iso-NPG y Viniléster. Para pistola, brocha o rodillo. Personalizables en carta RAL y NCS.</div>
-        <div class="prod-count">4 referencias</div>
       </div>
       <div class="prod-card reveal reveal-delay-2">
         <div class="prod-icon">🧪</div>
         <div class="prod-name">Resinas</div>
-        <div class="prod-desc">Poliéster, Ortoftálica, Viniléster, Tixotrópica y de Colada. Para todos los procesos de laminación.</div>
-        <div class="prod-count">5 referencias</div>
       </div>
       <div class="prod-card reveal reveal-delay-3">
         <div class="prod-icon">⚗️</div>
         <div class="prod-name">Catalizadores</div>
-        <div class="prod-desc">MEKP, Octoato de Cobalto y DMA. Curado controlado en cualquier condición de temperatura.</div>
-        <div class="prod-count">3 referencias</div>
       </div>
       <div class="prod-card reveal reveal-delay-4">
         <div class="prod-icon">🧵</div>
         <div class="prod-name">Fibra de Vidrio</div>
-        <div class="prod-desc">Mat CSM y Roving en múltiples gramajes. Compatible con todos los sistemas de resina.</div>
-        <div class="prod-count">2 referencias</div>
       </div>
     </div>
   </div>
